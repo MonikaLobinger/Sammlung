@@ -1,0 +1,11 @@
+" Have j and k navigate visual lines rather than logical ones
+nmap j gj
+nmap k gk
+" Quickly remove search highlights
+nmap <F9> :nohl<CR>
+
+" Yank to system clipboard
+set clipboard=unnamed
+inoremap jk <Esc>
+inoremap <C-j> <Esc>
+inoremap <C-g> <Esc>

@@ -1,0 +1,147 @@
+---
+cssclasses: foldernote
+tags: [MOC]
+---
+```dataviewjs
+dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
+```
+
+[[A|°A°]] &nbsp;
+[[B|°B°]] &nbsp;
+[[C|°C°]] &nbsp;
+[[D|°D°]] &nbsp;
+[[E|°E°]] &nbsp;
+[[F|°F°]] &nbsp;
+[[G|°G°]] &nbsp;
+[[H|°H°]] &nbsp;
+[[I|°I°]] &nbsp;
+[[J|°J°]] &nbsp;
+[[K|°K°]] &nbsp;
+[[L|°L°]] &nbsp;
+[[M|°M°]] &nbsp;
+[[N|°N°]] &nbsp;
+[[O|°O°]] &nbsp;
+[[P|°P°]] &nbsp;
+[[Q|°Q°]] &nbsp;
+[[R|°R°]] &nbsp;
+[[S|°S°]] &nbsp;
+[[T|°T°]] &nbsp;
+[[U|°U°]] &nbsp;
+[[V|°V°]] &nbsp;
+[[W|°W°]] &nbsp;
+[[X|°X°]] &nbsp;
+[[Y|°Y°]] &nbsp;
+[[Z|°Z°]] &nbsp;
+
+
+%% Begin Waypoint %%
+- **[[A]]**
+  - [[Acosta Quellen]]
+  - [[Alkmaion Quellen]]
+  - [[Anaximander Quellen]]
+  - [[Anaximenes Quellen]]
+  - [[Apollodoros Quellen]]
+  - [[Aristoteles Quellen]]
+- **[[B]]**
+  - [[Borges Quellen]]
+- **[[C]]**
+  - [[Calvin Quellen]]
+  - [[Chateaubriand Quellen]]
+  - [[Cortes Quellen]]
+- **[[D]]**
+  - [[Darwin Quellen]]
+  - [[Deleuze Quellen]]
+  - [[Derrida Quellen]]
+  - [[Descartes Quellen]]
+  - [[Diderot Quellen]]
+  - [[Diels Quellen]]
+- **[[E]]**
+  - [[Einhard Quellen]]
+- **[[F]]**
+  - [[Fichte Quellen]]
+  - [[Frege Quellen]]
+  - [[Freud Quellen]]
+- **[[G]]**
+  - [[Galileo Quellen]]
+  - [[Gettier Quellen]]
+  - [[Gilgamesch Quellen]]
+  - [[Grotius Quellen]]
+- **[[H]]**
+  - [[Harman Quellen]]
+  - [[Hegel Quellen]]
+  - [[Heidegger Quellen]]
+  - [[Hempel Quellen]]
+  - [[Heraklit Quellen]]
+  - [[Hesiod Quellen]]
+  - [[Hobbes Quellen]]
+  - [[Hoelderlin Quellen]]
+  - [[Homer Quellen]]
+  - [[Hume Quellen]]
+  - [[Husserl Quellen]]
+- **[[I]]**
+  - [[Ignatius Quellen]]
+- **[[J]]**
+  - [[Jankelevitch Quellen]]
+- **[[K]]**
+  - [[Kafka Quellen]]
+  - [[Kant Quellen]]
+  - [[Karl Quellen]]
+  - [[Kierkegaard Quellen]]
+  - [[Kojeve Quellen]]
+  - [[Kopernikus Quellen]]
+  - [[Kotzebue Quellen]]
+- **[[L]]**
+  - [[Laplanche Quellen]]
+  - [[Leibniz Quellen]]
+  - [[Locke Quellen]]
+- **[[M]]**
+  - [[Malabou Quellen]]
+  - [[Melanchthon Quellen]]
+- **[[N]]**
+  - [[Nietzsche Quellen]]
+- **[[O]]**
+- **[[P]]**
+  - [[Paracelsus Quellen]]
+  - [[Parmenides Quellen]]
+  - [[Pico Quellen]]
+  - [[Pindar Quellen]]
+  - [[Platon Quellen]]
+  - [[Plotin Quellen]]
+  - [[Protagoras Quellen]]
+  - [[Pythagoras Quellen]]
+- **[[Q]]**
+  - [[Quine Quellen]]
+- **[[R]]**
+  - [[Rousseau Quellen]]
+- **[[S]]**
+  - [[Schaellibaum Quellen]]
+  - [[Schelling Quellen]]
+  - [[Schobinger Quellen]]
+  - [[Schopenhauer Quellen]]
+  - [[Scotus Quellen]]
+  - [[Simplicius Quellen]]
+  - [[Sokrates Quellen]]
+  - [[Spinoza Quellen]]
+- **[[T]]**
+  - [[Thales Quellen]]
+  - [[Theophrastos Quellen]]
+  - [[Theresa Quellen]]
+  - [[Thomas Quellen]]
+- **[[U]]**
+- **[[V]]**
+- **[[W]]**
+  - [[Wells Quellen]]
+  - [[Whitehead Quellen]]
+  - [[Wittgenstein Quellen]]
+  - [[Wolff Quellen]]
+- **[[X]]**
+  - [[Xenophanes Quellen]]
+  - [[Xenophon Quellen]]
+- **[[Y]]**
+- **[[Z]]**
+  - [[Zizek Quellen]]
+  - [[Zorn Quellen]]
+  - [[Zupancic Quellen]]
+
+%% End Waypoint %%
+
