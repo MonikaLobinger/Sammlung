@@ -11,7 +11,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Urs Schällibaum
-[[timeline#Schaellibaum]]
+![[Materialien/timeline#Schaellibaum]]
 ## Reflexivität und Verschiebung
 
 

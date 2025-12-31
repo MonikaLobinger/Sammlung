@@ -9,7 +9,7 @@ author:
 # Mitschrift
 Mitschrift zu Adamson [2 - Infinity and Beyond: Anaximander and Anaximenes](https://historyofphilosophy.net/anaximander-anaximenes)
 
-[[timeline#Anaximander|Anaximander]] und [[timeline#Anaximenes|Anaximenes]]
+[[Materialien/timeline#Anaximander|Anaximander]] und [[Materialien/timeline#Anaximenes|Anaximenes]]
 
 Über diese beiden wissen wir ein bißchen mehr als über [[Adamson  001 Thales|Thales]].
 

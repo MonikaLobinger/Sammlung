@@ -5,7 +5,7 @@ publish: true
 author: Ueberphilosophy
 ---
 # Mit den Ohren lernen
-Sammlung von Links zu __Materialien__ zum Lernen (hörbar) __[[-Materialien|als Katalog]]__/__[[Materialien|als Verzeichnis]]__  und frei zugänglichen __Quelltexten__ __[[timeline|als  Zeitleiste]]__/__[[Autoren|als Verzeichnis]]__. 
+Sammlung von Links zu __Materialien__ zum Lernen (hörbar) __[[-Materialien|als Katalog]]__/__[[Materialien|als Verzeichnis]]__  und frei zugänglichen __Quelltexten__ __[[Materialien/timeline|als  Zeitleiste]]__/__[[Autoren|als Verzeichnis]]__. 
 
 Diese befindet sich als kaum kommentierte Linksammlung im Ordner `Materialen`. Der Ordner `Werkstatt` kann für jeweils eigene Notizen verwendet. Im Ordner `Zusaetze` sind für die Sammlung unwichtige Seiten. Die selbst erstellen Definitionen im Ordner `Zusaetze/Definitionen` sind grob, auf den Themenseiten im Ordner `Zusaetze/Themen` finden sich Links zu bestimmten Themen.
 ## Bedienung
@@ -39,14 +39,15 @@ Der gesamte Ablauf des Exports steht in [[2025-12-14#Wie es läuft]]
 %%
 
 ## Inhalt
-Es wird unterschieden zwischen Lernmaterialen, hauptsächlich Videos und Audios,  und Quellen. Lernmaterialen sind über ein Thema, Quellen sind  frei zugängliche Originaltexte. Für Lernmaterialien gibt es einen  [[-Materialien|Katalog]] nach Bereichen. Quellen sind nach Autoren unterschieden, sie sind über die [[timeline|Zeitleiste]]  zu finden. Der Katalog wird automatisch erstellt, die timeline manuell. Beide Bereiche sind auch über das [[Materialien|Inhaltsverzeichnis]] zugänglich. Über die Seitenleiste links kann man alle Seiten finden. Die Dateinamen der Kataloge beginnen mit einem Bindestrich, die Dateinamen der Inhaltsverzeichnisse heissen wie die Verzeichnisse, die sie auflisten.
+Es wird unterschieden zwischen Lernmaterialen, hauptsächlich Videos und Audios,  und Quellen. Lernmaterialen sind über ein Thema, Quellen sind  frei zugängliche Originaltexte. Für Lernmaterialien gibt es einen  [[-Materialien|Katalog]] nach Bereichen. Quellen sind nach Autoren unterschieden, sie sind über die [[Materialien/timeline|Zeitleiste]]  zu finden. Der Katalog wird automatisch erstellt, die timeline manuell. Beide Bereiche sind auch über das [[Materialien|Inhaltsverzeichnis]] zugänglich. Über die Seitenleiste links kann man alle Seiten finden. Die Dateinamen der Kataloge beginnen mit einem Bindestrich, die Dateinamen der Inhaltsverzeichnisse heissen wie die Verzeichnisse, die sie auflisten.
 
 
-- Grobe [[timeline|Zeitleiste]]  mit Links zu Quellenseiten (verknüpft über den Autorennamen)
+- Grobe [[Materialien/timeline|Zeitleiste]]  mit Links zu Quellenseiten (verknüpft über den Autorennamen)
 - [[-Materialien|Katalog]] mit Links zu thematischen Sammlungen von  Links zu Lernmaterialen
 ## Netzresourcen
 ### Seiten für Quellen
 - [Gottwein](https://www.gottwein.de/7)
+- [12koerbe](http://12koerbe.de/)
 - [Perseus](https://www.perseus.tufts.edu/hopper/)
 - [librivox](https://librivox.org/)
 - [Internet Archive](https://archive.org/)
@@ -75,6 +76,7 @@ Es wird unterschieden zwischen Lernmaterialen, hauptsächlich Videos und Audios,
 - [Annas Archive](https://annas-archive.org/) Schattenarchiv, Grauzone, manchmal illegal
 - https://dokumen.pub/  Bücher mit Copyright Verletzungen und evlt Malware 
 - [Zeitungsartikel archive.ph](https://archive.ph/)
+- [odysseetheater](https://odysseetheater.org/ftp/) Weiss nicht ob die legal oder beständig sind
 %% 
 ### Kanäle für Materialen
 #### Sammlungen von Kanälen
@@ -116,8 +118,9 @@ Es wird unterschieden zwischen Lernmaterialen, hauptsächlich Videos und Audios,
     - Kein Auto-pair brackets
     - Kein Auto-Pair Markdown Syntax
     - vim-key bindings, 
-  - Files and Links 
-    - Attachments nach `allhelperfiles/allresources` , 
+  - Files and Links
+    - Default location for new notes: Same folder as current file
+    - Attachments nach `allhelperfiles/allresources`  
   - Appearance
     - Nicht Show Inline Title
     - CSS-Snippets: Lade adapt.css, obsidian-source-view.css, timeline.css
@@ -161,7 +164,7 @@ Es wird unterschieden zwischen Lernmaterialen, hauptsächlich Videos und Audios,
 - Plugin [Foldernotes](https://github.com/LostPaul/obsidian-folder-notes) ^[für die Eingliederung der Verzeichnisseiten in Obsidian]
   - Einstellungen
     - File Explorer
-      - Open Folder Notes by only clicking directly on the folder name An 
+      - Open Folder Notes by only clicking directly on the folder name anwählen
 - Für Zeitleiste [Timeline Callout von FirelsGood](https://github.com/r-u-s-h-i-k-e-s-h/Obsidian-CSS-Snippets/blob/Collection/Snippets/Callout%20styling%20-%20Timeline%20callout.md), leicht angepasst, als `timeline.css`. 
 %%
 - Plugin [Folder notes](https://github.com/LostPaul/obsidian-folder-notes)
@@ -220,6 +223,11 @@ siehe Obsidian [Advanced Formatting Syntax](https://help.obsidian.md/advanced-sy
 Dieser Abschnitt gilt nur für  eine laufende Obsidian Instanz
 
 - Obwohl man den Notiznamen für eine neue Notiz im Dialogprompt angegeben hat, muss man noch `<return>` drücken. Dies ist kein Fehler des Scripts. Eventuell ist es eine Regression, jahrelang davor ist es mir nicht negativ aufgefallen.
+  
+  - Nein, keine Regression; früher hatte ich in den Einstellungen im Abschnitt `Appearance` `Show inline title` an. Dann muss man nicht return drücken
+  - Noch schlimmer wird es, wenn man in `Appearance` sowohl `Show inline title` als auch die folgende Einstellung `Show tab title bar` ausschaltet. Dann poppt zusätzlich zum Dialog des Templates noch ein Dialog von Obsidian auf, der auch einen Dateinamen will. 
+  - Die [Lösung des doppelten Dialog Problems](https://forum.obsidian.md/t/templater-triggering-before-choosing-files-title/52968/11) ist also `Show tab title bar` anzuwählen; der Thread in dem diese Lösung auftaucht, beschreibt das Problem. Scheinbar hat sich das seit 2023 nicht geändert. 
+  - Meine Lösung ist, beide anwählen und über css klein und unsichtbar zu machen, das aber nicht mit `display:none`, das entspräche einem abwählen. 
 #### tote interne Links
 %%
 ```dataviewjs

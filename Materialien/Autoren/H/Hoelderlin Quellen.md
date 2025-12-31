@@ -11,7 +11,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Friedrich Hölderlin
-[[timeline#Hoelderlin]]
+![[Materialien/timeline#Hoelderlin]]
 ## Urteil und Sein
 - [textlog](https://www.textlog.de/hoelderlin/philosophie/urteil-und-sein) - deutsch, online zu lesen
 

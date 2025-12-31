@@ -6,6 +6,7 @@ tags: [MOC]
 dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 %% Begin Landmark %%
+- [[Sagard Quellen]]
 - [[Schaellibaum Quellen]]
 - [[Schelling Quellen]]
 - [[Schobinger Quellen]]
@@ -13,6 +14,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 - [[Scotus Quellen]]
 - [[Simplicius Quellen]]
 - [[Sokrates Quellen]]
+- [[Solon Quellen]]
 - [[Spinoza Quellen]]
 
 %% End Landmark %%

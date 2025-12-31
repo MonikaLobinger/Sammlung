@@ -11,6 +11,6 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Søren Kierkegaard
-[[timeline#Kierkegaard]]
+![[Materialien/timeline#Kierkegaard]]
 
 ## -footnotes 

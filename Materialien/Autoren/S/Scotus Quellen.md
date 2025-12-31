@@ -11,6 +11,6 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Johannes Duns Scotus
-[[timeline#Scotus]]
+![[Materialien/timeline#Scotus]]
 
 ## -footnotes 

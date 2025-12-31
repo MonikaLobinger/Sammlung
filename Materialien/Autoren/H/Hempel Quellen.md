@@ -11,6 +11,6 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Carl Gustav Hempel
-[[timeline#Hempel-Carl-Gustav]]
+![[Materialien/timeline#Hempel-Carl-Gustav]]
 
 ## -footnotes 

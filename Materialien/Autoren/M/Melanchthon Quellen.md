@@ -11,6 +11,6 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Philipp Melanchthon
-[[timeline#Melanchthon]]
+![[Materialien/timeline#Melanchthon]]
 
 ## -footnotes 

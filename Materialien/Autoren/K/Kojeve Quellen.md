@@ -11,6 +11,6 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Alexandre Kojeve
-[[timeline#Kojeve]]
+![[Materialien/timeline#Kojeve]]
 
 ## -footnotes 

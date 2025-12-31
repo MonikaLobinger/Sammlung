@@ -11,6 +11,6 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Denis Diderot
-[[timeline#Diderot]]
+![[Materialien/timeline#Diderot]]
 
 ## -footnotes 

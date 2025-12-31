@@ -11,7 +11,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Gilles Deleuze
-[[timeline#Deleuze]]
+![[Materialien/timeline#Deleuze]]
 ## Transskriptionen
 - [https://www.webdeleuze.com/](https://www.webdeleuze.com/) - französch, manche auch englisch oder spanisch
 - [What is grounding, Transkription](https://dn720005.ca.archive.org/0/items/WhatIsGrounding/What%20is%20Grounding.pdf) - englisch, Digitalisat

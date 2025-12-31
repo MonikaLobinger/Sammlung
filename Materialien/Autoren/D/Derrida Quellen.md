@@ -11,6 +11,6 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Jacques Derrida
-[[timeline#Derrida]]
+![[Materialien/timeline#Derrida]]
 
 ## -footnotes 

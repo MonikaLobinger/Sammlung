@@ -11,6 +11,6 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Charles Darwin
-[[timeline#Darwin]]
+![[Materialien/timeline#Darwin]]
 
 ## -footnotes 

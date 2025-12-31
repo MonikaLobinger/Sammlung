@@ -11,6 +11,6 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Edmund Husserl
-[[timeline# ^Husserl]]
+![[Materialien/timeline# ^Husserl]]
 
 ## -footnotes 

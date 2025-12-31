@@ -11,7 +11,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Parmenides von Elea
-[[timeline#Parmenides]]
+![[Materialien/timeline#Parmenides]]
 ## Lehrgedicht
 - [zeno](http://www.zeno.org/Philosophie/M/Parmenides+aus+Elea/Fragmente/Aus:+%C3%9Cber+die+Natur) - deutsch, online zu lesen
 - [Helmut Hille](https://www.helmut-hille.de/parmen1.html) - deutsch, online zu lesen,

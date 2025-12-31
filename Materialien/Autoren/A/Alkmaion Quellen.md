@@ -11,6 +11,6 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Alkmaion
-[[timeline#Alkmaion]]
+![[Materialien/timeline#Alkmaion]]
 
 ## -footnotes 

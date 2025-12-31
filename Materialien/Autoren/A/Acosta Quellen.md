@@ -11,6 +11,6 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Jose de Acosta
-[[timeline#Acosta]]
+![[Materialien/timeline#Acosta]]
 
 ## -footnotes 

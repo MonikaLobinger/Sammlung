@@ -9,6 +9,6 @@ author:
 #  Mitschrift
 Mitschrift zu Adamson [1 - Everything is full of Gods: Thales](https://historyofphilosophy.net/thales)
 
-[[timeline#Thales|Thales]] 
+[[Materialien/timeline#Thales|Thales]] 
 
 ## -footnotes

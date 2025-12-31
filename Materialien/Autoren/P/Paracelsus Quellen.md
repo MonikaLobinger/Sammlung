@@ -11,6 +11,6 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Theophrastus Bombast von Hohenheim, genannt Paracelsus
-[[timeline#Paracelsus]]
+![[Materialien/timeline#Paracelsus]]
 
 ## -footnotes 

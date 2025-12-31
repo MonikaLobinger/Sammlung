@@ -10,7 +10,7 @@ author: Ueberphilosophy
 dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 # Aristoteles
-[[timeline#Aristoteles]]
+![[Materialien/timeline#Aristoteles]]
 ## Metaphysik
 - [Zeno](http://www.zeno.org/Philosophie/M/Aristoteles/Metaphysik) - deutsch, online zu lesen
 - [Übersetzt von Hermann Bonitz 1890](https://archive.org/details/metaphysik00bonigoog/page/n17/mode/2up) - Digitalisat

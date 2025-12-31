@@ -50,11 +50,15 @@
   --accent-l: 21% !important;
 
   /* timeline */
-  --blue-bg:  rgba(214, 233, 255, .3);
-  --green-bg: rgba(0,   255, 0,   .03);
-  --red-bg:   rgba(255, 0,   0,   .04);
-  --yellow-bg:rgba(255, 255, 0,   .05);
-  --grey-bg:  rgba(0, 0, 0, .03);
+  --grey-bg:   rgba(from black          r g b / 0.03);
+  --blue-bg:   rgba(from cornflowerblue r g b / 0.06);
+  --green-bg:  rgba(from lime           r g b / 0.03);
+  --red-bg:    rgba(from red            r g b / 0.04);
+  --yellow-bg: rgba(from yellow         r g b / 0.08);
+  --orange-bg: rgba(from darkorange     r g b / 0.08);
+  --cyan-bg:   rgba(from cyan           r g b / 0.05);
+  --purple-bg: rgba(from purple         r g b / 0.07);
+  --pink-bg:   rgba(from deeppink       r g b / 0.07);
 
   /* von den Grundfarben */
   --clr-seco: var(--seco-light);
@@ -111,11 +115,15 @@
   --accent-l: 37% !important;
 
   /* timeline */
-  --blue-bg:  #141b52;
-  --green-bg: #1a4217;
-  --red-bg:   #4c050f;
-  --yellow-bg:#44420e;
-  --grey-bg:  rgba(0, 0, 0, .7);
+  --grey-bg:   oklch(from black          0.3 c h);
+  --blue-bg:   oklch(from cornflowerblue 0.1 c h);
+  --green-bg:  oklch(from lime           0.2 c h);
+  --red-bg:    oklch(from red            0.2 c h);
+  --yellow-bg: oklch(from yellow         0.3 c h);
+  --orange-bg: oklch(from darkorange     0.2 c h);
+  --cyan-bg:   oklch(from cyan           0.2 c h);
+  --purple-bg: oklch(from purple         0.1 c h);
+  --pink-bg:   oklch(from deeppink       0.2 c h);
 
   /* von den Grundfarben */
   --clr-seco: var(--seco-dark);
@@ -205,6 +213,17 @@ body, body * {
    * Webpage Html Export
   */
 .page-title  { display:none; }
+.view-header,
+.inline-title {
+    max-height: 1px !important;
+    font-size: 1px !important;
+    line-height: 1px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: var(--color-bg) !important;
+    opacity: 0.0;
+    border: 0;
+}
 
   /* Keine so großen Überschriften, doch klare Trenner.
   */
@@ -323,7 +342,17 @@ th:nth-child(n) {
 [data-callout-metadata="red"]    .callout-content{background:var(--red-bg)   !important; }
 [data-callout-metadata="yellow"] .callout-content{background:var(--yellow-bg)!important; }
 [data-callout-metadata="grey"]   .callout-content{background:var(--grey-bg)  !important; }
+[data-callout-metadata="orange"]   .callout-content{background:var(--orange-bg)  !important; }
+[data-callout-metadata="cyan"]   .callout-content{background:var(--cyan-bg)  !important; }
+[data-callout-metadata="purple"]   .callout-content{background:var(--purple-bg)  !important; }
+[data-callout-metadata="pink"]   .callout-content{background:var(--pink-bg)  !important; }
 
+  /* timeline.css setzt die Fontsize für den Teil der bei mir das Geburtsjahr
+   * enthält explizit und überschreibt so auch die Größe der Fußnoten
+  */
+[data-callout="timeline"] .callout-title-inner .footnote-ref {
+  font-size: 50%;
+}
   /* Die Linkfarbe, die auf dunklem neutralem Hintergrund gut aussieht, ist auf
    * den dunklen bunten Hintergründen nicht schön.
    * Sie wird durch eine sehr milde Variante ersetzt.
@@ -500,6 +529,14 @@ th:nth-child(n) {
 
 /*** CssClass autor
 */
+  .autor {
+    .markdown-embed {
+      margin-bottom: 3rem;
+    }
+    .markdown-embed h3 {
+      display: none;
+    }
+  }
 
 /*** CssClass werkstatt
 */
@@ -527,6 +564,22 @@ th:nth-child(n) {
   */
   .studies {
     background-image: linear-gradient(to right, #cccc90 0%, white 3%, white 97%, #cccc90 100%);
+  }
+
+/*** CssClass feld
+*/
+  .feld .internal-embed {
+    margin-bottom: 3rem;
+    border-top: 2px dotted var(--clr-seco-pur);
+    border-left-width: 5px;
+  }
+  .feld .internal-embed .internal-embed {
+    margin-bottom: 0;
+    border-top:  none;
+    border-left-width: 2px;
+  }
+  .feld .markdown-embed-title {
+    display: none;
   }
 
 /*** CssClass diary

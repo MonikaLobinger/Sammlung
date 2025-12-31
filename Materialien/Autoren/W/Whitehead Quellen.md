@@ -11,6 +11,6 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Alfred North Whitehead
-[[timeline#Whitehead]]
+![[Materialien/timeline#Whitehead]]
 
 ## -footnotes 

@@ -11,7 +11,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Ludwig Wittgentstein
-[[timeline#Wittgenstein]]
+![[Materialien/timeline#Wittgenstein]]
 ##  Tractatus Logico-Philosophicus
 [Gutenberg](https://www.gutenberg.org/files/5740/5740-pdf.pdf) - englisch und deutsch, pdf
 

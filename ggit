@@ -1,0 +1,68 @@
+#! /usr/bin/env bash
+# Stimmt das Repository?
+use_current_dir=true
+for arg in "$@"; do
+    if [[ "$arg" =~  ^"--git-dir" ]]; then
+      echo "$arg"
+      use_current_dir=false
+    fi
+done
+if [ "$use_current_dir" = true ]; then
+  echo "In aktuellem Verzeichnis"
+  grep ispub .git/info/exclude
+  if [ $? -eq 0 ]; then
+    echo "Das öffentliche Repository ist aktiv"
+    if [ -f .ispriv ]; then
+      echo "1 in PRIVAT git public"
+      echo "Privat darf nicht public gepushed werden"
+      echo "Deshalb darf kein git Befehl in diesem Modus auf dieses"
+      echo "Repository angewendet werden. Die Sache wird hier beendet"
+      exit
+    fi
+    if [ -f .isexport ]; then
+      echo "2 in EXPORT git public"
+      echo "Export ist wie privat, das darf nicht public gepushed werden"
+      echo "Deshalb darf kein git Befehl in diesem Modus auf dieses"
+      echo "Repository angewendet werden. Die Sache wird hier beendet"
+      exit
+    fi
+    if [ -f .ispub ]; then
+      echo "3 in PUBLIC git public"
+    fi
+  else
+    echo "Das private Repository ist aktiv"
+    if [ -f .ispriv ]; then
+      echo "4 in PRIVAT git privat"
+      echo "Der Private Modus ist nur zum inhaltlichen Arbeiten gedacht."
+      echo "Um einzuchecken muss man im Export Modus sein."
+      echo "Hier fehlt das XXXStudiis Verzeichnis."
+      echo "Deshalb darf kein git Befehl in diesem Modus auf dieses"
+      echo "Repository angewendet werden. Die Sache wird hier beendet"
+      exit
+    fi
+    if [ -f .isexport ]; then
+      echo "5 in EXPORT git privat"
+    fi
+    if [ -f .ispub ]; then
+      echo "6 in PUBLIC git privat"
+      echo "Public ist quasi eine Untermenge von Privat. "
+      echo "Wenn man das hier pushen würde, würde was verlorengehen. "
+      echo "Deshalb darf kein git Befehl in diesem Modus auf dieses"
+      echo "Repository angewendet werden. Die Sache wird hier beendet"
+      exit
+    fi
+  fi
+
+  if [ -f .ispub ]; then
+    echo "  in PUBLIC git public"
+  fi
+  if [ -f .isexport ]; then
+    echo "  in EXPORT git privat"
+    .erstelleleeremitschriften "wegdamit"
+  fi
+  /usr/bin/git "$@"
+else
+  /usr/bin/git "$@"
+  echo "git Befehl auf anderem Verzeichnis"
+fi
+echo "VERWENDETE git WRAPPER Original wäre: /usr/bin/git"

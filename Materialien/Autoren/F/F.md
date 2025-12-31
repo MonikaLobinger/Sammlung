@@ -6,7 +6,7 @@ tags: [MOC]
 dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 %% Begin Landmark %%
-- [[Fichte Quellen]]
+- [[Materialien/Autoren/F/Fichte Quellen]]
 - [[Frege Quellen]]
 - [[Freud Quellen]]
 

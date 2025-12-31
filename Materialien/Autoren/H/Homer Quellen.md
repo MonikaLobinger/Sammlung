@@ -11,7 +11,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Homer
-[[timeline#Homer]]
+![[Materialien/timeline#Homer]]
 
 ## Illias
 - [wikisource](https://el.wikisource.org/wiki/%CE%99%CE%BB%CE%B9%CE%AC%CF%82) - Griechisch, online lesen

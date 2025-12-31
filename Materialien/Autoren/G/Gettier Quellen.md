@@ -11,6 +11,6 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Edmund Gettier
-[[timeline#Gettier]]
+![[Materialien/timeline#Gettier]]
 
 ## -footnotes 

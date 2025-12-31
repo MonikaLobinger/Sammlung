@@ -11,7 +11,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Protagoras
-[[timeline#Protagoras]]
+![[Materialien/timeline#Protagoras]]
 
 Alle seine Schriften sind heute verloren.
 

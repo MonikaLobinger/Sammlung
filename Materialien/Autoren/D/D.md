@@ -12,5 +12,6 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 - [[Descartes Quellen]]
 - [[Diderot Quellen]]
 - [[Diels Quellen]]
+- [[Diogenes Quellen]]
 
 %% End Landmark %%

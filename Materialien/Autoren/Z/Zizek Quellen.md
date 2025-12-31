@@ -11,7 +11,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Slavoj Zizek
-[[timeline#Zizek]]
+![[Materialien/timeline#Zizek]]
 
 ## How to read Lacan
 - [Internet Archive](https://archive.org/details/how-to-read-lacan_202307) - englisch, Digitalisat

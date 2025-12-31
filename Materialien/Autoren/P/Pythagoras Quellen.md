@@ -11,7 +11,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Pythagoras von Samos
-[[timeline#Pythagoras]]
+![[Materialien/timeline#Pythagoras]]
 
 Von Pythagoras sind keine Werke erhalten.  Ob er überhaupt was geschrieben hat, ist strittig.
 

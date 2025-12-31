@@ -11,6 +11,6 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Hugo Grotius
-[[timeline#Grotius]]
+![[Materialien/timeline#Grotius]]
 
 ## -footnotes 

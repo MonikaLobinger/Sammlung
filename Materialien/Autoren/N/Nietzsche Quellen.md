@@ -11,7 +11,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Friedrich Nietzsche
-[[timeline#Nietzsche]]
+![[Materialien/timeline#Nietzsche]]
 ## Die Philosophie im tragischen Zeitalter der Griechen 1873 unvollendet
 - [Nietzschesource](http://www.nietzschesource.org/#eKGWB/PHG) - deutsch, online zu lesen
 

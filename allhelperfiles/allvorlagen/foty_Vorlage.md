@@ -13,11 +13,11 @@
     let nextlink   = "";
     let lastline   = "";
     let fugger     = false; // used by example configurations
-    
-    
+
+
     let knownYAML  = ["cssclasses", "date_created", "publish", "tags", ];
     const inYAML   = new Map()
-    let results    = await tp.user.foty(tp, app); 
+    let results    = await tp.user.foty(tp, app);
 
     if(results.CANCELLED == true) { return }
 
@@ -52,7 +52,7 @@
             }
           }
         }
-    } 
+    }
     if(fugger && lastline != "") lastline="am ende "+type+"!";
 %>
 

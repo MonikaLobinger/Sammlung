@@ -10,18 +10,21 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 # Zeitleiste
 ## Abschnitte
-- [[timeline#Anfang|erste schriftliche Zeugnisse]]
-- [[timeline#Zeitenwende (001)|Zeitenwende]]
-- [[timeline#Mittelalter (520)|Mittelalter]]
-- [[timeline#frühe Neuzeit (1470)|frühe Neuzeit]]
-- [[timeline#langes 19. Jhd (1789)|langes 19. Jhd]]
-- [[timeline#Gegenwart (1914)|Gegenwart]]
+- [[Materialien/timeline#Anfang|erste schriftliche Zeugnisse]]
+- [[Materialien/timeline#Zeitenwende (001)|Zeitenwende]]
+- [[Materialien/timeline#Mittelalter (520)|Mittelalter]]
+- [[Materialien/timeline#frühe Neuzeit (1470)|frühe Neuzeit]]
+- [[Materialien/timeline#langes 19. Jhd (1789)|langes 19. Jhd]]
+- [[Materialien/timeline#Gegenwart (1914)|Gegenwart]]
 
 Auflistung nach Geburtsjahr, Farben nach Profession ^[Literatys/Künstlys/Musikys "green", Religiösys/Spirituellys "yellow", Wissenschaftlys/Forschys "grey", Politikys/Königys/Feldherren "red", Philosophys "blue"]
 ## Anfang
 ### Gilgamesch
 > [!timeline|green] ~-1800 
 > [[Gilgamesch Quellen|Mesopotamische Mythen]] - ~-900 ^Gilgamesch
+### Trojanischer-Krieg-Ende
+> [!timeline|red] ~-1230
+> Ende des trojanischen Krieges (grob geschätzt) ^Trojanischer-Krieg-Ende
 ### Homer
 > [!timeline|green] ~-850 
 > [[Homer Quellen|Homer]] ^Homer
@@ -31,6 +34,12 @@ Auflistung nach Geburtsjahr, Farben nach Profession ^[Literatys/Künstlys/Musiky
 ### Hesiod
 > [!timeline|green] ~-750
 > [[Hesiod Quellen|Hesiod]] ^Hesiod
+### Alkman 
+> [!timeline|blue] ~-700
+> [[Alkman Quellen|Alkman]] †~-600 ^Alkman
+### Solon
+> [!timeline|blue] ~-640
+> [[Solon Quellen|Solon]] †~-560 ^Solon
 ### Thales
 > [!timeline|blue] ~-624
 > [[Thales Quellen|Thales]] †~-548 ^Thales
@@ -58,12 +67,18 @@ Auflistung nach Geburtsjahr, Farben nach Profession ^[Literatys/Künstlys/Musiky
 ### Parmenides
 > [!timeline|blue] ~-520
 > [[Parmenides Quellen|Parmenides]] †~-460 ^Parmenides
+### Empedokles
+> [!timeline|blue] ~-495
+> [[Empedokles Quellen|Empedokles]] †~-435 ^Empedokles
 ### Perikles
 > [!timeline|red] -490
 > Perikles †-429 ^Perikles
 ### Protagoras
 > [!timeline|blue] ~-490
 > [[Protagoras Quellen|Protagoras]] †~-411 ^Protagoras
+### Herodot
+> [!timeline|grey] -490
+> [[Herodot Quellen|Herodot]] †~-430 ^Herodot
 ### Sokrates
 > [!timeline|blue] -469
 > [[Sokrates Quellen|Sokrates]] †-399 ^Sokrates
@@ -79,13 +94,47 @@ Auflistung nach Geburtsjahr, Farben nach Profession ^[Literatys/Künstlys/Musiky
 ### Theophrastos
 > [!timeline|blue] -371
 > [[Theophrastos Quellen|Theophrastos]] †-287 ^Theophrastos
+### Eudemos
+> [!timeline|blue] ~-370
+> [[Eudemos Quellen|Eudemos]] †~-300 ^Eudemos
+### Kallimachos
+> [!timeline|green] ~-305
+> [[Kallimachos Quellen|Kallimachos]] †~-240 ^Kallimachos
+### Alexander-der-Grosse
+> [!timeline|red] ~-356
+> Alxander der Grosse †~-323 ^Alexander-der-Grosse
+### Apollodoros
 ### Apollodoros
 > [!timeline|green] ~-180
 > [[Apollodoros Quellen|Apollodoros]]  †~-120 ^Apollodoros
 ## Zeitenwende (001)
+### Pamphile
+> [!timeline|grey] ~1
+> [[Pamphile Quellen|Pamphile]] †~99 ^Pamphile
+### Qunitilian
+> [!timeline|green] ~35
+> [[Qunitilian Quellen|Qunitilian]] †~96 ^Quintilian
+### Diogenes-Laertios
+> [!timeline|blue] ~100
+> [[Diogenes Quellen|Diogenes Laertios]] †~199 ^Diogenes-Laertios
+### Hippolyt
+> [!timeline|yellow] ~170
+> [[Hippolyt Quellen|Hippolyt]] †235 ^Hippolyt
 ### Plotin
 > [!timeline|blue] ~205
 > [[Plotin Quellen|Plotin]] †270 ^Plotin
+### Eusebius
+> [!timeline|yellow] ~260
+> [[Eusebius Quellen|Eusebius]] †~339 ^Eusebius
+### Hieronymus
+> [!timeline|yellow] ~348
+> [[Hieronymus Quellen|Hieronymus]] †420 ^Hieronymus
+### Augustinus
+> [!timeline|yellow] 354
+> [[Augustinus Quellen|Augustinus]] †430 ^Augustinus
+### Proklos
+> [!timeline|blue] ~412
+> [[Proklos Quellen|Proklos]]  †485 ^Proklos
 ### Simplicius
 > [!timeline|green] ~480
 > [[Simplicius Quellen|Simplicius]]  †560 ^Simplicius
@@ -99,6 +148,9 @@ Auflistung nach Geburtsjahr, Farben nach Profession ^[Literatys/Künstlys/Musiky
 ### Scotus
 > [!timeline|blue] ~1265
 >[[Scotus Quellen|Scotus]] †1308 ^Scotus
+### Gutenberg-Johannes
+> [!timeline|grey] ~1400
+> Gutenberg †1468 ^Gutenberg
 ### Pico
 > [!timeline|blue] 1463
 >[[Pico Quellen|Pico]] †1494 ^Pico
@@ -109,6 +161,9 @@ Auflistung nach Geburtsjahr, Farben nach Profession ^[Literatys/Künstlys/Musiky
 ### Pizarro-Francisco
 > [!timeline|red] 1478
 > Pizarro†1541 ^Pizarro-Francisco
+### Luther 
+> [!timeline|yellow] 1483
+> [[Luther Quellen|Luther]]†1546 ^Luther
 ### Cortes-Hernan
 > [!timeline|red] 1485
 > [[Cortes Quellen|Cortes]] †1547 ^Cortes-Hernan
@@ -142,6 +197,9 @@ Auflistung nach Geburtsjahr, Farben nach Profession ^[Literatys/Künstlys/Musiky
 ### Hobbes
 > [!timeline|blue] 1588
 >[[Hobbes Quellen|Hobbes]] †1679 ^Hobbes
+### Sagard-Gabriel
+> [!timeline|yellow] ~1590
+>[[Sagard Quellen|Sagard]] †1636 ^[Todesjahr nach Wengrow/Graeber - Anfaenge, S.63] ^Sagard-Gabriel
 ### Descartes
 > [!timeline|blue] 1596
 >[[Descartes Quellen|Descartes]] †1650 ^Descartes
@@ -157,6 +215,9 @@ Auflistung nach Geburtsjahr, Farben nach Profession ^[Literatys/Künstlys/Musiky
 ### Wolff
 > [!timeline|blue] 1679
 >[[Wolff Quellen|Wolff]] †1754 ^Wolff
+### Voltaire
+> [!timeline|blue] 1694
+>[[Voltaire Quellen|Voltaire]] †1778 ^Voltaire
 ### Ludwig-XV
 > [!timeline|red] ~1710
 > Ludwig XV †1774 ^Ludwig-XV
@@ -171,13 +232,13 @@ Auflistung nach Geburtsjahr, Farben nach Profession ^[Literatys/Künstlys/Musiky
 > [[Diderot Quellen|Diderot]] †1784 ^Diderot
 ### Kant
 > [!timeline|blue] 1724
-> [[Kant Quellen|Kant]] †1804 ^Kant
+> [[Materialien/Autoren/K/Kant Quellen|Kant]] †1804 ^Kant
 ### Kotzebue
 > [!timeline|green] 1761
 > [[Kotzebue Quellen|Kotzebue]] †1819 ^Kotzebue
 ### Fichte
 > [!timeline|blue] 1762
-> [[Fichte Quellen|Fichte]] †1814 ^Fichte
+> [[Materialien/Autoren/F/Fichte Quellen|Fichte]] †1814 ^Fichte
 ### Chateaubriand-Francois-Rene
 > [!timeline|green] 1768
 > [[Chateaubriand Quellen|Chateaubriand]] †1848 ^Chateaubriand-Francois-Rene
@@ -197,6 +258,9 @@ Auflistung nach Geburtsjahr, Farben nach Profession ^[Literatys/Künstlys/Musiky
 > [!timeline|blue] 1788
 > [[Schopenhauer Quellen|Schopenhauer]] †1860 ^Schopenhauer
 ## langes 19. Jhd (1789)
+### Franzoesische-Revolution
+> [!timeline|red] 1789
+> Französische Revolution †1799 ^Franzoesische-Revolution
 ### Darwin
 > [!timeline|grey] 1809
 > [[Darwin Quellen|Darwin]] †1882 ^Darwin

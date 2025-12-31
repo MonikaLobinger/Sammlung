@@ -38,10 +38,12 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 - **[[A]]**
   - [[Acosta Quellen]]
   - [[Alkmaion Quellen]]
+  - [[Alkman Quellen]]
   - [[Anaximander Quellen]]
   - [[Anaximenes Quellen]]
   - [[Apollodoros Quellen]]
   - [[Aristoteles Quellen]]
+  - [[Augustinus Quellen]]
 - **[[B]]**
   - [[Borges Quellen]]
 - **[[C]]**
@@ -55,8 +57,12 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
   - [[Descartes Quellen]]
   - [[Diderot Quellen]]
   - [[Diels Quellen]]
+  - [[Diogenes Quellen]]
 - **[[E]]**
   - [[Einhard Quellen]]
+  - [[Empedokles Quellen]]
+  - [[Eudemos Quellen]]
+  - [[Eusebius Quellen]]
 - **[[F]]**
   - [[Fichte Quellen]]
   - [[Frege Quellen]]
@@ -72,7 +78,10 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
   - [[Heidegger Quellen]]
   - [[Hempel Quellen]]
   - [[Heraklit Quellen]]
+  - [[Herodot Quellen]]
   - [[Hesiod Quellen]]
+  - [[Hieronymus Quellen]]
+  - [[Hippolyt Quellen]]
   - [[Hobbes Quellen]]
   - [[Hoelderlin Quellen]]
   - [[Homer Quellen]]
@@ -84,6 +93,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
   - [[Jankelevitch Quellen]]
 - **[[K]]**
   - [[Kafka Quellen]]
+  - [[Kallimachos Quellen]]
   - [[Kant Quellen]]
   - [[Karl Quellen]]
   - [[Kierkegaard Quellen]]
@@ -94,6 +104,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
   - [[Laplanche Quellen]]
   - [[Leibniz Quellen]]
   - [[Locke Quellen]]
+  - [[Luther Quellen]]
 - **[[M]]**
   - [[Malabou Quellen]]
   - [[Melanchthon Quellen]]
@@ -101,19 +112,23 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
   - [[Nietzsche Quellen]]
 - **[[O]]**
 - **[[P]]**
+  - [[Pamphile Quellen]]
   - [[Paracelsus Quellen]]
   - [[Parmenides Quellen]]
   - [[Pico Quellen]]
   - [[Pindar Quellen]]
   - [[Platon Quellen]]
   - [[Plotin Quellen]]
+  - [[Proklos Quellen]]
   - [[Protagoras Quellen]]
   - [[Pythagoras Quellen]]
 - **[[Q]]**
   - [[Quine Quellen]]
+  - [[Qunitilian Quellen]]
 - **[[R]]**
   - [[Rousseau Quellen]]
 - **[[S]]**
+  - [[Sagard Quellen]]
   - [[Schaellibaum Quellen]]
   - [[Schelling Quellen]]
   - [[Schobinger Quellen]]
@@ -121,6 +136,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
   - [[Scotus Quellen]]
   - [[Simplicius Quellen]]
   - [[Sokrates Quellen]]
+  - [[Solon Quellen]]
   - [[Spinoza Quellen]]
 - **[[T]]**
   - [[Thales Quellen]]
@@ -129,6 +145,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
   - [[Thomas Quellen]]
 - **[[U]]**
 - **[[V]]**
+  - [[Voltaire Quellen]]
 - **[[W]]**
   - [[Wells Quellen]]
   - [[Whitehead Quellen]]

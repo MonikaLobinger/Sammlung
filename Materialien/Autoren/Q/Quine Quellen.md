@@ -11,6 +11,6 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Willard von Orman Quine
-[[timeline#Quine]]
+![[Materialien/timeline#Quine]]
 
 ## -footnotes 
