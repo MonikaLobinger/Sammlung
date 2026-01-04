@@ -1,0 +1,870 @@
+/* Webpage html export hängt die snippets willkürlich aneinander
+ * - obsidian-source-view.css hat eh keinen Einfluss auf die Lese Ansicht
+ * - timeline passe ich hier an, mit !important, falls nötig
+ * weitere snippet css Dateien darf es nicht geben
+ *
+ * Viele obsidian css Variablen sind hier zu finden:
+ * https://docs.obsidian.md/Reference/CSS+variables/CSS+variables
+*/
+/* Obsidian selbst hat kein @layer,
+ * Webpage HTML Export exportiert keine @layerr
+*/
+
+
+/********************************************************************************
+ *
+ *** Vorgegebenes
+ *
+********************************************************************************/
+
+/*** Farben
+*/
+
+  /* Webpage HTML Export braucht body, wenigstens für die class selectors */
+:root, body { 
+    /* Die 6 Skin Farben, prim ist gleich ntrl und fehlt daher*/
+  --seco-dark:  #17A589;
+  --seco-light: #0D5E4E;
+  --tert-dark:  #D4AC0D;
+  --tert-light: #D4AC0D;
+  --erro-dark:  #E74C3C;
+  --erro-light: #CB4335;
+  --ntrl-dark:  #B6B6B6;
+  --ntrl-light: #494949;
+  --vari-dark:  #BDC3C7;
+  --vari-light: #BDC3C7;
+}
+.theme-light, .theme-dark {
+    /* So aufgesplittet definiert Obsidian die Azent Farbe.
+     * Die Werte von accent-h/-s/-l sollen seco-dark/seco-light
+     * entsprechen.
+    */
+  --accent-h:   168 !important;
+  --accent-s:   76% !important;
+}
+.theme-light {
+    /* Die Akzentfarbe soll im hellen und dunklen Skin gleich sein,
+     * ausser dass l (Lightness) verschieden ist; die Akzentfarbe ist
+     * in theme-light dunkler als in theme-dark.
+   */
+  --accent-l: 21% !important;
+
+  /* timeline */
+  --grey-bg:   rgba(from black          r g b / 0.03);
+  --blue-bg:   rgba(from cornflowerblue r g b / 0.06);
+  --green-bg:  rgba(from lime           r g b / 0.03);
+  --red-bg:    rgba(from red            r g b / 0.04);
+  --yellow-bg: rgba(from yellow         r g b / 0.08);
+  --orange-bg: rgba(from darkorange     r g b / 0.08);
+  --cyan-bg:   rgba(from cyan           r g b / 0.05);
+  --purple-bg: rgba(from purple         r g b / 0.07);
+  --pink-bg:   rgba(from deeppink       r g b / 0.07);
+
+  /* von den Grundfarben */
+  --clr-seco: var(--seco-light);
+  --clr-tert: var(--tert-light);
+  --clr-erro: var(--erro-light);
+  --clr-ntrl: var(--ntrl-light);
+  --clr-vari: var(--vari-light);
+
+    --clr-seco-soft:     oklch(from var(--clr-seco) .99 c h );
+    --clr-seco-muted:    oklch(from var(--clr-seco) calc(l + 0.25) c h );
+  --clr-seco-faint:    oklch(from var(--clr-seco) calc(l + 0.15) c h );/*used*/
+  --clr-seco-pur:      var(--clr-seco);                                /*used*/
+  --clr-seco-tough:    lch(from var(--clr-seco) calc(l / 10 * 9) c h );/*used*/
+    --clr-seco-mighty:   lch(from var(--clr-seco) calc(l / 10 * 7) c h );
+  --clr-seco-hard:     lch(from var(--clr-seco) calc(l / 10 * 5) c h );/*used*/
+
+  --clr-tert-soft:     oklch(from var(--clr-tert) 0.99 c h );/*used*/
+  --clr-tert-muted:    oklch(from var(--clr-tert) calc(l + 0.25) c h );/*used*/
+  --clr-tert-faint:    oklch(from var(--clr-tert) calc(l + 0.10) c h );/*used*/
+    --clr-tert-pur:      var(--clr-tert);
+  --clr-tert-tough:    lch(from var(--clr-tert) calc(l / 10 * 8) c h );/*used*/
+    --clr-tert-mighty:   lch(from var(--clr-tert) calc(l / 10 * 5) c h );
+    --clr-tert-hard:     lch(from var(--clr-tert) calc(l / 10 * 2) c h );
+
+    --clr-erro-soft:     oklch(from var(--clr-erro) .99 c h );
+    --clr-erro-muted:    oklch(from var(--clr-erro) calc(l + 0.25) c h );
+    --clr-erro-faint:    oklch(from var(--clr-erro) calc(l + 0.10) c h );
+    --clr-erro-pur:      var(--clr-erro);
+    --clr-erro-tough:    lch(from var(--clr-erro) calc(l / 10 * 8) c h );
+    --clr-erro-mighty:   lch(from var(--clr-erro) calc(l / 10 * 5) c h );
+    --clr-erro-hard:     lch(from var(--clr-erro) calc(l / 10 * 2) c h );
+
+  --clr-ntrl-soft:     oklch(from var(--clr-ntrl) .96 c h );           /*used*/
+    --clr-ntrl-muted:    oklch(from var(--clr-ntrl) calc(l + 0.25) c h );
+  --clr-ntrl-faint:    oklch(from var(--clr-ntrl) calc(l + 0.10) c h );/*used*/
+    --clr-ntrl-pur:      var(--clr-ntrl);
+  --clr-ntrl-tough:    lch(from var(--clr-ntrl) calc(l / 10 * 9) c h );/*used*/
+    --clr-ntrl-mighty:   lch(from var(--clr-ntrl) calc(l / 10 * 7) c h );
+    --clr-ntrl-hard:     lch(from var(--clr-ntrl) calc(l / 10 * 5) c h );
+
+  --clr-vari-soft:     oklch(from var(--clr-vari) .96 c h );           /*used*/
+    --clr-vari-muted:    oklch(from var(--clr-vari) calc(l + 0.10) c h );
+    --clr-vari-faint:    oklch(from var(--clr-vari) calc(l + 0.05) c h );
+    --clr-vari-pur:      var(--clr-vari);
+    --clr-vari-tough:    lch(from var(--clr-vari) calc(l / 10 * 7) c h );
+    --clr-vari-mighty:   lch(from var(--clr-vari) calc(l / 10 * 5) c h );
+    --clr-vari-hard:     lch(from var(--clr-vari) calc(l / 10 * 2) c h );
+}
+.theme-dark {
+    /* Die Akzentfarbe soll im hellen und dunklen Skin gleich sein,
+     * ausser dass l (Lightness) verschieden ist; die Akzentfarbe ist
+     * in theme-dark heller als in theme-light.
+   */
+  --accent-l: 37% !important;
+
+  /* timeline */
+  --grey-bg:   oklch(from black          0.3 c h);
+  --blue-bg:   oklch(from cornflowerblue 0.1 c h);
+  --green-bg:  oklch(from lime           0.2 c h);
+  --red-bg:    oklch(from red            0.2 c h);
+  --yellow-bg: oklch(from yellow         0.3 c h);
+  --orange-bg: oklch(from darkorange     0.2 c h);
+  --cyan-bg:   oklch(from cyan           0.2 c h);
+  --purple-bg: oklch(from purple         0.1 c h);
+  --pink-bg:   oklch(from deeppink       0.2 c h);
+
+  /* von den Grundfarben */
+  --clr-seco: var(--seco-dark);
+  --clr-tert: var(--tert-dark);
+  --clr-erro: var(--erro-dark);
+  --clr-ntrl: var(--ntrl-dark);
+  --clr-vari: var(--vari-dark);
+
+  --clr-seco-soft:     lch(from var(--clr-seco) calc(l / 10 * 2) c h );
+  --clr-seco-muted:    lch(from var(--clr-seco) calc(l / 10 * 5) c h );
+  --clr-seco-faint:    lch(from var(--clr-seco) calc(l / 10 * 8) c h );
+  --clr-seco-pur:      var(--clr-seco);
+  --clr-seco-tough:    oklch(from var(--clr-seco) calc(l + 0.10) c h );
+  --clr-seco-mighty:   oklch(from var(--clr-seco) calc(l + 0.25) c h );
+  --clr-seco-hard:     oklch(from var(--clr-seco) 0.99 c h );
+
+  --clr-tert-soft:     lch(from var(--clr-tert) calc(l / 10 * 1) c h );
+  --clr-tert-muted:    lch(from var(--clr-tert) calc(l / 10 * 4) c h );
+  --clr-tert-faint:    lch(from var(--clr-tert) calc(l / 10 * 7) c h );
+  --clr-tert-pur:      var(--clr-tert);
+  --clr-tert-tough:    oklch(from var(--clr-tert) calc(l + 0.10) c h );
+  --clr-tert-mighty:   oklch(from var(--clr-tert) calc(l + 0.25) c h );
+  --clr-tert-hard:     oklch(from var(--clr-tert) 0.99 c h );
+
+  --clr-erro-soft:     lch(from var(--clr-erro) calc(l / 10 * 0.1) c h );
+  --clr-erro-muted:    lch(from var(--clr-erro) calc(l / 10 * 3) c h );
+  --clr-erro-faint:    lch(from var(--clr-erro) calc(l / 10 * 6) c h );
+  --clr-erro-pur:      var(--clr-erro);
+  --clr-erro-tough:    oklch(from var(--clr-erro) calc(l + 0.10) c h );
+  --clr-erro-mighty:   oklch(from var(--clr-erro) calc(l + 0.25) c h );
+  --clr-erro-hard:     oklch(from var(--clr-erro) 0.99 c h );
+
+  --clr-ntrl-soft:     lch(from var(--clr-ntrl) calc(l / 10 * 2) c h );
+  --clr-ntrl-muted:    lch(from var(--clr-ntrl) calc(l / 10 * 5) c h );
+  --clr-ntrl-faint:    lch(from var(--clr-ntrl) calc(l / 10 * 8) c h );
+  --clr-ntrl-pur:      var(--clr-ntrl);
+  --clr-ntrl-tough:    oklch(from var(--clr-ntrl) calc(l + 0.05) c h );
+  --clr-ntrl-mighty:   oklch(from var(--clr-ntrl) calc(l + 0.25) c h );
+  --clr-ntrl-hard:     oklch(from var(--clr-ntrl) 0.99 c h );
+
+  --clr-vari-soft:     lch(from var(--clr-vari) calc(l / 10 * 2) c h );
+  --clr-vari-muted:    lch(from var(--clr-vari) calc(l / 10 * 5) c h );
+  --clr-vari-faint:    lch(from var(--clr-vari) calc(l / 10 * 8) c h );
+  --clr-vari-pur:      var(--clr-vari);
+  --clr-vari-tough:    oklch(from var(--clr-vari) calc(l + 0.10) c h );
+  --clr-vari-mighty:   oklch(from var(--clr-vari) calc(l + 0.25) c h );
+  --clr-vari-hard:     oklch(from var(--clr-vari) 0.99 c h );
+}
+
+/*** Obsidian Variablen, Css Klassen und Typ Selektoren
+*/
+
+.theme-light, .theme-dark {
+       /* Zur Bequemlichkeit */
+  --clr-fg:                  var(--text-normal);
+  --clr-bg:                  var(--background-primary);
+       /* ein bißchen mehr hervorgehoben */
+  --background-primary-alt:    var(--clr-ntrl-soft);
+       /* In theme-light ein bißchen mehr hervorgehoben;
+        * in theme-dark etwas mehr zurückgenommen.
+        * Webpage Html Export benötigt !important.
+       */
+  --background-secondary-alt: var(--clr-vari-soft) !important;
+       /* ein bißchen mehr hervorgehoben */
+  --text-muted:                var(--clr-ntrl-tough);
+      /* Eine kleine Rückmeldung, wenn man über einen Link fährt */
+  --link-color-hover:          var(--clr-seco-faint);
+  --link-external-color-hover: var(--clr-seco-faint);
+       /* Interne Links nicht unterstrichten */
+  --link-decoration: none;
+  --link-decoration-hover: none;
+      /* Selbst erstellte class */
+  --pin-bg:                   var(--clr-tert-soft);
+  --pin-header-bg:            var(--clr-tert-faint);
+}
+
+body, body * {
+    /* Der Abstand einer Überschrift nach oben, wenn drüber nicht eine andere
+     * Überschrift ist 
+    */
+  --heading-spacing: 1rem;
+
+    /* Erweitert die readable line length
+     * hat keinen Einfluss auf Webpage HTML Export
+    */
+  --file-line-width: 46rem;
+}
+
+  /* Dateiname nicht zu H1
+   * Webpage Html Export
+  */
+.page-title  { display:none; }
+
+
+  /* Damit das Benennen neu erstellter Dateien mit dem Templater gut
+   * funktioniert muss man den view-header (oder den inline-title) anzeigen.
+   * Dies geschieht in den Einstellungen, Abschnitt appearance mit
+   * Show tab title bar (oder für den inline-title mit Show inline title).
+   * view-header ist parallel zu view-content, welcher die views enthält
+   * er stört so den Editor nicht, also wähle ich diesen
+   * und schalte in den Einstellungen den .inline-title aus.
+   * Der view-header wird hier ganz klein gemacht - display:none würde einem
+   * Ausschalten entsprechen, das kann man nicht nehmen.
+  */
+.view-header {
+    max-height: 1px !important;
+    font-size: 1px !important;
+    line-height: 1px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: var(--clr-bg) !important;
+    opacity: 0.0;
+    border: 0;
+    background-color: blue !important;
+}
+
+
+  /* Keine so großen Überschriften, doch klare Trenner.
+  */
+h1 {
+  font-size: 2rem;
+  line-height: 2.2rem;
+  padding-bottom: 1px !important;
+  border-bottom: 2px solid var(--text-accent);
+}
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.7rem;
+  padding-bottom: 1px !important;
+  border-bottom: 2px solid var(--text-normal);
+}
+h3 {
+  padding-bottom: 1px !important;
+  border-bottom: 1px solid var(--text-muted);
+}
+h4 {
+  padding-bottom: 1px;
+  padding-bottom: 1px !important;
+  border-bottom: 1px dashed var(--text-muted);
+}
+h5 {
+  text-decoration: underline;
+  text-underline-offset: 0.4rem;
+}
+h6 {
+  text-decoration: underline;
+  text-decoration-thickness: 1px !important;
+  text-decoration-style: dashed !important;
+  text-underline-offset: 0.4rem;
+}
+
+  /* Zeilenabstand recht klein.  */
+p, li {
+  line-height: 1.25rem;
+}
+
+  /* Absatzabstand recht klein.  */
+p {
+  margin-top: 0rem !important;
+  margin-bottom: 0.3rem !important;
+}
+  /* Mit dem margin über dem Absatz wurde der Abstand zwischen .callout-title
+   * und .collout-content realisiert.
+   * Diesen nun explizit definieren.
+  */
+.callout-content {
+  margin-top: 0.5rem;
+}
+  /* Absatzanfang hervorheben, doch nur im Seitentext.
+  */
+.markdown-preview-section > .el-p > p::first-letter {
+  font-size: 1.3rem !important;
+  font-weight: bold !important;
+  color: var(--clr-seco-tough) !important;
+  /* Zum Testen, sehen wo das greift */
+  color: var(--clr-tert-tough) !important;
+}
+  /* Absatzanfang für Links oder Code am Anfang nicht hervorheben
+  */
+.markdown-preview-section > .el-p > p a:first-child,
+.markdown-preview-section > .el-p > p code:first-child {
+  display: inline-block;
+}
+
+  /* Die Tabellenheader wären in Obsidian gar nicht hervorgehoben.
+   * Hebt man sie hervor, wird nur jeder zweite eingefärbt.
+   * Daher die komplizierte Konstruktion; diese benötigt auch !important.
+ */
+th:nth-child(n) {
+  background: var(--background-secondary-alt) !important;
+}
+
+  /* Die Vorschaufenster für externe Links werden folgendermaßen gestyled:
+   * Sie sollen variable Höhe haben */
+.popover.hover-popover {
+  min-height: auto;
+}
+.popover.hover-popover > .markdown-embed > .markdown-embed-content {
+  padding: 0;
+}
+  /* Sie sollen einen ganz leichten Rand haben */
+.popover.hover-popover .markdown-preview-view {
+  background-color: var(--clr-bg);
+  border: 1px solid var(--clr-ntrl-soft);
+}
+
+  /* mermaid timeline und gantt sollen breiter werden können als der Bildschirm
+   * sonst werden große Diagramme unlesbar.
+   * dafür bekommen sie einen Scrollbalken.
+  */
+div.mermaid:has(svg[aria-roledescription="timeline"]) {
+  overflow-x: scroll;
+  scrollbar-color: var(--clr-seco-pur) var(--clr-vari-muted);
+}
+div.mermaid:has(svg[aria-roledescription="gantt"]) {
+  overflow: scroll;
+  scrollbar-color: var(--clr-tert-pur) var(--clr-vari-muted);
+}
+svg[aria-roledescription="timeline"] {
+  max-width: unset;
+  width: 9000%;
+}
+svg[aria-roledescription="gantt"] {
+  max-width: unset;
+  width: 200% ;
+}
+
+/********************************************************************************
+ *
+ *** Anpassung der Addons
+ *
+********************************************************************************/
+
+/*** Addon timeline
+*/
+[data-callout="timeline"] {
+    /* Diese Einstellung aus timeline.css muss für den Export important sein */
+  background-color: unset !important;
+    /* Der linke Rand der Zeitleiste soll eine Linie sein
+    */
+  margin:  0 !important;
+  padding: 0 !important;
+}
+  /* Die Hintergrundfarben ist in timeline.css für alle callouts gleich.
+   * Die Unterscheidung der callouts nach Farben dort ist nur für einen farbigen
+   * Kreis in der Zeitleiste selbst.
+   * Dieser Kreis geht beim Export verloren.
+   * So wird der Hintergrund entsprechend dieser Farbe gesetzt.
+  */
+[data-callout-metadata="blue"]   .callout-content{background:var(--blue-bg)  !important; }
+[data-callout-metadata="green"]  .callout-content{background:var(--green-bg) !important; }
+[data-callout-metadata="red"]    .callout-content{background:var(--red-bg)   !important; }
+[data-callout-metadata="yellow"] .callout-content{background:var(--yellow-bg)!important; }
+[data-callout-metadata="grey"]   .callout-content{background:var(--grey-bg)  !important; }
+[data-callout-metadata="orange"]   .callout-content{background:var(--orange-bg)  !important; }
+[data-callout-metadata="cyan"]   .callout-content{background:var(--cyan-bg)  !important; }
+[data-callout-metadata="purple"]   .callout-content{background:var(--purple-bg)  !important; }
+[data-callout-metadata="pink"]   .callout-content{background:var(--pink-bg)  !important; }
+
+  /* timeline.css setzt die Fontsize für den Teil der bei mir das Geburtsjahr
+   * enthält explizit und überschreibt so auch die Größe der Fußnoten
+  */
+[data-callout="timeline"] .callout-title-inner .footnote-ref {
+  font-size: 50%;
+}
+  /* Die Linkfarbe, die auf dunklem neutralem Hintergrund gut aussieht, ist auf
+   * den dunklen bunten Hintergründen nicht schön.
+   * Sie wird durch eine sehr milde Variante ersetzt.
+  */
+.theme-dark .callout-content a { color: var(--clr-seco-hard) !important; }
+
+  /* Auf die einzelnen Einträge in der Timeline wird verlinkt.
+   * Anker funktionieren im Export nicht.
+   * So wird das über Überschriften realisiert.
+   * Diese dürfen aber kein display:none haben.
+   * Aber zu sehen sein sollen sie auch nicht.
+  */
+.timeline h3 {
+    max-height: 3px !important;
+    font-size: 3px !important;
+    line-height: 3px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: var(--clr-bg) !important;
+    border: 0;
+}
+
+  /* Die Zeitleiste ist in Epochen unterteilt.
+   * Diese helfen, einen Eintrag schneller zu sehen, indem man die anderen
+   * Epochen ausblendet.
+   * Die Überschriften der Epochen sollen den Fluss der Zeitleiste kaum
+   * unterbrechen.
+  */
+.timeline h2 {
+  color: var(--clr-ntrl-faint) !important;
+  font-size: 0.7rem !important;
+  line-height: 0.7rem !important;
+  max-height: 0.7rem !important;
+  border: none !important;
+  margin: none !important;
+  padding: none !important;
+}
+
+/********************************************************************************
+ *
+ *** CssClasses und sonstige von mir erstellte Css Klassen/Besonderheiten
+ *
+********************************************************************************/
+
+/*** Die Überschrift -footnotes
+*/
+  /* Die Überschrift "-footnotes" soll nicht angezeigt werden. Sie dient dazu,
+   * über die Seitenleiste ganz nach unten zu springen.
+   * Damit das in Webpage HTML Export funktioniert darf display nicht auf none
+   * gesetzt sein
+  */
+  [data-heading="-footnotes"] {
+    max-height: 6px !important;
+    font-size: 6px !important;
+    line-height: 6px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: var(--clr-bg) !important;
+    border: 0;
+  }
+
+/*** Class pin - kann in reinem html verwendet werden
+*/
+  /* pin: Hervorgehoben angezeigt, aber nicht in Vorschau oder Canvas */
+  .pin { /* div */
+    float:               right;
+    font-size:           85%;
+    background-color:    var(--pin-bg);
+    border-top:          0.5rem solid var(--pin-header-bg);
+    padding:             0.4rem;
+    padding-left:        1ch;
+    background-position: right -2px;
+    background-size:     15px;
+    background-repeat:   no-repeat;
+    background-image:    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M15.113 3.21l.094 .083l5.5 5.5a1 1 0 0 1 -1.175 1.59l-3.172 3.171l-1.424 3.797a1 1 0 0 1 -.158 .277l-.07 .08l-1.5 1.5a1 1 0 0 1 -1.32 .082l-.095 -.083l-2.793 -2.792l-3.793 3.792a1 1 0 0 1 -1.497 -1.32l.083 -.094l3.792 -3.793l-2.792 -2.793a1 1 0 0 1 -.083 -1.32l.083 -.094l1.5 -1.5a1 1 0 0 1 .258 -.187l.098 -.042l3.796 -1.425l3.171 -3.17a1 1 0 0 1 1.497 -1.26z"></path></svg>');
+  }
+  .pinleft { /* div */
+    float:               left;
+  }
+  .pin td, .pin tr, .pin table {
+    font-size:           100%;
+    padding:             0;
+    margin:              0;
+    border:              none;
+  }
+  .popover .pin { /* Nicht in der Vorschau anzeigen */
+      display: none;
+  }
+  .canvas-wrapper  .pin { /* Nicht im Canvas anzeigen */
+      display: none;
+  }
+
+
+/*** Class breadcrumbs - durch dataviewjs erzeugt
+*/
+    /** Dataviewjs gibt die Daten an denen hier Interesse besteht in einer
+     * nicht näher spezifizierten ul aus.
+     * Das Element vorher ist ein span der Klasse .breadcrumbs.
+     * Der Inhalt dieses span ist unwichtig, das span soll so wenig
+     * wie möglich stören. Mit ihm kann die Liste als nachfolgendes
+     * Geschwister selektiert werden.
+     * Breadcrumbs sollen dezent sein.
+    */
+  .breadcrumbs  {
+    display: block;
+    color: var(--clr-bg) !important;
+    max-height: 3px !important;
+    font-size: 3px !important;
+    line-height: 3px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0;
+  }
+  .markdown-preview-section .breadcrumbs + div ul {
+    font-size: 90%;
+    color: var(--clr-ntrl-faint) !important;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 0;
+  }
+  .markdown-preview-section .breadcrumbs ~ div li {
+    color: var(--clr-ntrl-faint) !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0;
+  }
+  .markdown-preview-section .breadcrumbs ~ div li span {
+    /* Direkt ein MOC wird grau angezeigt */
+    color: var(--clr-ntrl-faint) !important;
+  }
+  .markdown-preview-section .breadcrumbs ~ div li a {
+    /* Auch die Links in den Breadcrumbs sollen wenig auffallen */
+    color: var(--clr-seco-faint) !important;
+  }
+
+
+
+/*** CssClass PRIVATE note // Eigenleistung
+*/
+    /* Oben&Unten einen dicken clr-seco-pur Rand
+    */
+  .note {
+    .mod-header, .cm-line:first-child {
+      border-top: 1.5em solid var(--clr-seco-pur);
+      padding-top: 1em;
+    }
+  .mod-footer, .cm-line:last-child {
+      border-bottom: 1.5em solid var(--clr-seco-pur);
+    }
+  }
+
+/*** CssClass PRIVATE diary // besondere Eigenleistung
+*/
+    /* Oben&Unten einen dicken clr-tert-pur Rand
+    */
+  .diary {
+    .mod-header, .cm-line:first-child {
+      border-top: 1.5em solid var(--clr-tert-pur);
+      padding-top: 1em;
+    }
+  .mod-footer, .cm-line:last-child {
+      border-bottom: 1.5em solid var(--clr-tert-pur);
+    }
+  }
+
+/*** CssClass PUBLIC foldernote (MOCs)
+*/
+    /* Rechts im Editor einen ca 1 cm breiten verlaufenden clr-tert-muted Streifen.
+    */
+  .foldernote {
+    .cm-editor {
+      background-image: linear-gradient(to right, var(--clr-bg) 97%, var(--clr-tert-muted) 100%);
+    }
+    .markdown-embed {
+      margin-bottom: 3rem;
+    }
+    .markdown-embed h3 {
+      display: none;
+    }
+  }
+
+    /* Im MOC sollen die Katalogdateien hervorgehoben werden.
+     * data-href: Der angezeigte Text, z.B. "-Genetik", "-Philosophie des 20ten"
+    */
+  .foldernote [data-href^="-"] { /* Operator "^=": Der Wert beginnt mit "-" */
+    font-weight: bold;
+    text-decoration: underline overline double var(--clr-tert-muted);
+  }
+
+/*** CssClass PUBLIC catalog für Kataloge (Dateien die mit "-" beginnen)
+*/
+    /* Rechts im Editor einen ca 1 cm breiten verlaufenden clr-tert-muted Streifen.
+    */
+  .catalog {
+    .cm-editor {
+      background-image: linear-gradient(to right, var(--clr-bg) 97%, var(--clr-tert-muted) 100%);
+    }
+    .markdown-embed {
+      margin-bottom: 3rem;
+    }
+    .markdown-embed h3 {
+      display: none;
+    }
+  }
+  .catalog *{border: unset !important;}
+  .catalog table {table-layout: fixed !important; width: 100% !important;}
+  .catalog table *{white-space: nowrap !important; text-overflow: clip !important;}
+  .catalog th:first-child {width: 80% !important;}
+  .catalog th:nth-child(2) {width: 4ch !important;}
+  .catalog td:nth-child(2) {padding-left: 1ch;}
+  .catalog td:first-child {text-overflow: ellipsis !important;}
+  .catalog th:nth-child(3) {font-size: 90% !important;}
+    /* Das enthält die Anzahl der Einträge - beim Export werden die sonst ohne
+     * Zwischenraum an die erste Spaltenüberschrift rangehängt
+    */
+  .catalog th span.dataview.small-text {padding-left: 1ch;}
+  /* Embedded
+   * Obsidian
+   * !!! div .block-language-dataviewjs .node-insert-event
+   *       p
+   *          span
+   *             span .internal-embed .inline-embed .markdown-embed .is-loaded
+   * !!!            div .markdown-embed-title
+   * !!!            div .markdown-preview-view .markdown-rendered .show-indentation-guide .mod-frontmatter .mod-ui
+   *                   pre
+   *                   div .block-language-dataviewjs .node-insert-event
+   *                      span
+   *                         breadcrumbs
+   *                   h2
+   * !!!               div .block-language-dataviewjs .node-insert-event
+   * !!!                  div
+   * !!!                     table .dataview .table-view-table
+   * Browser
+   * !!! div .block-language-dataviewjs .node-insert-event
+   *       p
+   *          span
+   *             span .internal-embed .inline-embed .markdown-embed .is-loaded
+   *!!!    div .markdown-embed-title
+   *!!!    div .markdown-preview-view .markdown-rendered .show-indentation-guide .mod-frontmatter .mod-ui
+   *          pre
+   *          div .block-language-dataviewjs .node-insert-event
+   *             span
+   *                breadcrumbs
+   *          h2
+   *!!!       div .block-language-dataviewjs .node-insert-event
+   *!!!          div
+   *!!!             table .dataview .table-view-table
+   */
+  .catalog .block-language-dataviewjs .markdown-preview-view {padding-left: 0 !important; padding-right: 0 !important; }
+    /* In -Materialien sind in einem Abschnitt die Unterkataloge eingebunden */
+  .catalog h3 { margin-bottom: 0 !important; margin-top: 0 !important; }
+    /* Das wirkt auf Obsidian und Html Export */
+  .catalog .markdown-embed-title { display: none; }
+  .catalog .block-language-dataviewjs .markdown-preview-view div.block-language-dataviewjs:nth-child(2) { display:none; }
+  .catalog .block-language-dataviewjs .markdown-preview-view h2 { display: none !important; }
+  .catalog .block-language-dataviewjs .block-language-dataviewjs { margin-left: 2ch !important; }
+
+/*** CssClass PUBLIC material
+*/
+    /* Rechts im Editor einen ca 1 cm breiten verlaufenden clr-tert-muted Streifen
+    */
+  .material {
+    .cm-editor {
+      background-image: linear-gradient(to right, var(--clr-bg) 97%, var(--clr-tert-muted) 100%);
+    }
+  }
+
+/*** CssClass PUBLIC autor
+*/
+    /* Rechts im Editor einen ca 1 cm breiten verlaufenden clr-tert-muted Streifen.
+    */
+  .autor {
+    .cm-editor {
+      background-image: linear-gradient(to right, var(--clr-bg) 97%, var(--clr-tert-muted) 100%);
+    }
+    .markdown-embed {
+      margin-bottom: 3rem;
+    }
+    .markdown-embed h3 {
+      display: none;
+    }
+  }
+
+/*** CssClass PUBLIC sekundaer
+*/
+    /* Rechts im Editor einen ca 1 cm breiten verlaufenden clr-tert-faint Streifen.
+    */
+  .sekundaer {
+    .cm-editor {
+      background-image: linear-gradient(to right, var(--clr-bg) 97%, var(--clr-tert-pur) 100%);
+    }
+  }
+
+/*** CssClass PRIVATE feld
+*/
+    /* Links einen knapp 1 cm breiten verlaufenden clr-erro-soft Streifen.
+    */
+  .feld {
+    background-image: linear-gradient(to right,var(--clr-erro-soft) 0%, var(--clr-bg) 3%);
+  }
+  .feld .internal-embed {
+    margin-bottom: 3rem;
+    border-top: 2px dotted var(--clr-seco-pur);
+    border-left-width: 5px;
+  }
+  .feld .internal-embed .internal-embed {
+    margin-bottom: 0;
+    border-top:  none;
+    border-left-width: 2px;
+  }
+  .feld .markdown-embed-title {
+    display: none;
+  }
+
+/*** CssClass PUBLIC studiis
+*/
+  /* Rechts&Links ca 1 cm verlaufende clr-tert-pur Streifen.
+   * Der Hintergrund hat weiter keine Bedeutung, er soll sich nur
+   * deutlich vom werkstatt Hintergrund unterscheiden.
+  */
+  .studies {
+    background-image: linear-gradient(to right, var(--clr-tert-faint) 0%, var(--clr-bg) 2%, var(--clr-bg) 98%, var(--clr-tert-faint) 100%);
+  }
+
+/*** CssClass PRIVATE werkstatt
+*/
+    /* Rechts&Links im Editor sehr breite verlaufende clr-vari-muted Streifen; in der Leseansicht Wasserzeichen.
+     * Diese sollen sich leicht erkennbar vom Hintergrund der Studiis-
+     * Notizen unterscheiden.
+    */
+  .werkstatt {
+    background-image: linear-gradient(to right, var(--clr-vari-muted) 0%, var(--clr-bg) 10%, var(--clr-bg) 90%, var(--clr-vari-muted) 100%);
+  }
+    /* Der Schriftzug Privat als Wasserzeichen im oberen Drittel
+     * der Leseansicht.
+    */
+  .markdown-reading-view .werkstatt {
+    background-size: 100% 100%;
+    background-position: top 1rem right -2rem;
+  }
+  .theme-light .markdown-reading-view .werkstatt {
+    background-image: url('data:image/svg+xml,<svg height="30" width="60" xmlns="http://www.w3.org/2000/svg"><text x="10" y="10" fill="%23F6F6F6">privat</text></svg>');
+  }
+  .theme-dark .markdown-reading-view .werkstatt {
+    background-image: url('data:image/svg+xml,<svg height="30" width="60" xmlns="http://www.w3.org/2000/svg"><text x="10" y="10" fill="%23101010">privat</text></svg>');
+  }
+
+/*** CssClass PRIVATE audio // fremdleistung
+*/
+    /* Links einen schmalen verlaufenden clr-seco-soft Streifen.
+    */
+  .audio {
+    background-image: linear-gradient(to right,var(--clr-seco-soft) 0%, var(--clr-bg) 1%);
+  }
+
+/*** CssClass PRIVATE buch // fremdleistung
+*/
+    /* Links einen schmalen verlaufenden clr-seco-soft Streifen.
+    */
+  .buch {
+    background-image: linear-gradient(to right,var(--clr-seco-soft) 0%, var(--clr-bg) 1%);
+  }
+
+/*** CssClass PRIVATE exzerpt // fast eigenleistung
+*/
+    /* Oben&Unten einen schmalen clr-seco-pur Rand.
+    */
+  .exzerpt {
+    .mod-header, .cm-line:first-child {
+      border-top: 0.5em solid var(--clr-seco-pur);
+      padding-top: 1em;
+    }
+  .mod-footer, .cm-line:last-child {
+      border-bottom: 0.5em solid var(--clr-seco-pur);
+    }
+  }
+
+/*** CssClass PRIVATE mitschrift (allgemein, nicht in Mitschriften/) // fast eigenleistung
+*/
+    /* Oben&Unten einen schmalen clr-seco-pur Rand.
+    */
+  .mitschrift {
+    .mod-header, .cm-line:first-child {
+      border-top: 0.5em solid var(--clr-seco-pur);
+      padding-top: 1em;
+    }
+  .mod-footer, .cm-line:last-child {
+      border-bottom: 0.5em solid var(--clr-seco-pur);
+    }
+  }
+
+/*** CssClass PRIVATE ort // fast fremdleistung
+*/
+    /* Links einen schmalen verlaufenden clr-seco-muted Streifen.
+    */
+  .ort {
+    background-image: linear-gradient(to right,var(--clr-seco-muted) 0%, var(--clr-bg) 1%);
+  }
+
+/*** CssClass PRIVATE person // fast fremdleistung
+*/
+    /* Links einen schmalen verlaufenden clr-seco-muted Streifen.
+    */
+  .person {
+    background-image: linear-gradient(to right,var(--clr-seco-muted) 0%, var(--clr-bg) 1%);
+  }
+
+/*** CssClass PRIVATE video // fremdleistung
+*/
+    /* Links einen schmalen verlaufenden clr-seco-soft Streifen.
+    */
+  .video {
+    background-image: linear-gradient(to right,var(--clr-seco-soft) 0%, var(--clr-bg) 1%);
+  }
+
+/*** CssClass PRIVATE web // fremdleistung
+*/
+    /* Links einen schmalen verlaufenden clr-seco-soft Streifen.
+    */
+  .web {
+    background-image: linear-gradient(to right,var(--clr-seco-soft) 0%, var(--clr-bg) 1%);
+  }
+
+/*** CssClass PRIVATE zitat // fremdleistung
+*/
+    /* Links einen schmalen verlaufenden clr-seco-soft Streifen.
+    */
+  .zitat {
+    background-image: linear-gradient(to right,var(--clr-seco-soft) 0%, var(--clr-bg) 1%);
+  }
+
+/*** CssClass PRIVATE zitate // fremdleistung
+*/
+    /* Links einen schmalen verlaufenden clr-seco-soft Streifen.
+    */
+  .zitate {
+    background-image: linear-gradient(to right,var(--clr-seco-soft) 0%, var(--clr-bg) 1%);
+  }
+
+
+
+/*** CssClass bigbiglist, semantische, keine technische Liste in Datei DDCKlassen
+*/
+  .bigbiglist h2 {
+    border-bottom: 0;
+    border-top: 1px solid  var(--clr-fg);
+    padding-top: 0;
+    font-size: 1.2rem !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 0;
+  }
+  .bigbiglist h3, h4 {
+    text-decoration: none !important;
+    border-bottom: none !important;
+    font-size: 1rem !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .bigbiglist h3 {
+    margin-left: 3ch !important;
+  }
+  .bigbiglist h4 {
+    font-weight: normal !important;
+    margin-left: 6ch !important;
+  }
+  .bigbiglist p {
+    padding-left: 9ch !important;
+  }
+
+
+
+/********************************************************************************
+ *
+ *** Versuche
+ *
+********************************************************************************/
+

@@ -1,0 +1,8 @@
+.repos/*
+.Werkstatt/*
+.obsidian/*
+!.obsidian/snippets/
+test/
+test*
+rmdirs
+*.swp
