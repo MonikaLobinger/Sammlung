@@ -11,7 +11,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Hesiod
-![[Materialien/timeline#Hesiod]]
+[[Materialien/timeline#Hesiod|Zeitleiste]]
 
 
 ## Theogonie

@@ -6,7 +6,7 @@ tags: []
 author:
 ---
 # Mitschrift
-zu [[Deleuze_2002_UniWien_Heinrich|Mitschrift]]
+zu [[Deleuze_2002_UniWien_Heinrich]]
 ## Offen
 - [Deleuze 1](https://audiothek.philo.at/lesson/deleuze-1/)
 - [Deleuze 2](https://audiothek.philo.at/lesson/deleuze-2/)

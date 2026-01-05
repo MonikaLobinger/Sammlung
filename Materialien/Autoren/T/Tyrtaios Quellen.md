@@ -11,7 +11,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Tyrtaios
-![[timeline#Tyrtaios]]
+[[timeline#Tyrtaios|Zeitleiste]]
 ## Fragmente
 [gottwein](https://www.gottwein.de/Grie/lyr/lyr_tyrt_de.php) - deutsch, griechisch online zu lesen
 

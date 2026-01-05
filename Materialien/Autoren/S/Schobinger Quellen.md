@@ -11,7 +11,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Jean-Pierre Schobinger
-![[Materialien/timeline#Schobinger]]
+[[Materialien/timeline#Schobinger|Zeitleiste]]
 ## Operationale Aufmerksamkeit in der textimmanenten Auslegung
 
 

@@ -11,7 +11,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Hegel Georg Wilhelm Friedrich
-![[Materialien/timeline#Hegel]]
+[[Materialien/timeline#Hegel|Zeitleiste]]
 ## Wer denkt abstrakt ^[1807]
 - [zeno](http://www.zeno.org/Philosophie/M/Hegel,+Georg+Wilhelm+Friedrich/Wer+denkt+abstrakt) - deutsch, online zu lesen
 - [hegel-system](https://hegel-system.de/de/wer_denkt_abstrakt.pdf) - deutsch, Pdf

@@ -11,6 +11,6 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Johannes Calvin
-![[Materialien/timeline#Calvin]]
+[[Materialien/timeline#Calvin|Zeitleiste]]
 
 ## -footnotes 

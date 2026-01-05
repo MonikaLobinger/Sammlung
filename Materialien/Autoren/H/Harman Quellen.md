@@ -11,6 +11,6 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Graham Harman
-![[Materialien/timeline#Harman-Graham]]
+[[Materialien/timeline#Harman-Graham|Zeitleiste]]
 
 ## -footnotes 

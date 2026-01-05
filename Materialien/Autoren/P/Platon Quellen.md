@@ -11,7 +11,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Platon
-![[Materialien/timeline#Platon]]
+[[Materialien/timeline#Platon|Zeitleiste]]
 
 - [Opera Platonis](http://opera-platonis.de/Platon_Werke.pdf) - Alle Werke, deutsch pdf, Links zu griechisch/lateinisch online
 

@@ -11,6 +11,6 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Anaximenes von Milet
-![[Materialien/timeline#Anaximenes]]
+[[Materialien/timeline#Anaximenes|Zeitleiste]]
 
 ## -footnotes 

@@ -11,6 +11,6 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Catherine Malabou
-![[Materialien/timeline#Malabou]]
+[[Materialien/timeline#Malabou|Zeitleiste]]
 
 ## -footnotes 

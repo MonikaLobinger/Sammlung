@@ -11,6 +11,6 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Johann Gottlieb Fichte
-![[Materialien/timeline#Fichte]]
+[[Materialien/timeline#Fichte|Zeitleiste]]
 
 ## -footnotes 

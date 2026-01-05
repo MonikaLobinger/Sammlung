@@ -11,6 +11,6 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Hippolyt von Rom
-![[timeline#Hippolyt]]
+[[timeline#Hippolyt|Zeitleiste]]
 
 ## -footnotes

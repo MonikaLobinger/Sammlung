@@ -11,6 +11,6 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Leukipp von Milet
-![[Materialien/timeline#Leukipp]]
+[[Materialien/timeline#Leukipp|Zeitleiste]]
 
 ## -footnotes 

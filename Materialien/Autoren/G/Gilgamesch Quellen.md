@@ -11,7 +11,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Mesopotamische Mythen
-![[Materialien/timeline#Gilgamesch]]
+[[Materialien/timeline#Gilgamesch|Zeitleiste]]
 ## Enuma Elisch
 - [Hinter den Dingen](https://hinter-den-dingen.podigee.io/b26-enuma-elisch-hoerbuch) - deutsch, Hörbuch online zu hören
 - [12koerbe](http://12koerbe.de/arche/enuma.htm) - deutsch, online zu lesen

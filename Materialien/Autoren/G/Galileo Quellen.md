@@ -11,6 +11,6 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Galileo Galilei
-![[Materialien/timeline#Galileo]]
+[[Materialien/timeline#Galileo|Zeitleiste]]
 
 ## -footnotes 

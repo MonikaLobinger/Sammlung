@@ -11,6 +11,6 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Theresa von Avila
-![[Materialien/timeline#Theresa-von-Avila]]
+[[Materialien/timeline#Theresa-von-Avila|Zeitleiste]]
 
 ## -footnotes 

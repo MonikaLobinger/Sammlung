@@ -11,7 +11,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Immanuel Kant
-![[Materialien/timeline#Kant]]
+[[Materialien/timeline#Kant|Zeitleiste]]
 ## Kritik der reinen Vernunft
 
 - [Wikisource](https://de.wikisource.org/wiki/Critik_der_reinen_Vernunft_%281781%29) - 1. Auflage Deutsch, Text, Online lesen, manchmal herunterladen

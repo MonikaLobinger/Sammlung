@@ -11,6 +11,6 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Pindar
-![[Materialien/timeline#Pindar]]
+[[Materialien/timeline#Pindar|Zeitleiste]]
 
 ## -footnotes 

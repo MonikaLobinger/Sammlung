@@ -11,6 +11,6 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Melissos von Samos
-![[timeline#Melissos]]
+[[timeline#Melissos|Zeitleiste]]
 
 ## -footnotes

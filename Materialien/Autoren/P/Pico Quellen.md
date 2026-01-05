@@ -11,7 +11,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Giovanni Pico della Mirandola
-![[Materialien/timeline#Pico]]
+[[Materialien/timeline#Pico|Zeitleiste]]
 ## Über die Würde des Menschen
 [Willensbekundung](http://www.willensbekundung.net/Assets/PDF_Dateien/Mirandola_Wuerde_des_Menschen.pdf) - deutsch, pdf
 

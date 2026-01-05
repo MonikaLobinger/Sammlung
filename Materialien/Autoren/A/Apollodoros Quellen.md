@@ -11,7 +11,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Apollodoros von Athen
-![[Materialien/timeline#Apollodoros]]
+[[Materialien/timeline#Apollodoros|Zeitleiste]]
 
 Nur in 356 Fragmente erhalten
 

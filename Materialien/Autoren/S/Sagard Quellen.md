@@ -11,7 +11,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Sagard
-![[timeline#Sagard-Gabriel]]
+[[timeline#Sagard-Gabriel|Zeitleiste]]
 ## Le grand voyage du pays des Hurons
 [gutenberg.org](https://www.gutenberg.org/ebooks/23828) - französisch, mehrere Formate, online oder offline zu lesen
 

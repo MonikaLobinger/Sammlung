@@ -11,7 +11,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Herodot
-![[timeline#Herodot]]
+[[timeline#Herodot|Zeitleiste]]
 ## Historien (Erkundungen)
 - [iranchamber](https://www.iranchamber.com/history/herodotus/herodotus_history_book1.php) - englisch, online zu lesen
 - [university chicago](https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Herodotus/home.html) - englisch, online zu lesen

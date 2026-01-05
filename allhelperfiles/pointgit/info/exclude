@@ -15,6 +15,6 @@
 ggit
 git
 private/
-show_diagrams
-show_greek
-show_hotkeys
+show_diagrams.md
+show_greek.md
+show_hotkeys.md

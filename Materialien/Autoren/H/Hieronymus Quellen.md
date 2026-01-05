@@ -11,7 +11,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Hieronymus
-![[timeline#Hieronymus]]
+[[timeline#Hieronymus|Zeitleiste]]
 
 
 ## -footnotes

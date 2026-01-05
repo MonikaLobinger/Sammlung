@@ -11,6 +11,6 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Voltaire
-![[timeline#Voltaire]]
+[[timeline#Voltaire|Zeitleiste]]
 
 ## -footnotes

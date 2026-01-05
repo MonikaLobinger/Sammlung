@@ -11,6 +11,6 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Proklos
-![[timeline#Proklos]]
+[[timeline#Proklos|Zeitleiste]]
 
 ## -footnotes

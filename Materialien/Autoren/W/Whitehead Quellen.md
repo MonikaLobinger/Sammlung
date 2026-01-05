@@ -11,6 +11,6 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Alfred North Whitehead
-![[Materialien/timeline#Whitehead]]
+[[Materialien/timeline#Whitehead|Zeitleiste]]
 
 ## -footnotes 

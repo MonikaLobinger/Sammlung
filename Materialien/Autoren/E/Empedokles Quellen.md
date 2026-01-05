@@ -11,6 +11,6 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Empedokles
-![[timeline#Empedokles]]
+[[timeline#Empedokles|Zeitleiste]]
 
 ## -footnotes

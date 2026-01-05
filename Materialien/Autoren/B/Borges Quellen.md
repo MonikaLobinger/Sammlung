@@ -11,6 +11,6 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Jorge Luis Borges
-![[Materialien/timeline#Borges-Jorge-Luis]]
+[[Materialien/timeline#Borges-Jorge-Luis|Zeitleiste]]
 
 ## -footnotes 

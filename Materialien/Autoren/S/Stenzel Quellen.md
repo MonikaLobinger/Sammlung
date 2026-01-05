@@ -11,7 +11,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Julius Stenzel
-![[timeline#Stenzel]]
+[[timeline#Stenzel|Zeitleiste]]
 
 ## Metaphysik des Altertums
 [Internet Archive](https://archive.org/details/metaphysikdesalt00sten) - deutsch, Digitalisat

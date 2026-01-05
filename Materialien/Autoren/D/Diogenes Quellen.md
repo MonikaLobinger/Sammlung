@@ -11,7 +11,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Diogenes Laertios
-![[Materialien/timeline#Diogenes-Laertios]]
+[[Materialien/timeline#Diogenes-Laertios|Zeitleiste]]
 ## Leben und Meinungen berühmter Philosophen
 ### Buch I-VI
 - [Internet Archive](https://archive.org/details/DiogenesLaertius1921LebenMeinungenPhilosophen16ApeltBd1) - deutsch, Digitalisat Version Apelt 1921

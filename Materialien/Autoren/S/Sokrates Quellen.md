@@ -11,7 +11,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Sokrates
-![[Materialien/timeline#Sokrates]]
+[[Materialien/timeline#Sokrates|Zeitleiste]]
 
 Es existieren keine persönlichen Überlieferungen. [[Platon Quellen|Platon]] hat  ausser in den Nomoi immer Sokrates als Figur in seinen Texten, inwieweit dieser historisch ist, ist unbekannt. [[Xenophon Quellen|Xenophons]] sokratische Schriften sind [[Xenophon Quellen#Memorabilien|Memorabilien]], [[Xenophon Quellen#Symposion|Symposion]], [[Xenophon Quellen#Apologie|Apologie]] und [[Xenophon Quellen#Oikonomikos|Hauswirtschaft]].
 

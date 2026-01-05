@@ -11,6 +11,6 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Sextus Empiricus
-![[timeline#Sextus-Empiricus]]
+[[timeline#Sextus-Empiricus|Zeitleiste]]
 
 ## -footnotes

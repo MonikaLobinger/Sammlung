@@ -11,7 +11,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Xenophanes von Kolophon
-![[Materialien/timeline#Xenophanes]]
+[[Materialien/timeline#Xenophanes|Zeitleiste]]
 Nur Fragmente überliefert
 ## Elegien
 [zeno](http://www.zeno.org/Philosophie/M/Xenophanes+aus+Kolophon/Fragmente/Aus+den+Elegien) - deutsch, online zu lesen

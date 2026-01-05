@@ -11,7 +11,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Georg Misch
-![[timeline#Misch]]
+[[timeline#Misch|Zeitleiste]]
 ## Der Weg in die Philosophie 1926
 [internet archive](https://archive.org/details/der-weg-in-die-philosophie/mode/2up) - deutsch, Digitalisat
 

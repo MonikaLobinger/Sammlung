@@ -11,7 +11,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Heraklit von Ephesos
-![[Materialien/timeline#Heraklit]]
+[[Materialien/timeline#Heraklit|Zeitleiste]]
 
 Nur Zitate aus Texten anderer Autoren überliefert. Diese wurden von [[Materialien/timeline#Diels|Hermann Diels]] in [[Diels Quellen#Herakleitos|Herakleitos]] zusammengetragen.
 

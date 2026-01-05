@@ -11,6 +11,6 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Thomas von Aquin
-![[Materialien/timeline#Thomas]]
+[[Materialien/timeline#Thomas|Zeitleiste]]
 
 ## -footnotes 

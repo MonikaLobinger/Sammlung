@@ -11,6 +11,6 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Franz Kafka
-![[Materialien/timeline#Kafka]]
+[[Materialien/timeline#Kafka|Zeitleiste]]
 
 ## -footnotes 

@@ -11,7 +11,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Baruch Spinoza
-![[Materialien/timeline#Spinoza]]
+[[Materialien/timeline#Spinoza|Zeitleiste]]
 
 ## Die Ethik
 [Internet Archive](https://archive.org/details/dieethik00spin/mode/2up) - Digitalisat, deutsch, Fraktur

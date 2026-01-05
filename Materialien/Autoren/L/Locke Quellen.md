@@ -11,7 +11,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # John Locke
-![[Materialien/timeline#Locke]]
+[[Materialien/timeline#Locke|Zeitleiste]]
 ## Ein Versuch über den menschlichen Verstand
 - [susannealbers](https://www.susannealbers.de/literatur/LockeVerstand.pdf) - pdf, deutsch
 - 

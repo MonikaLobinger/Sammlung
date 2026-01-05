@@ -11,7 +11,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Thomas Hobbes
-![[Materialien/timeline#Hobbes]]
+[[Materialien/timeline#Hobbes|Zeitleiste]]
 ## Leviathan
 - [Gutenberg](https://www.gutenberg.org/files/3207/3207-h/3207-h.htm) - Englisch, Online zu lesen
 - [Standard Ebooks](https://standardebooks.org/ebooks/thomas-hobbes/leviathan)  - Englisch, E-Book und Online zu lesen

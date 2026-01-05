@@ -11,6 +11,6 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Alkman
-![[timeline#Alkman]]
+[[timeline#Alkman|Zeitleiste]]
 
 ## -footnotes

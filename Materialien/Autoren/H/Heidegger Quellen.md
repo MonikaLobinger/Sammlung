@@ -11,6 +11,6 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Martin Heidegger
-![[Materialien/timeline#Heidegger]]
+[[Materialien/timeline#Heidegger|Zeitleiste]]
 
 ## -footnotes 

@@ -11,7 +11,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Hermann Diels
-![[Materialien/timeline#Diels]]
+[[Materialien/timeline#Diels|Zeitleiste]]
 ## Herakleitos
  - [InternetArchive](https://archive.org/details/herakleitosvonep00hera_0) - Digitalisat deutsch/griechisch
  - [Zeno](http://www.zeno.org/Philosophie/M/Heraklit+aus+Ephesus) - nur die kommentierten Fragmente, online zu lesen

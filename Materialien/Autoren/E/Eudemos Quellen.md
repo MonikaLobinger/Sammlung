@@ -11,6 +11,6 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Eudemos von Rhodos
-![[timeline#Eudemos]]
+[[timeline#Eudemos|Zeitleiste]]
 
 ## -footnotes

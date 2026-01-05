@@ -11,7 +11,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Thukydides
-![[timeline#Thukydides]]
+[[timeline#Thukydides|Zeitleiste]]
 ## acht Bücher der Geschichte
 [internet archive](https://archive.org/details/11912543bsb/mode/2up) - deutsch, Fraktur, Digitalisat, 1760
 [interntet archive](https://archive.org/details/bub_gb_7Jc-AAAAcAAJ/mode/2up) - deutsch, Fraktur, Digitalisat geweisst, 1760

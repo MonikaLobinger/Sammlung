@@ -11,6 +11,6 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Jean Laplance
-![[Materialien/timeline#Laplanche]]
+[[Materialien/timeline#Laplanche|Zeitleiste]]
 
 ## -footnotes 

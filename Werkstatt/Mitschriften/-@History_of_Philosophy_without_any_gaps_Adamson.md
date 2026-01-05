@@ -15,7 +15,7 @@ Auf jeder Seite des Autors, von der der jeweilige Podcast gehört werden kann, g
 ## Presocratic Philosophy
 Jede gehörte Podcastfolge hat eine eigene Notiz
 
-- [[Adamson  001 Thales]]
-- [[Adamson  002 Anaximander und Anaximenes]]
+- [[Werkstatt/Mitschriften/Adamson/@Adamson 001 Thales]]
+- [[Werkstatt/Mitschriften/Adamson/@Adamson 002 Anaximander und Anaximenes]]
 ## -footnotes
 

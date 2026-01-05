@@ -11,7 +11,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Simplicius von Kilikien
-![[Materialien/timeline#Simplicius]]
+[[Materialien/timeline#Simplicius|Zeitleiste]]
 
 
 

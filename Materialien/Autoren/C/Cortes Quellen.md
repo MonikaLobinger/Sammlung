@@ -11,6 +11,6 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Hernan Cortes
-![[Materialien/timeline#Cortes-Hernan]]
+[[Materialien/timeline#Cortes-Hernan|Zeitleiste]]
 
 ## -footnotes 

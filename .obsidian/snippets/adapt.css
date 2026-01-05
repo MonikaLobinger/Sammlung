@@ -330,6 +330,25 @@ th:nth-child(n) {
   border: 1px solid var(--clr-ntrl-soft);
 }
 
+  /* Es war einmal angedacht auch in Materialien, die Links auf die Timeline
+   * einzubetten, so dass auch auf dem Handy wo scheinbar kein Hover geht,
+   * direkt auf der Seite Geburt und Sterbedatum zu sehen ist.
+   * Allerdings soll der Link auf die ganze Timeline erhalten bleiben, so dass
+   * man sich auch das zeitliche Umfeld ansehen kann.
+   * Im Export wird das svg mit display:none !important ausgeblendet.
+   * Und das hat seinen Grund: Man kann es einblenden, indem man ein
+   * spezifischeres Css Auswahlkriterium angibt. Doch es gibt kein Linkziel
+   * für den nun sicht- und klickbaren Link.
+   * Das per Script zu ändern verkomplizierte die Sache unnötig.
+   * Deshalb werden die timeline links in Materialien nicht eingebettet.
+   *
+   * Mit dem folgenden auskommentierten Selektor würde der Link angezeigt.
+   * Da es in Obsidian kein #main gibt, greift er dort nicht
+  */
+.nirgendsda #main .internal-embed.markdown-embed.inline-embed.is-loaded > .markdown-embed-link {
+  display: block !important;
+}
+
   /* mermaid timeline und gantt sollen breiter werden können als der Bildschirm
    * sonst werden große Diagramme unlesbar.
    * dafür bekommen sie einen Scrollbalken.
@@ -595,12 +614,24 @@ svg[aria-roledescription="gantt"] {
       display: none;
     }
   }
-  .catalog *{border: unset !important;}
+    /* Keine Umrandungen der Zellen, nur eine Linie zwischen
+     * Tabellenüberschrift und Tabelleneinträgen
+    */
+  .catalog tr, .catalog  th, .catalog td  {
+      border: none !important;
+  }
+  .catalog th {
+    border-bottom: 1px solid var(--clr-seco-pur) !important;
+  }
+    /* Der Inhalt einer Zelle soll nicht umbrechen.
+     * Auch auf kleine Bildschirmen soll aber der Inhalt jeder Spalte
+     * erkennbar sein
+    */
   .catalog table {table-layout: fixed !important; width: 100% !important;}
   .catalog table *{white-space: nowrap !important; text-overflow: clip !important;}
   .catalog th:first-child {width: 80% !important;}
   .catalog th:nth-child(2) {width: 4ch !important;}
-  .catalog td:nth-child(2) {padding-left: 1ch;}
+  .catalog td:nth-child(2) {padding-left: 0.6ch;}
   .catalog td:first-child {text-overflow: ellipsis !important;}
   .catalog th:nth-child(3) {font-size: 90% !important;}
     /* Das enthält die Anzahl der Einträge - beim Export werden die sonst ohne

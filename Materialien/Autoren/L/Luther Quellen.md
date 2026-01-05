@@ -11,6 +11,6 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Martin Luther
-![[timeline#Luther]]
+[[timeline#Luther|Zeitleiste]]
 
 ## -footnotes

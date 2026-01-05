@@ -11,6 +11,6 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Ignatius von Loyola
-![[Materialien/timeline#Ignatius-von-Loyola]]
+[[Materialien/timeline#Ignatius-von-Loyola|Zeitleiste]]
 
 ## -footnotes 

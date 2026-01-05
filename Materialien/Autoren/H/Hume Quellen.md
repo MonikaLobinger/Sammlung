@@ -11,7 +11,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # David Hume
-![[Materialien/timeline#Hume]]
+[[Materialien/timeline#Hume|Zeitleiste]]
 ## Traktat über die menschliche Natur
 - [Internet Archive](https://archive.org/details/traktatberdiemen02hume) - deutsch, Digitalisat
 - 

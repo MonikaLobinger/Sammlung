@@ -11,6 +11,6 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Francois-Rene Chateaubriand
-![[Materialien/timeline#Chateaubriand-Francois-Rene]]
+[[Materialien/timeline#Chateaubriand-Francois-Rene|Zeitleiste]]
 
 ## -footnotes 

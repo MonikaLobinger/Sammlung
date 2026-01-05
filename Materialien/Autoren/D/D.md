@@ -7,7 +7,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 %% Begin Landmark %%
 - [[Darwin Quellen]]
-- [[Deleuze Quellen]]
+- [[Materialien/Autoren/D/Deleuze Quellen]]
 - [[Demokrit Quellen]]
 - [[Derrida Quellen]]
 - [[Descartes Quellen]]

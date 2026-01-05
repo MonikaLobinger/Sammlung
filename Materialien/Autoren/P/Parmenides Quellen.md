@@ -11,7 +11,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Parmenides von Elea
-![[Materialien/timeline#Parmenides]]
+[[Materialien/timeline#Parmenides|Zeitleiste]]
 ## Lehrgedicht
 - [zeno](http://www.zeno.org/Philosophie/M/Parmenides+aus+Elea/Fragmente/Aus:+%C3%9Cber+die+Natur) - deutsch, online zu lesen
 - [12koerbe](http://12koerbe.de/pan/parmen.htm) - deutsch/griechisch, online zu lesen

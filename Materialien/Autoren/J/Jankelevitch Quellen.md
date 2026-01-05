@@ -11,6 +11,6 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Vladimir Janelevitch
-![[Materialien/timeline#Jankelevitch]]
+[[Materialien/timeline#Jankelevitch|Zeitleiste]]
 
 ## -footnotes 

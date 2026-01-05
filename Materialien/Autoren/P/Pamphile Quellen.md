@@ -11,6 +11,6 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Pamphile von Epidaurus
-![[timeline#Pamphile]]
+[[timeline#Pamphile|Zeitleiste]]
 
 ## -footnotes

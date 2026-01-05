@@ -11,6 +11,6 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Demokrit von Abdera
-![[timeline#Demokrit]]
+[[timeline#Demokrit|Zeitleiste]]
 
 ## -footnotes

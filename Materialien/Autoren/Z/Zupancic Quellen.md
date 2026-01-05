@@ -11,6 +11,6 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # Alenka Zupancic
-![[Materialien/timeline#Zupancic]]
+[[Materialien/timeline#Zupancic|Zeitleiste]]
 
 ## -footnotes 

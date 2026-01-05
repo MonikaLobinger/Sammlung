@@ -11,6 +11,6 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 
 # August von Kotzebue
-![[Materialien/timeline#Kotzebue]]
+[[Materialien/timeline#Kotzebue|Zeitleiste]]
 
 ## -footnotes 

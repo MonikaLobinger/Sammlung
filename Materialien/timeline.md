@@ -337,7 +337,7 @@ Auflistung nach Geburtsjahr, Farben nach Profession ^[Literatys/Künstlys/Musiky
 > [[Heidegger Quellen|Heidegger]] †1976 ^Heidegger
 ### Borges-Jorge-Luis 
 > [!timeline|green] 1899
-> [[Borges Quellen|Borges]] †1986 ^Borges-Jorge-Luis
+> [[Materialien/Autoren/B/Borges Quellen|Borges]] †1986 ^Borges-Jorge-Luis
 ### Schadewaldt
 > [!timeline|grey] 1900 %%1900-03-15%%
 > [[Schadewaldt Quellen|Schadewaldt]] †1974 ^Schadewaldt
@@ -359,7 +359,7 @@ Auflistung nach Geburtsjahr, Farben nach Profession ^[Literatys/Künstlys/Musiky
 > [[Laplanche Quellen|Laplanche]] †2012 ^Laplanche
 ### Deleuze
 > [!timeline|blue] 1925
-> [[Deleuze Quellen|Deleuze]] †1995 ^Deleuze
+> [[Materialien/Autoren/D/Deleuze Quellen|Deleuze]] †1995 ^Deleuze
 ### Schobinger
 > [!timeline|blue] 1927
 > [[Schobinger Quellen|Schobinger]] †2001 ^Schobinger
