@@ -1,0 +1,24 @@
+---
+cssclasses: studies
+date_created:
+publish: false
+tags: []
+author:
+---
+# Mitschrift
+zu [[Erkenntnistheorie_2014_UniWien_Heinrich]]
+## Offen
+- [1-erkenntnistheorie](https://audiothek.philo.at/lesson/erkenntnistheorie-1)
+- [2-erkenntnistheorie](https://audiothek.philo.at/lesson/erkenntnistheorie-2)
+- [3-erkenntnistheorie](https://audiothek.philo.at/lesson/erkenntnistheorie-3)
+- [4-erkenntnistheorie](https://audiothek.philo.at/lesson/erkenntnistheorie-4)
+- [5-erkenntnistheorie](https://audiothek.philo.at/lesson/erkenntnistheorie-5)
+- [6-erkenntnistheorie](https://audiothek.philo.at/lesson/erkenntnistheorie-6)
+- [7-erkenntnistheorie](https://audiothek.philo.at/lesson/erkenntnistheorie-7)
+- [8-erkenntnistheorie](https://audiothek.philo.at/lesson/erkenntnistheorie-8)
+- [9-erkenntnistheorie](https://audiothek.philo.at/lesson/erkenntnistheorie-9)
+- [10-erkenntnistheorie](https://audiothek.philo.at/lesson/erkenntnistheorie-10)
+- [11-erkenntnistheorie](https://audiothek.philo.at/lesson/erkenntnistheorie-11)
+- [12-erkenntnistheorie](https://audiothek.philo.at/lesson/erkenntnistheorie-12)
+
+## -footnotes

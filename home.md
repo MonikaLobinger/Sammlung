@@ -4,11 +4,14 @@ date_created: 2025-11-24
 publish: true
 author: Ueberphilosophy
 ---
-# Mit den Ohren lernen
+# Nonmatrikulation
+
 Sammlung von Links zu __Materialien__ zum Lernen (hörbar) __[[-Materialien|als Katalog]]__/__[[Materialien|als Verzeichnis]]__  und frei zugänglichen __Quelltexten__ __[[Materialien/timeline|als  Zeitleiste]]__/__[[Autoren|als Verzeichnis]]__. 
 
-Diese befindet sich als kaum kommentierte Linksammlung im Ordner `Materialen`. Der Ordner `Werkstatt` kann für jeweils eigene Notizen verwendet. Im Ordner `Zusaetze` sind für die Sammlung unwichtige Seiten. Die selbst erstellen Definitionen im Ordner `Zusaetze/Definitionen` sind grob, auf den Themenseiten im Ordner `Zusaetze/Themen` finden sich Links zu bestimmten Themen.  
-## Bedienung
+Diese befindet sich als kaum kommentierte Linksammlung im Ordner `Materialen`. Der Ordner `Werkstatt` kann für jeweils eigene Notizen verwendet. Im Ordner `Zusaetze` sind für die Sammlung unwichtige Seiten. Die selbst erstellen Definitionen im Ordner `Zusaetze/Definitionen` sind grob, auf den Themenseiten im Ordner `Zusaetze/Themen` finden sich Links zu bestimmten Themen.
+
+Die Sammlung ist im Netz als statische Site veröffentlicht. Die [Quellen](https://github.com/MonikaLobinger/Sammlung) sind ein [Obsidian](https://obsidian.md/) Notebook.
+## Bedienung der Site
  - Klick vor (links neben) Überschriften klappt den Inhalt ein, nochmaliger Klick wieder auf; das zugehörige Symbol wird beim Drüberfahren mit der Maus sichtbar. 
  - Ganz oben links und rechts kann man die Seitenleisten ein- und ausblenden
  - Auf der rechten Seitenleiste oben kann man dunkle oder helle Anzeige einstellen.
@@ -40,8 +43,6 @@ Der gesamte Ablauf des Exports steht in [[2025-12-14#Wie es läuft]]
 
 ## Inhalt
 Es wird unterschieden zwischen Lernmaterialen, hauptsächlich Videos und Audios,  und Quellen. Lernmaterialen sind über ein Thema, Quellen sind  frei zugängliche Originaltexte. Für Lernmaterialien gibt es einen  [[-Materialien|Katalog]] nach Bereichen. Quellen sind nach Autoren unterschieden, sie sind über die [[Materialien/timeline|Zeitleiste]]  zu finden. Der Katalog wird automatisch erstellt, die timeline manuell. Beide Bereiche sind auch über das [[Materialien|Inhaltsverzeichnis]] zugänglich. Über die Seitenleiste links kann man alle Seiten finden. Die Dateinamen der Kataloge beginnen mit einem Bindestrich, die Dateinamen der Inhaltsverzeichnisse heissen wie die Verzeichnisse, die sie auflisten.
-
-
 - Grobe [[Materialien/timeline|Zeitleiste]]  mit Links zu Quellenseiten (verknüpft über den Autorennamen)
 - [[-Materialien|Katalog]] mit Links zu thematischen Sammlungen von  Links zu Lernmaterialen
 ## Netzresourcen
@@ -106,8 +107,8 @@ Es wird unterschieden zwischen Lernmaterialen, hauptsächlich Videos und Audios,
 ### Datenbanken für alle Medien
 - [Datenbank Infosystem](https://dbis.ur.de/browse/subjects/31/)
 %%https://transformatorische-bildung.de/ %%
-## Technisches über diese Site
-### Einstellungen
+## Technisches über die Quellen und deren Export
+### Einstellungen und Plugins in Obsidian
 - Erstellt mit [Obsidian](https://obsidian.md/), 
 - Einstellungen 
   - Editor
@@ -144,6 +145,7 @@ Es wird unterschieden zwischen Lernmaterialen, hauptsächlich Videos und Audios,
 - dort auch die css Klassen definiert
 - Eigenes Script `foty.js` nach `allhelperfiles/allscripts`, ^Script
 - Eigenes Template `foty_Vorlage.md` nach `allhelperfiles/allvorlagen`. ^Vorlage
+- Eigene vimrc Anpassung `vimrc.js` ^[Hauptsächlich um sich im Insert Mode mit Alt-h, Alt-j, Alt-k, Alt-l bewegen zu können.]
 - Plugin [Templater](https://github.com/SilentVoid13/Templater) erstellt neue Notes mit [[home#^Script|Script]] `allhelperfiles/allscripts/foty.js` und [[home#^Vorlage|Vorlage]] `allhelperfiles/allvorlagen/foty_Vorlage.md`
   - Einstellungen Templater
     - Template Folder Location `allhelperfiles/allvorlagen`
@@ -159,107 +161,196 @@ Es wird unterschieden zwischen Lernmaterialen, hauptsächlich Videos und Audios,
 - Plugin [Shortcuts Extender](https://github.com/ryjjin/Obsidian-shortcuts-extender) ^[Nur wegen des Backticks für Code, insbesondere des dreifachen Backticks für Code Blöcke]
 - Plugin [ProZen](https://github.com/cmoskvitin/obsidian-prozen)
 - Plugin [Typewriter Mode](https://github.com/davisriedel/obsidian-typewriter-mode)
-- Plugin [Vimrc](https://github.com/esm7/obsidian-vimrc-support) 
 - Plugin [Waypoint](https://github.com/IdreesInc/Waypoint) ^[zum Erstellen der Inhaltsverzeichnisse]
 - Plugin [Foldernotes](https://github.com/LostPaul/obsidian-folder-notes) ^[für die Eingliederung der Verzeichnisseiten in Obsidian]
   - Einstellungen
     - File Explorer
       - Open Folder Notes by only clicking directly on the folder name anwählen
+- Plugin [Quickadd](https://github.com/chhoumann/quickadd) ^[um damit beim Start das  selbsterstellte Script vimrc.js zu laden.]
+- Plugin [Calendar](https://github.com/liamcain/obsidian-calendar-plugin)
 - Für Zeitleiste [Timeline Callout von FirelsGood](https://github.com/r-u-s-h-i-k-e-s-h/Obsidian-CSS-Snippets/blob/Collection/Snippets/Callout%20styling%20-%20Timeline%20callout.md), leicht angepasst, als `timeline.css`. 
-%%
-- Plugin [Folder notes](https://github.com/LostPaul/obsidian-folder-notes)
-  - Einstellungen Folder notes
-    - Abschnitt Folder Overview
-      - Folder path of the Overview: "Path of folder linked to the file"
-	- Abschnitt File Explorer
-	  - Open folder notes by only clicking directly to the folder name an
-	  - Disable folder collapsing aus
-%%
-### Formatierungen
-#### Basics
-siehe Obsidian [Basic Formatting Syntax](https://help.obsidian.md/syntax)
-- __bold__ *schräg* ~~Durchgestrichen~~ ==Highlight== ***Fett Schräg***  ***==Fett Schräg Highlight==*** ^textformate
-- [[home#^zitat|Zitate]], beginnend mit \> 
-- Listen, wie diese, auch geschachtelt
-- 1) und auch,
-- 2) nummerierte Listen
-- sowie Aufgaben
-- - [x] erledigt
-- - [ ] offen
--  Tags, z.B. #Argumente , auch geschachtelte Tags wie #speaker/Jaspers-Karl 
-- Inline `code` und Codeblöcke mit \`\`\` umschlossen
-- Fußnoten direkt im Text^[Nach einem Dach steht der Fussnotentext in eckigen Klammern] und  mit `[^zahl]` längere Fußnoten[^2] (keine Hover-Anzeige  von Fußnoten mit `Webpage HTML Export`)
-- internes und externe Links (Benutze auch Wiki-Links)
-- Bilder anzeigen mit \!\[\]\(link\), in Größe 250  mit  \!\[\|250\]\(link\)
-- Absatz (Leerzeile beendet Absatz)
-- mehrere Leerzeichen verschwinden zu einem 
-- Neue Zeile verschwindet, außer zwei Leerzeichen sind vorm Zeilenumbruch
-- Überschriften (# bis ###### )
-- Links zu [[home#Sammlungen von Kanälen|Überschriften auf selber Seite]], auf anderer Seite funktioniert [[DDCKlassen#723|723 nur in Obsidian, im Export normalerweise nicht]], außer auf anderer Seite ist der Link  als [[DDCKlassen#723_0|723_0 für den Export angepasst]]
-- Trennlinie mit drei \-\-\-
-- Kommentare innerhalb von \%\%, die nicht exportiert werden - %%sieht man nicht%% -
+- Plugin [Hot-Reload](https://github.com/pjeby/hot-reload#) manuell installiert ^[um einfacher eigenes Plugin vim-fuer-sammlung zu entwickeln]
+- eigenes Plugin vim-fuer-sammlung zum Anzeigen des Vim Modes in der Status Bar.
+- 
+### vim Anpassungen
+- Im Edit Mode soll man sich ohne Pfeiltasten bewegen können
+- Dass man sich im Edit Mode befindet soll deutlich angezeigt werden
 
-> Human beings face ever more complex and urgent problems, and their effectiveness in dealing with these problems is a matter that is critical to the stability and continued progress of society. ==-Doug Engelbart, 1961== ^zitat
+Mit dem zuerst verwendete Plugin [obsidian-vimrc-support](https://github.com/esm7/obsidian-vimrc-support) gab es keine Möglichkeit auf die Pfeiltasten zu mappen. Ausserdem zeigt es den Vim Mode nicht zuverlässig an.
+
+[The Ultimate Guide to Customizing Obsidian Vim Mode via QuickAdd](https://blog.iany.me/2023/04/the-ultimate-guide-to-customizing-obsidian-vim-mode-via-quickadd/) beschreibt, wie man ohne ein Plugin zu erstellen, direkt mittels einer Javascript Datei Vim anpasst, zum Beispiel Mappings erstellt.
+
+Damit als Vorlage erstellt die eigene Datei [[vimrc.js]] einfache Befehle um sich hoch, runter, nach rechts und nach links zu bewegen und weist diese, auch im Insert Mode, den Tastenkombinationen \[Alt-k\], \[Alt-j\], \[Alt-l\] und \[Alt-h\] zu; sie wird mit dem Modul QuickAdd beim Start geladen.
+
+Wie man den Vim Mode in der Statusbar anzeigt, ist im verworfenen Plugin [obsidian-vimrc-support](https://github.com/esm7/obsidian-vimrc-support) implementiert. Dieser Code wurde in das eigene Plugin [vim-fuer-sammlung](https://github.com/MonikaLobinger/vim-fuer-sammlung) übernommen. Die zugewiesene Css Klasse `vim-sammlung-statusbar` wird im snippet `adapt.css`  im Edit Mode deutlich hervorgehoben.
+
+Diese beiden Ansätze könnte man vereinigen. Aber sie wurden von unterschiedlichen Vorlagen mit unterschiedlichen Prinzipien erstellt und ich bin kein Profi für Obsidian Anpassungen. 
+### Das verwendete Template foty
+[foty](https://github.com/MonikaLobinger/foty) ist ein Template, mit dem es möglich ist, automatisch in verschiedene Verzeichnisse unterschiedliche Notizgerüste einzufügen.
+
+Es ist ein bisschen kompliziert aber mächtig. Vielleicht ist das Script leichter zu verstehen, wenn man sich bewusst macht, dass jedes Templater Script von der Vorlage ausgeht.
+
+#### Das Templater Plugin
+Der [Templater](https://github.com/SilentVoid13/Templater) arbeitet mit Templates, Vorlagendateien. Er hat verschiedene Möglichkeiten, sie einzufügen. 
+
+In einem Templater Template kann man Zwischen Klammerausdrücken `<%*` und `%>` jeglichen Javascript Code schreiben, in dem man z.B. eine Stringvariable `strout` füllen kann. Diese kann man dann in einem anderen Block direkt in das Gerüst der neuen Datei schreiben: `<% strout _`. (Dieser Block wird von <% ohne Stern eingeleitet)
+
+Zusätzlich bietet der Templater die Möglichkeit Script Dateien einzubinden. Die von diesen Dateien exportierten Funktionen können von den Templates aufgerufen werden.
+
+Wenn eine Script Datei mit `module.exports = foty` die Funktion `foty` exportiert, kann sie in einer Vorlagendatei aufgerufen werden: `<%* tp.user.foty(tp, app) %>`.
+
+Was zwischen `<%*` und `%>` ausgeführt wird, ist echtes Javascript. Doch es steht nicht in einer Javascript Datei.
+#### Folder Templates
+Deswegen habe ich die Logik soweit als irgend möglich in ein (ein einziges) Script verlegt und gleichzeitig die Anzahl der benötigten Vorlagen (Templates) auf eins reduziert.
+#### foty_Vorlage.md
+Diese eine Vorlage ruft die eine exportiert Funktion auf, die Funktion macht die ganze Arbeit und gibt der Vorlage dann die gewonnen Werte. Die Werte können entweder YAML (Frontmatter, was auf Deutsch in den Editor Einstellungen von Obsidian "Eigenschaften im Dokument" heißt) sein oder Textschnipsel, die direkt in die Notiz eingefügt werden. 
+
+foty hat die Konvention, dass alles was vor "____" gesendet wird YAML Eigenschaften sind - diese sind recht einfach zu bearbeiten, sie werden so wie sie kommen in den Eigenschaftenbereich am Anfang der Notiz geschrieben.
+
+Alles was danach kommt kommt direkt in die Notiz. Aber wie? Da müssen die Vorlage und das Script gemeinsame Namen haben, z.B. "pict", "firstline", "prevlink" und es müssen sich beide einig sein, was mit dem jeweiligen Schnipsel gemacht wird.
+#### foty.js
+Das Script ist solides Handwerk ohne Benutzeroberfläche. 
+
+##### Voraussetzungen
+Damit es läuft, muß im Templater
+- die Template folder location auf das Verzeichnis von foty_Vorlage.md gesetzt sein
+- Trigger Templater on new file creation aktiviert sein
+- Enable Folder Templates aktiviert sein
+- Und dafür eine einzige Regel: Für alle Dateien (also links die Wurzel `/` angeben) soll foty_Vorlage (rechts angeben) eingefügt werden.
+- die Script file folder location auf das Verzeichnis von foty.js gesetzt sein.
+##### was foty tut
+Vielleicht hat man ein Verzeichnis Garten und eines Bibliothek und möchte in jedes dieser Verzeichnisse ein Tagebuch einfügen. Das allgemeine Tagebuch möchte man auch führen. Dann könnte man die Verzeichnisse /Tagebuch, /Garten/Tagebuch und Bibliothek/Tagebuch anlegen und einen NoteType erstellen, den man z.B. tagebuch nennt und für den der Wert folders ["Tagebuch"] ist. Dann würden alle Notizen in jedem Verzeichnis Tagebuch oder einem Unterverzeichnis davon mit der Variante von foty_Vorlage.md erstellt werden, die man fürs Tagebuch möchte, z.B. "publish: -nein" und als Titel das aktuelle Datum und eine automatische Verlinkung auf den vorigen Eintrag und den morgigen (wenn man erst übermorgen wieder schreibt muss man das per Hand ändern.)
+
+Oder man möchte all seine Notizen in einem Verzeichnis haben, Bücher, Rechnungen, Filmbeschreibungen, damit man die aber visuell unterscheiden kann sollen sie je nach Typ mit einem anderen Kenner anfangen. Man könnte drei NoteTypes erstellen: buch, rechnung, film, derem folders ["Einträge", "vielleicht"] sind. Bücher sollen mit {b} beginnen, filme mit $ und Rechnungen mit - . Man setzt die marker der NoteTypes entsprechend.
+
+Erstellt man dann eine Notiz in einem Verzeichnis "Einträge" oder "vielleicht" wird einem die Auswahl zwischen buch, rechnung, film angeboten. Nach der Auswahl gibt man den Dateinamen name ein und es wird für ein Buch eine Notiz {b}name, für einen Film $name und für eine Rechnung -name erzeugt. Die YAML Einträge und die Notizgerüste werden so erzeugt wie im jeweiligen NoteType angegeben.
+##### wie man es bedient
+###### Beispiel 1
 ```
-dies ist ein codeblock
-§$-?*+^ 
+let example_configuration1 = {
+  SECTION_NOTETYPES: {
+    note: {
+      marker: "{w}",
+      yaml: {__SPEC: {RENDER: false,}, aliases: aliasOrt, borgia: "Lucrezia", },
+      show: {__SPEC: {RENDER: true,}, firstline: "DAS WORT", fugger: true, },
+    },
+  }
+}
+```
+Ein einziger NoteType "note", der für alle Verzeichnisse gilt. Jede Datei hat vor dem eigentlichen Namen den Kenner {w}. In den YAML Kopf wird aliases: und borgia: geschrieben. aliases hat einen Wert der durch die Funktion aliasOrt bestimmt wird (diese ignoriert den Kenner und macht noch was mit Kommas) und borgia hat den Wert "Lukrezia".
+
+Dem Template wird als firstline "DAS WORT" gegeben. Das Template foty_Vorlage fügt firstline als erste Zeile (nach scriptline) ein, und zwar als Überschrift der Stufe eins. Zwar ist fugger wahr (true), doch das Template macht nur was, wenn auch lastline gesetzt wäre und das ist es nicht.
+
+Hier sieht man, daß das Script und die Vorlage in der Übergabe übereinstimmen müssen. Die Schlüssel "borgia" und "fugger" sind absichtlich schräg gewählt, so dass deutlich wird, dass die Namen egal sind.
+###### Beispiel 2
+```
+let example_configuration2 = {
+  SECTION_TRANSLATE: { TITLE_NEW_FILE: "Unbenannt",  },
+  SECTION_NOTETYPES: {
+    defaults: {
+      __SPEC: {REPEAT: true},  
+      yaml: {__SPEC: {RENDER: false,},
+        publish:          {__SPEC:false, DEFAULT: true, TYPE: "Boolean", },
+      },
+      show: { __SPEC: {RENDER: true,},
+        type:      {__SPEC:false, DEFAULT: cbkNoteType, TYPE: "(String|Function)",},
+        firstline: {__SPEC:false, DEFAULT: "First Line", TYPE: "String",},
+        lastline: {__SPEC:false, DEFAULT: "##Footnotes", TYPE: "String",},
+      },    
+    },
+    book: { folders: ["book"], },
+    test: { folders: ["test"], yaml: { publish: false, }, },
+  }
+}
+```
+Für Obsidian, das auf Deutsch läuft, muss unbedingt TITLE_NEW_FILE auf "Unbenannt" gesetzt werden.
+
+Was im Abschnitt "defaults" steht, gilt für jeden Notiztyp. Jede Notiz wird also einen YAML Eintrag publish mit dem Wert true erhalten. Sie kann den Wert allerdings überschreiben, so wie das der NoteType test macht. Jede Notiz wird type, firstline und lastline an die Vorlage senden. type wird von der Callback Funktion cbkNoteType bestimmt, die den Foldertype zurückgibt, hier also entweder book oder test. Aber unsere Vorlage foty_Vorlage macht nichts mit type. Da stimmt was mit der Kommunikation nicht.
+
+Der NoteType book übernimmt die Vorgaben, der notetype test überschreibt publish mit false.
+###### Beispiel 3/Folder
 
 ```
-#### Weitergehende Formatierungen
-siehe Obsidian [Advanced Formatting Syntax](https://help.obsidian.md/advanced-syntax) und folgende Seiten für
-- Tabellen
-- Mermaid Diagramme
-- Mathematische Ausdrücke innerhalb  \$-Zeichen inline $e^{2i\pi} = 1$ oder Paaren von \$\$-Zeichen als Block
-- Anker, Links zu [[home#^textformate|Ankern]], sowie Linknamenüberschreibungen
-- Callouts
-- Tags #tag und Nested Tags #nested/tag - Groß/Kleinschreibung ist für Tags egal
+let schule_configuration = {
+    LANGUAGE: "de", // hardcoded:FALLBACK_LANGUAGE "en"
+  },
+  SECTION_TRANSLATE: {
+    TITLE_NEW_FILE:      [ ["en", "Untitled"], ["de", "Unbenannt"] ],
+  },
+  SECTION_NOTETYPES: {
+    __SPEC: {DEFAULT: "note"},
+    defaults: {
+      __SPEC: {REPEAT: true},
+      schoolyaml: {__SPEC: {RENDER: false,},
+        cssclasses:  {__SPEC:false, DEFAULT: cbkFmtCC, TYPE: "(Array.<String>|Function)"},
+        author:      {__SPEC:false, DEFAULT: "Tulpe Riesengross", TYPE: "String", },
+        publish:     {__SPEC:false, DEFAULT: true, TYPE: "Boolean", },
+      },
+      schoolshow: { __SPEC: {RENDER: true,},
+        prevlink:  {__SPEC:false, DEFAULT: "", TYPE: "(String|Function)",},
+        nextlink:  {__SPEC:false, DEFAULT: "", TYPE: "(String|Function)",},
+        scriptline:{__SPEC:false, DEFAULT: "", TYPE: "(String|Function)",},
+        firstline: {__SPEC:false, DEFAULT: cbkNoteName, TYPE: "(String|Function)",},
+      },
+    },
+	 note:{ 
+      schoolyaml: { },
+      schoolshow: { },
+    },
+	werkstattmitschrift: { 
+      folders: ["Werkstatt/Mitschriften"],
+      marker: "@",
+      name_prompt: "Titel der Veranstaltung",
+      schoolyaml: {
+        author: "",
+        cssclasses: "studies",
+        publish: false,
+      },
+      schoolshow: {
+        firstline: "Mitschrift",
+      },
+    },
+     mitschrift: { 
+      folders: ["Werkstatt", "Buchmitschriften"],
+      marker: "@",
+      name_prompt: "Autornachname - Buchtitel",
+    },
+    buch: {
+      folders: ["Werkstatt"],
+      marker: "{b}",
+      name_prompt: "Autornachname - Buchtitel",
+      title_date_function: cbkAskGoogleForTitle,
+      schoolyaml: {
+        buchtitel: cbkBuchTitel,
+        buchautor: cbkBuchAutor,
+        buchdatum: cbkBuchDatum,
+        buchstatus: [ "gelesen", ],
+        xbuchstatus: [ "aktuell", "teilweise", "nochmal", "ungelesen", ],
+      }
+    },
+  },
+}
+```
+Der Default NoteType ist note - wird das nicht angegeben, ist es der erste.
+Die Defaultsbereiche heissen hier schoolyaml und schoolshow - die Namen sind egal, in den NotyTypes müssen dann aber diese Namen verwendet werden. Der YAML Eintrag cssclasses wird durch die Funktion cbkFmtCC bestimmt. Die muss es geben, sonst bricht das Script mit einem Fehler ab. Der author und publish werden auf feste Werte gesetzt. 
 
-> [!quote]- Das ist ein Callout Block
-> Durch ein Pluszeichen wäre er ursprünglich aufgefaltet. So wird er gefaltet angezeigt.
->
-> Es gibt folgende Callouts: Note, Abstract, Info, Todo, Tip, Success, Question, Warning, Failure, Danger, Bug, Example, Quote - alle kleingeschrieben, aber groß angezeigt, falls der Titel nicht überschrieben wird
+Für den Renderbereich werden die Einträge prevlink und nextlink und scriptline mit einem leeren Wert vorgegeben und firstline bekommt wieder den Notiznamen ohne Marker von einer Funktion.
 
-### Obsidian 
-Dieser Abschnitt gilt nur für  eine laufende Obsidian Instanz
+Der Default NoteType note übernimmt alles wie oben vorgegeben. die beiden mittleren Zeilen könnten auch fehlen.
 
+Der NoteType werkstattmitschrift wird bei neuen Notizen in Verzeichnissen "Werkstatt/Mitschrift angewandt. Vor den Notiznamen wird ein Klammeraffe gestellt. Der Autor wird als leer überschrieben, publish mit false und firstline mit "Mitschrift".
+
+Der NoteType mitschrift wird in Verzeichnissen "Werkstatt" und "Buchmitschriften" erstellt (und in deren Unterverzeichnissen, falls nicht eine Regel greift die näher am letzten Teil des Pfades ist). Der Marker ist auch ein Klammeraffe. Alle Vorgaben werden übernommen.
+
+Auch der NoteType buch wird in Werkstatt erzeugt. Sein Marker ist {b}, Es werden also Namen erzeugt wie: "{b}Kant - Vernunft". Die Funktion cbkAskGoogleForTitle geht ins Netz und frägt Google nach Büchern mit den Stichwörtern, die beim name_prompt eingegeben wurden (also z.B. Kant und Vernunft). Aus der von Google zurückgegebenen Liste lässt sie den Nutzer dann einen auswählen. Die erhaltenen Informationen braucht sie teilweise selbst für den Dateinamen und sie speichert sie auch zwischen, für die anderen Callbackfunktionen. cbkBuchTitel, cbkBuchAutor und cbkBuchDatum greifen darauf zu und geben damit ihre Werte zurück. 
+
+Der Buchstatus kann einen von  5 Werten haben. Die anderen vier kommen in ein Bequemlichkeitsarray, so dass man sie beim Ändern des Wertes einfach kopieren kann.
+
+### Anmerkungen zur Verwendung in Obsidian
 - Obwohl man den Notiznamen für eine neue Notiz im Dialogprompt angegeben hat, muss man noch `<return>` drücken. Dies ist kein Fehler des Scripts. Eventuell ist es eine Regression, jahrelang davor ist es mir nicht negativ aufgefallen.
 - Wenn man in den Einstellungen im Abschnitt  `Appearance` sowohl `Show inline title` als auch die folgende Einstellung `Show tab title bar` ausschaltet poppt bei der namenlosen Neuerstellung einer Notiz zusätzlich zum Dialog des Templates noch ein Dialog von Obsidian auf, der auch einen Dateinamen will.
   - Die [Lösung des doppelten Dialog Problems](https://forum.obsidian.md/t/templater-triggering-before-choosing-files-title/52968/11) ist  `Show tab title bar` anzuwählen; der Thread in dem diese Lösung auftaucht, beschreibt das Problem. Scheinbar hat sich das seit 2023 nicht geändert. 
   - Meine Lösung ist zusätzlich `.view-header` im css möglichst klein und unsichtbar zu machen, aber nicht mit `display:none` , was einem Ausschalten von `Show tab title bar` entspräche.
-#### tote interne Links
-%%
-```dataviewjs
-let r = Object.entries(dv.app.metadataCache.unresolvedLinks) .filter(([k,v])=>Object.keys(v).length) .flatMap(([k,v]) => Object.keys(v).map(x=>dv.fileLink(x)))  
-dv.list([...new Set(r)])  
-```
-%%
-
-```dataviewjs
-let result = {};
-function process(referingFile, unresolvedLinks) {
-    Object.keys(unresolvedLinks).forEach(function (link) {
-        link = dv.fileLink(link);
-        if (!result[link]) result[link] = [];
-        result[link].push(dv.fileLink(referingFile));
-    });
-}
-
-// Filter for files in a specific directory (e.g., starting with "10 Example Data/dailys")
-Object.entries(dv.app.metadataCache.unresolvedLinks)
-    .filter(([referingFile]) => {
-        return !referingFile.startsWith("allhelperfiles/allvorlagen");
-    })
-    .forEach(([referingFile, unresolvedLink]) => process(referingFile, unresolvedLink));
-
-// Display the results in a table
-dv.table(
-    ["Non existing notes", "Linked from"],
-    Object.entries(result).map(([unresolvedLink, referingFiles]) => [
-        unresolvedLink,
-        referingFiles.join(" • ")
-    ])
-);   
-```
 ### github.io
 - Github hosted mit dem Service [Github Pages](https://docs.github.com/de/pages) zu jedem Account eine statische Webseite. 
 - Das Github Projekt, das diese Seite definiert muss `accountname.github.io` heißen.

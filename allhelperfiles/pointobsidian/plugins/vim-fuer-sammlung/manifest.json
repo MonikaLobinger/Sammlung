@@ -1,0 +1,11 @@
+{
+	"id": "vim-fuer-sammlung",
+	"name": "Vim Fuer Sammlung",
+	"version": "1.0.0",
+	"minAppVersion": "0.15.0",
+	"description": "Zeigt den VIM Mode in der Status Bar",
+	"author": "oskopia",
+	"authorUrl": "https://obsidian.md",
+	"fundingUrl": "https://obsidian.md/pricing",
+	"isDesktopOnly": false
+}

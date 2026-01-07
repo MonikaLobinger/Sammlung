@@ -7,8 +7,10 @@ author: Ueberphilosophy
 ---
 aletheia - ἀλήθεια
 
-Wahrheit
+Wahrheit, Unentzogenheit, Unverborgenheit
 
-Nicht eine Annäherung des Geistes an die Sache, sondern das, was etwas an sich selbst ist. Ein Seinsbegriff.
+Als Wahrheit nicht eine Annäherung des Geistes an die Sache, sondern das, was etwas an sich selbst ist. Ein Seinsbegriff.
+
+lethe deutet Heidegger als Schwund, Entzogenheit (z.B. durch Vergessen), 
 
 ## -footnotes

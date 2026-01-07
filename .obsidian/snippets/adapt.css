@@ -280,6 +280,12 @@ p, li {
   line-height: 1.25rem;
 }
 
+pre  {
+    line-height: 1.2rem;
+    overflow: auto;
+    display: block;
+    word-wrap: break-word;
+}
   /* Absatzabstand recht klein.  */
 p {
   margin-top: 0rem !important;
@@ -444,6 +450,32 @@ svg[aria-roledescription="gantt"] {
   border: none !important;
   margin: none !important;
   padding: none !important;
+}
+
+/*** Addon vim-fuer-sammlung
+*/
+.vim-sammlung-statusbar[data-vim-mode="insert"] {
+  background: yellow;
+  background: lightyellow;
+  background: peachpuff;
+  background: lemonchiffon;
+  width:  100px;
+}
+@media screen and (min-width: 1000px) {
+  .vim-sammlung-statusbar[data-vim-mode="insert"]{width: 600px;}
+  .xxvim-sammlung-statusbar[data-vim-mode="insert"]{ background: lime; }
+}
+@media screen and (min-width: 1400px) {
+  .vim-sammlung-statusbar[data-vim-mode="insert"]{width:1000px;}
+  .xxvim-sammlung-statusbar[data-vim-mode="insert"]{ background: blue; }
+}
+@media screen and (min-width: 1600px) {
+  .vim-sammlung-statusbar[data-vim-mode="insert"]{width:1200px;}
+  .xxvim-sammlung-statusbar[data-vim-mode="insert"]{ background: green; }
+}
+@media screen and (min-width: 1800px) {
+  .vim-sammlung-statusbar[data-vim-mode="insert"]{width:1400px;}
+  .xxvim-sammlung-statusbar[data-vim-mode="insert"]{ background: red; }
 }
 
 /********************************************************************************
@@ -873,7 +905,7 @@ svg[aria-roledescription="gantt"] {
     margin-bottom: 0 !important;
     padding-bottom: 0;
   }
-  .bigbiglist h3, h4 {
+  .bigbiglist h3, .bigbiglist h4 {
     text-decoration: none !important;
     border-bottom: none !important;
     font-size: 1rem !important;

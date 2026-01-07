@@ -11,6 +11,8 @@ aporía- ἀπορία
 
 Ratlosigkeit, Ausweglosigkeit, Unvereinbarkeit
 
+auch jede Art von Verlegenheit, Zweifel, Fragen
+
 Ursprünglich auf eine Sache bezogen, nicht existentiell
 
 ## -footnotes

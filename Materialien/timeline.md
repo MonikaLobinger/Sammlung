@@ -1,4 +1,32 @@
 ---
+cssclasses: buch
+date_created: 2026-01-05
+publish: true
+tags: []
+author: Ueberphilosophy
+buchtitel: Jenseits von Gut und Böse ; Zur Genealogie der Moral
+buchuntertitel:
+buchautor: Nietzsche
+buchautorv: Friedrich Wilhelm
+buchdatum: 1906
+buchverlag: N/A
+buchseiten: 556
+buchsprache: de
+buchisbn: UCAL:$B7341
+buchisbn13:
+buchebook: papier
+buchstatus:
+  - gelesen
+xbuchstatus:
+  - aktuell
+  - teilweise
+  - nochmal
+  - ungelesen
+---
+# Nietzsche - Jenseits von Gut und Böse ; Zur Genealogie der Moral - 1906
+
+## -footnotes
+---
 cssclasses: timeline
 date_created: 2025-11-28
 publish: true

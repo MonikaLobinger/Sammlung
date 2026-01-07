@@ -9,4 +9,7 @@ episteme - ἐπιστήμη
 
 Erkenntnis, Wissen (wirklich gewußtes Wissen)
 
+> [!quote] aus Schadewaldt, Die Anfänge der Philosophie bei den Griechen
+> Das Wissen, das sich als Wissen weiß, das gewusste oder bewusste Wissen.
+
 ## -footnotes
