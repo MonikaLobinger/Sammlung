@@ -4,13 +4,22 @@ date_created: 2025-11-24
 publish: true
 author: Ueberphilosophy
 ---
-# Nonmatrikulation
 
+# Nonmatrikulation
+## Inhaltsverzeichnis Hauptbereiche
+ &nbsp;&nbsp;&nbsp;&nbsp;[[home#Studieren von zu Hause aus|Allgemein]]  
+ &nbsp;&nbsp;&nbsp;&nbsp;[[home#Bedienung der Site|Bedienung Netz]]  
+ &nbsp;&nbsp;&nbsp;&nbsp;[[home#Benutzung des Obsidian Vaults|Bedienung Obsidian]]  
+ &nbsp;&nbsp;&nbsp;&nbsp;[[home#Inhalt|Inhalt der Site/des Vaults]]  
+ &nbsp;&nbsp;&nbsp;&nbsp;[[home#Erschliessung|Erschliessung]]  
+ &nbsp;&nbsp;&nbsp;&nbsp;[[home#Netzresourcen|Netzressourcen]]  
+ &nbsp;&nbsp;&nbsp;&nbsp;[[home#Technisches über die Quellen und deren Export|Technisches]]
+## Allgemein: Studieren von zu Hause aus
 Sammlung von Links zu __Materialien__ zum Lernen (hörbar) __[[-Materialien|als Katalog]]__/__[[Materialien|als Verzeichnis]]__  und frei zugänglichen __Quelltexten__ __[[Materialien/timeline|als  Zeitleiste]]__/__[[Autoren|als Verzeichnis]]__. 
 
 Diese befindet sich als kaum kommentierte Linksammlung im Ordner `Materialen`. Der Ordner `Werkstatt` kann für jeweils eigene Notizen verwendet. Im Ordner `Zusaetze` sind für die Sammlung unwichtige Seiten. Die selbst erstellen Definitionen im Ordner `Zusaetze/Definitionen` sind grob, auf den Themenseiten im Ordner `Zusaetze/Themen` finden sich Links zu bestimmten Themen.
 
-Die Sammlung ist im Netz als statische Site veröffentlicht. Die [Quellen](https://github.com/MonikaLobinger/Sammlung) sind ein [Obsidian](https://obsidian.md/) Notebook.
+Die Sammlung ist im Netz als statische Site veröffentlicht. Die [Quellen](https://github.com/MonikaLobinger/Nonmatrikulation) sind ein [Obsidian](https://obsidian.md/) Notebook.
 ## Bedienung der Site
  - Klick vor (links neben) Überschriften klappt den Inhalt ein, nochmaliger Klick wieder auf; das zugehörige Symbol wird beim Drüberfahren mit der Maus sichtbar. 
  - Ganz oben links und rechts kann man die Seitenleisten ein- und ausblenden
@@ -41,10 +50,97 @@ sed -i 's/<div class="tree-item-self is-clickable mod-collapsible nav-folder-tit
 Der gesamte Ablauf des Exports steht in [[2025-12-14#Wie es läuft]]
 %%
 
+## Benutzung des Obsidian Vaults
+Wird diese Seite im Web gelesen sollte dieser Abschnitt übersprungen werden. Wird diese Seite in Obsidian gelesen, wurde [der Obsidian Vault](https://github.com/MonikaLobinger/Nonmatrikulation)^[Ein Notizbuch  heißt in Obsidian Vault] heruntergeladen. Dieser Vault enthält keine Plugins. Im Abschnitt [[home#Einstellungen und Plugins in Obsidian|Einstellungen und Plugins für Obsidian]] ist beschrieben, wie dieser Vault bei der Erstellung der Quellen eingerichtet war. Das braucht man nicht alles, um ihn zu benutzen. Auch wurde dort die Anzeigesprache Englisch verwendet. Hier wird für ein auf Deutsch eingestelltes Obsidian beschrieben, wie man den Vault einrichtet, um ihn fürs Selbststudium gut nutzen zu können.
+
+### Einstellungen
+Mit der Tastenkombination `Strg-,`^[Steuerung Komma] öffnet man den Dialog Einstellungen. Dieser hat links sieben Einträge im Abschnitt "Optionen" und noch einige im Abschnitt "Obsidian-Erweiterungen".   
+#### Allgemein
+Im Eintrag Allgemein stellt man die Sprache auf "Deutsch" ein.
+#### Editor
+Im Eintrag Editor schaltet man "Strenge Zeilenumbrüche" ein und "Eigenschaften im Dokument" auf "Nicht sichtbar". Besonders für Obsidian Neulinge würde ich entgegen gängiger Meinung empfehlen, den dritten Eintrag "Standardmodus zum Bearbeiten" auf "Quellcode-Ansicht" zu stellen. Weitere Einstellungen wählt man nach Belieben. ^Bearbeitungsmodus
+#### Dateien & Links
+Im Eintrag Dateien & Links schaltet man "Standardordner für neue Notizen auf "Eigenen Ordner unten festlegen". Ebenso schaltet man "Standardordner für neue Anhänge" auf "Eigenen Ordner unten festlegen". Danach erscheint jeweils eine neue Option direkt darunter.
+
+- In "Ordner für neu erstellte Notizen" trägt man "Werkstatt" ein.
+- In "Ordnerpfad für Anhänge" trägt man "allhelperfiles/allresources" ein
+- "Interne Links automatisch aktualisieren" schaltet man ein
+
+Weitere Einstellungen wählt man nach Belieben.
+#### Darstellung
+Im Eintrag Darstellung würde ich empfehlen "Zeige Titel in Notiz" auszuschalten und "Zeige Tab-Titelleiste" eingeschaltet zu lassen.  Eines von beiden muß auf jeden Fall ein sein. Weitere Einstellungen wählt man nach Belieben.
+
+Ganz unten in "Darstellung" gibt es einen gibt es Abschnitt "CSS-Bausteine". Dort sind drei Einträge: "adapt", "obsidian-source-view" und "timeline". Dies enthalten die von [Nonmatrikulation](https://github.com/MonikaLobinger/Nonmatrikulation) mitgelieferten Css Einstellungen. Damit es so aussieht wie im Netz sollten "adapt" und "timeline" eingeschaltet werden. Nutzt man zum Editieren die [[home#^Bearbeitungsmodus|Quellcode Ansicht]] sollte man auch "obsidian-source-view" wählen. Dies zeigt beim Editieren alle Zeilen gleich hoch an, die Überschriften werden dafür mit hellgelbem Hintergrund hervorgehoben. Weiterhin werden die Links direkt als Buchstabenfolgen (und nicht als Links) dargestellt; für einen Vault mit vielen Links eine nützliche Einstellung beim Editieren.
+#### Tastenkürzel
+Im Eintrag Tastenkürzel stellt man die einem selbst angenehmen Tastenkürzel ein. Oder man kopiert direkt eine Datei "hotkeys.json" in das Verzeichnis ".obsidian". Dies würde bereits definierte Tastenkürzel entfernen. [Nonmatrikulation](https://github.com/MonikaLobinger/Nonmatrikulation) liefert eine Datei "hotkeys.json" mit. Diese kopiert man ins ".obsidian" Verzeichnis. In einer Shell in Linux geht das so: 
+```
+# In einer Bash Shell sicher stellen, dass man sich in der Wurzel des Vaults Nonmatrikulation befindet
+pwd
+# Ebenso sicher stellen, dass keine Datei .obsidian/hotkeys.json existiert
+ls .obsidian/hotkeys.json
+# Mitgelierte Tastenkürzel kopieren
+cp allhelperfiles/pointobsidian/hotkeys.json .obsidian/
+```
+Danach kann man z.B. mit `Alt-Pfeilrechts` die rechte Seitenleiste ein- und ausblenden, mit `Alt-Pfeilhoch` rückwärts navigieren oder mit `Strg-d` das aktuelle Datum einfügen.
+#### Obsidian-Erweiterungen
+Im Eintrag Obsidian-Erweiterungen schaltet man von Obsidian selbst mitgelieferte Erweiterungen nach Belieben ein- oder aus.
+#### Externe Erweiterungen
+Im Eintrag externe Erweiterungen drückt man auf den Knopf "Community-Erweiterungen aktivieren". Damit hat man externe Plugins ermöglicht. Man drückt auf den Knopf "Durchsuchen" und installiert die im folgenden Kapitel vorgestellten Plugins.
+
+### Man benötigt einige Plugins
+Nach der Installation eines externen Plugins gibt es im Einstellungsdialog `Strg-,` links einen dritten Abschnitt "Externe Erweiterungen". Dort kann man die Einstellungen für diese Plugins vornehmen. Einige Plugins haben keine Einstellungen, diese tauchen in diesem Abschnitt nicht auf.
+#### Templater
+Das Plugin Templater ist vom Entwickler "SilentVoid" und wurde über 3 Millionen mal installiert. Nach der Installation muß man auf den Knopf "Aktivieren" klicken.
+
+In den Einstellungen von Templater Templater einrichten:
+- "Template folder location "allhelperfiles/allvorlagen"
+- "Automatic jump to cursor" an
+- "Trigger Templater on new file creation" an
+- "Enable folder templates" an
+- Direkt in der Zeile darunter in "Folder" `/` eintragen und in "Template" `allhelperfiles/allvorlagen/foty_Vorlage.md`
+- "Script files folder location" `allhelperfiles/allscripts`
+#### Dataview
+Das Plugin Dataview ist vom Entwickler Michael Brenan und wurde über 3 Millionen mal installiert. Nach der Installation muß man auf den Knopf "Aktivieren" klicken.
+
+In den Einstellungen von Dataview Dataview einrichten:
+- "Enable Javascript Queries" an
+#### Waypoint
+Das Plugin Waypoint ist vom Entwickler Idrees Hassan und wurde über 90 Tausend mal installiert.  Nach der Installation muß man auf den Knopf "Aktivieren" klicken.
+### Weitere Einrichtung
+[Nonmatrikulation](https://github.com/MonikaLobinger/Nonmatrikulation) bietet folgende Features
+- [[timeline|eine Zeitleiste]]
+- Breadcrumbs oben in jeder [[Apollodoros Quellen|Materialien Datei]]
+- [[Materialien/Geschichte/-Geschichte|Veranstaltungskataloge]]
+- [[Philosophie|Verzeichnisse]]
+- Anzeige aller [[@Einfuehrung_Philosophie_1950_Karl_Jaspers|Mitschriften]] mit einem gelben Rand rechts und links.
+- Erstellung von neuen Notizen mit `Strg-n` automatisch im Verzeichnis "Werkstatt"
+- Neue Notizen im Verzeichnis Werkstatt sind typisiert, beim Erstellen einer neuen Notiz erscheint eine Auswahlliste.
+
+Wurden die Einstellungen und Erweiterungen wie oben angegeben eingerichtet, funktioniert das alles. Im Abschnitt [[home#Technisches über die Quellen und deren Export|Technisches über die Quellen und deren Export]] werden die verwendeten Techniken genauer beschrieben und weitere Plugins vorgestellt.
 ## Inhalt
-Es wird unterschieden zwischen Lernmaterialen, hauptsächlich Videos und Audios,  und Quellen. Lernmaterialen sind über ein Thema, Quellen sind  frei zugängliche Originaltexte. Für Lernmaterialien gibt es einen  [[-Materialien|Katalog]] nach Bereichen. Quellen sind nach Autoren unterschieden, sie sind über die [[Materialien/timeline|Zeitleiste]]  zu finden. Der Katalog wird automatisch erstellt, die timeline manuell. Beide Bereiche sind auch über das [[Materialien|Inhaltsverzeichnis]] zugänglich. Über die Seitenleiste links kann man alle Seiten finden. Die Dateinamen der Kataloge beginnen mit einem Bindestrich, die Dateinamen der Inhaltsverzeichnisse heissen wie die Verzeichnisse, die sie auflisten.
+Die Netzversion/die lokale Version, anders ausgedrückt die Site/der Vault ^[so nennt Obsidian Notizbücher] besteht aus einem öffentlichen und einem privaten Bereich. Der private Bereich ist im Ordner "Werkstatt". Er ist für eigene Notizen jeglicher Art gedacht und macht in der Netzversion keinen Sinn.
+
+Das Kernstück des öffentliche Bereichs ist der Ordner [[Materialien]]. Es wird unterschieden zwischen Lernmaterialen, hauptsächlich Videos und Audios,  und Quellen. Lernmaterialen sind über ein Thema, Quellen sind  frei zugängliche Originaltexte. Für Lernmaterialien gibt es einen  [[-Materialien|Katalog]] nach Bereichen. Quellen sind nach Autoren unterschieden, sie sind über die [[Materialien/timeline|Zeitleiste]]  zu finden. Der Katalog wird automatisch erstellt, die timeline manuell. Beide Bereiche sind auch über das [[Materialien|Inhaltsverzeichnis]] zugänglich. Über die Seitenleiste links kann man alle Seiten finden. Die Dateinamen der Kataloge beginnen mit einem Bindestrich, die Dateinamen der Inhaltsverzeichnisse heissen wie die Verzeichnisse, die sie auflisten.
 - Grobe [[Materialien/timeline|Zeitleiste]]  mit Links zu Quellenseiten (verknüpft über den Autorennamen)
 - [[-Materialien|Katalog]] mit Links zu thematischen Sammlungen von  Links zu Lernmaterialen
+## Erschliessung
+Ein physikalisches Buch steht genau einmal an einem bestimmten Platz. In Computern ist das anders. Man könnte nun meinen, wenigstens eine Datei müsse genau einmal irgendwo liegen, doch das stimmt nicht. Die selbe Datei könnte zweimal auf einem Speichermedium liegen. Änderte man sie an einem Ort, wäre sie auch am anderen verändert, da es die selbe Datei ist. So könnte eine Datei die eine Veranstaltung "evolutionäre Erkenntnistheorie" beschreibt, einmal im Ordner Philosophie und einmal im Ordner Biologie liegen. Dieser Ansatz wurde in [Nonmatrikulation](https://github.com/MonikaLobinger/Nonmatrikulation) nicht gewählt. Bei der Ablage der Dateien wird wie bei physikalischen Objekten verfahren. Jede Datei, auch eine Datei mit einer Veranstaltungsbeschreibung liegt immer genau einmal in einem bestimmten Ordner. So kann man sich sicher sein, wenn man eine Datei über Ordnersuche findet, dass man die selbe Datei nicht in einem anderen Ordner findet (und so vielleicht ohne es zu merken die selbe Veranstaltung zweimal auf seine "WillIchHören" Liste schreibt).
+### Inhaltsverzeichnisse
+Veranstaltungen liegen in Ordnern [[Materialien]]. Bis auf [[Autoren]] (und [[Autoren-Sekundaer]]) enthalten alle Unterordner in [[Materialien]] Veranstaltungen oder Unterordner mit Veranstaltungen. Inhaltsverzeichnisse in [[Materialien]] heißen wie der Ordner. 
+### Kataloge
+Die Deutsche Nationalbibliothek wartet die [Dewey-Dezimalklassifikation auf deutsch](https://www.dnb.de/DE/Professionell/DDC-Deutsch/ddc-deutsch_node.html), kurz DDC. Jeder Veranstaltung wird ein Attribut `DDC` mit einer dreistelligen DDC Nummer gegeben. Entscheidet man sich die Veranstaltung "evolutionäre Erkenntnistheorie" im Bereich Philosophie abzulegen, bekommt sie die DDC Nummer 121, legte man sie in Biologie ab, bekäme sie die DDC Nummer 576. 
+
+Die DDC Nummern werden in Katalogen angezeigt. Die Kataloge sind nach DDC Nummern sortiert. Im [[-Materialien|Hauptkatalog]] sind alle Veranstaltungen im Verzeichnis Materialien aufgelistet, in Unterkatalogen, z.B. [[-Sprachphilosophie|Sprachphilosophie]] entsprechend nur die Veranstaltungen des entsprechenden Verzeichnisses.
+### Vernetzung
+Nichtlineare Verbindungen in Dateien/Notizen können auf drei Arten gefunden und/oder erstellt werden.
+#### Tags
+Ein Wort, dem ein Doppelkreuz vorangestellt ist, wird zu #tag. Klickt man darauf, werden im rechten Seitenbereich alle Dateien angezeigt, die dieses #Tag enthalten.
+#### Links
+Notizen können untereinander verlinkt sein. In beiden Versionen kann man wie üblich auf diese Links klicken. In der Netzversion werden die Rückverweise (Backlinks) unten auf der Seite angezeigt. In der lokalen Version kann man verschiedene Rückverweis Bereiche anzeigen. 
+#### Suche nach einem Wort
+Nach jeder bestimmten Buchstabenfolge kann über alle Dateien in der Netzversion in der linken Seitenleiste gesucht werden; in der lokalen Version ist greift man auf diese Suche über den Befehl `Suchen: in allen Dateien suchen` zu, die Ergebnisse werden dann auch links in der Seitenleiste angezeigt. 
+
+
 ## Netzresourcen
 ### Seiten für Quellen
 - [Gottwein](https://www.gottwein.de/7)
@@ -107,6 +203,7 @@ Es wird unterschieden zwischen Lernmaterialen, hauptsächlich Videos und Audios,
 ### Datenbanken für alle Medien
 - [Datenbank Infosystem](https://dbis.ur.de/browse/subjects/31/)
 %%https://transformatorische-bildung.de/ %%
+
 ## Technisches über die Quellen und deren Export
 ### Einstellungen und Plugins in Obsidian
 - Erstellt mit [Obsidian](https://obsidian.md/), 
@@ -120,7 +217,7 @@ Es wird unterschieden zwischen Lernmaterialen, hauptsächlich Videos und Audios,
     - Kein Auto-Pair Markdown Syntax
     - vim-key bindings, 
   - Files and Links
-    - Default location for new notes: Same folder as current file
+    - New notes nach: `Werkstatt`
     - Attachments nach `allhelperfiles/allresources`  
   - Appearance
     - Nicht Show Inline Title
@@ -151,10 +248,10 @@ Es wird unterschieden zwischen Lernmaterialen, hauptsächlich Videos und Audios,
     - Template Folder Location `allhelperfiles/allvorlagen`
     - automatic jump to cursor, 
     - Trigger Templater on new file creation, 
-    - Kein enable folder templates, 
-    - Enable file regex template
-    - file regex template `allhelperfiles/allvorlagen/foty_Vorlage.md`, 
+    - Enable folder templates, 
+    - folder template `/` `allhelperfiles/allvorlagen/foty_Vorlage.md`, 
     - Script files folder location `allhelperfiles/allscripts`
+    - Kein enable file regex template
 - Plugin [Dataview](https://blacksmithgu.github.io/obsidian-dataview/)
   - Einstellungen Dataview
     -  Enable Javascript Queries
@@ -167,7 +264,7 @@ Es wird unterschieden zwischen Lernmaterialen, hauptsächlich Videos und Audios,
     - File Explorer
       - Open Folder Notes by only clicking directly on the folder name anwählen
 - Plugin [Quickadd](https://github.com/chhoumann/quickadd) ^[um damit beim Start das  selbsterstellte Script vimrc.js zu laden.]
-- Plugin [Calendar](https://github.com/liamcain/obsidian-calendar-plugin)
+- Plugin [Calendar](https://github.com/liamcain/obsidian-calendar-plugin) inklusive einer [Anpassung](allhelperfiles/pointobsidian/plugins/calendar/main.js), mit der der Befehl `Calendar: Open view` funktioniert.
 - Für Zeitleiste [Timeline Callout von FirelsGood](https://github.com/r-u-s-h-i-k-e-s-h/Obsidian-CSS-Snippets/blob/Collection/Snippets/Callout%20styling%20-%20Timeline%20callout.md), leicht angepasst, als `timeline.css`. 
 - Plugin [Hot-Reload](https://github.com/pjeby/hot-reload#) manuell installiert ^[um einfacher eigenes Plugin vim-fuer-sammlung zu entwickeln]
 - eigenes Plugin vim-fuer-sammlung zum Anzeigen des Vim Modes in der Status Bar.

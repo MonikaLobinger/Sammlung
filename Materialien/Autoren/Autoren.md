@@ -51,6 +51,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
   - [[Chateaubriand Quellen]]
   - [[Cicero Quellen]]
   - [[Cortes Quellen]]
+  - [[Cusanus Quellen]]
 - **[[D]]**
   - [[Darwin Quellen]]
   - [[Deleuze Quellen]]
@@ -74,13 +75,17 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
   - [[Galileo Quellen]]
   - [[Gettier Quellen]]
   - [[Gilgamesch Quellen]]
+  - [[Gorgias Quellen]]
   - [[Grotius Quellen]]
 - **[[H]]**
+  - [[Hamann Quellen]]
   - [[Harman Quellen]]
+  - [[Hartmann Quellen]]
   - [[Hegel Quellen]]
   - [[Heidegger Quellen]]
   - [[Hempel Quellen]]
   - [[Heraklit Quellen]]
+  - [[Herder Quellen]]
   - [[Herodot Quellen]]
   - [[Hesiod Quellen]]
   - [[Hieronymus Quellen]]
@@ -88,6 +93,8 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
   - [[Hobbes Quellen]]
   - [[Hoelderlin Quellen]]
   - [[Homer Quellen]]
+  - [[Hönigswald Quellen]]
+  - [[Humboldt-Wilhelm Quellen]]
   - [[Hume Quellen]]
   - [[Husserl Quellen]]
 - **[[I]]**
@@ -158,6 +165,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 - **[[V]]**
   - [[Voltaire Quellen]]
 - **[[W]]**
+  - [[Wagner-Hans Quellen]]
   - [[Wells Quellen]]
   - [[Whitehead Quellen]]
   - [[Wittgenstein Quellen]]

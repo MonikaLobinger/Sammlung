@@ -10,5 +10,6 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 - [[Chateaubriand Quellen]]
 - [[Cicero Quellen]]
 - [[Cortes Quellen]]
+- [[Cusanus Quellen]]
 
 %% End Landmark %%

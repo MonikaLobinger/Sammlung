@@ -8,8 +8,8 @@ author: Ueberphilosophy
 ```dataviewjs
 dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
-Der [DDC Übersicht](https://www.dnb.de/DE/Professionell/DDC-Deutsch/DDCUebersichten/ddcUebersichten.html?nn=259498#doc259496bodyText3) der deutschen Nationalbibliothek entnommen.
-Tiefer suchen kann man mit [WebDewey Search](https://deweysearchde.pansoft.de/webdeweysearch/mainClasses.html) auf Englisch.
+Der [DDC Übersicht](https://www.dnb.de/DE/Professionell/DDC-Deutsch/DDCUebersichten/ddcUebersichten.html?nn=259498#doc259496bodyText3) der deutschen Nationalbibliothek entnommen. ^[Die Schlagwortkataloge gibt es auf https://data.dnb.de/opendata/]
+Tiefer suchen kann man mit [WebDewey Search](https://deweysearchde.pansoft.de/webdeweysearch/). ^[Erst seit 2007 werden Werke von der DNB nach DDC mit vollständigen Notationen gegliedert. Vorher DDC-Sachgruppen und DDC-Kurznotationen)
 ## 000 Informatik, Information & Wissen, allgemeine Werke
 ### 000 Informatik, Wissen & Systeme
 #### 000

@@ -1,32 +1,4 @@
 ---
-cssclasses: buch
-date_created: 2026-01-05
-publish: true
-tags: []
-author: Ueberphilosophy
-buchtitel: Jenseits von Gut und Böse ; Zur Genealogie der Moral
-buchuntertitel:
-buchautor: Nietzsche
-buchautorv: Friedrich Wilhelm
-buchdatum: 1906
-buchverlag: N/A
-buchseiten: 556
-buchsprache: de
-buchisbn: UCAL:$B7341
-buchisbn13:
-buchebook: papier
-buchstatus:
-  - gelesen
-xbuchstatus:
-  - aktuell
-  - teilweise
-  - nochmal
-  - ungelesen
----
-# Nietzsche - Jenseits von Gut und Böse ; Zur Genealogie der Moral - 1906
-
-## -footnotes
----
 cssclasses: timeline
 date_created: 2025-11-28
 publish: true
@@ -122,6 +94,9 @@ Auflistung nach Geburtsjahr, Farben nach Profession ^[Literatys/Künstlys/Musiky
 ### Herodot
 > [!timeline|grey] -490
 > [[Herodot Quellen|Herodot]] †~-430 ^Herodot
+### Gorgias
+> [!timeline|blue] ~-485
+> [[Gorgias Quellen|Gorgias]] †~-396 ^Gorgias
 ### Sokrates
 > [!timeline|blue] -469
 > [[Sokrates Quellen|Sokrates]] †-399 ^Sokrates
@@ -208,6 +183,9 @@ Auflistung nach Geburtsjahr, Farben nach Profession ^[Literatys/Künstlys/Musiky
 ### Gutenberg-Johannes
 > [!timeline|grey] ~1400
 > Gutenberg †1468 ^Gutenberg
+### Cusanus
+> [!timeline|blue] ~1401
+>[[Cusanus Quellen|Cusanus]] †1464 ^Cusanus
 ### Pico
 > [!timeline|blue] 1463
 >[[Pico Quellen|Pico]] †1494 ^Pico
@@ -289,13 +267,22 @@ Auflistung nach Geburtsjahr, Farben nach Profession ^[Literatys/Künstlys/Musiky
 > [[Diderot Quellen|Diderot]] †1784 ^Diderot
 ### Kant
 > [!timeline|blue] 1724
-> [[Materialien/Autoren/K/Kant Quellen|Kant]] †1804 ^Kant
+> [[Kant Quellen|Kant]] †1804 ^Kant
+### Hamann
+> [!timeline|blue] 1730 %%1730-08-27%%
+> [[Hamann Quellen|Hamann]] †1788 ^Hamann
+### Herder
+> [!timeline|green] 1744 %%1744-08-25%%
+> [[Herder Quellen|Herder]] †1803 ^Herder
 ### Kotzebue
 > [!timeline|green] 1761
 > [[Kotzebue Quellen|Kotzebue]] †1819 ^Kotzebue
 ### Fichte
 > [!timeline|blue] 1762
-> [[Materialien/Autoren/F/Fichte Quellen|Fichte]] †1814 ^Fichte
+> [[Fichte Quellen|Fichte]] †1814 ^Fichte
+### Humboldt-Wilhelm
+> [!timeline|grey] 1767 %% 1767-06-22 %%
+> [[Humboldt-Wilhelm Quellen|Humboldt Wilhelm]] †1835 ^Humboldt-Wilhelm-von
 ### Chateaubriand-Francois-Rene
 > [!timeline|green] 1768
 > [[Chateaubriand Quellen|Chateaubriand]] †1848 ^Chateaubriand-Francois-Rene
@@ -348,9 +335,15 @@ Auflistung nach Geburtsjahr, Farben nach Profession ^[Literatys/Künstlys/Musiky
 ### Wells
 > [!timeline|green] 1866
 > [[Wells Quellen|Wells]] †1946 ^Wells
+### Hönigswald
+> [!timeline|blue] 1875 %%1875-07-18%%
+> [[Hönigswald Quellen|Hönigswald]] †1947 ^Hönigswald
 ### Misch 
 > [!timeline|blue] 1878 %%1878-04-05%%
 > [[Misch Quellen|Misch]] †1965 ^Misch
+### Hartmann-Nicolai
+> [!timeline|blue] 1882 %%1882-02-19%%
+> [[Hartmann Quellen|Hartmann]] †1950 ^Hartmann-Nicolai
 ### Stenzel
 > [!timeline|blue] 1883
 > [[Stenzel Quellen|Stenzel]] †1935 ^Stenzel
@@ -382,12 +375,15 @@ Auflistung nach Geburtsjahr, Farben nach Profession ^[Literatys/Künstlys/Musiky
 > [!timeline|blue] 1908
 > [[Quine Quellen|Quine]] †2000 ^Quine
 ## Gegenwart (1914)
+### Wagner-Hans
+> [!timeline|blue] 1917 %%1917-01-10%%
+> [[Wagner-Hans Quellen|Wagner Hans]] †2000 ^Wagner-Hans
 ### Laplanche 
 > [!timeline|grey] 1924
 > [[Laplanche Quellen|Laplanche]] †2012 ^Laplanche
 ### Deleuze
 > [!timeline|blue] 1925
-> [[Materialien/Autoren/D/Deleuze Quellen|Deleuze]] †1995 ^Deleuze
+> [[Deleuze Quellen|Deleuze]] †1995 ^Deleuze
 ### Schobinger
 > [!timeline|blue] 1927
 > [[Schobinger Quellen|Schobinger]] †2001 ^Schobinger

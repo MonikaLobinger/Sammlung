@@ -10,7 +10,7 @@ author: Ueberphilosophy
 ```dataviewjs
 dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
-## 
+## [Erkenntnistheorie 2014 - UniWien, Heinrich](https://audiothek.philo.at/course/erkenntnistheorie-ss-2014/)
 #speaker/Heinrich-Richard 
 
 [[Werkstatt/Mitschriften/@Erkenntnistheorie_2014_UniWien_Heinrich|Mitschrift]] 

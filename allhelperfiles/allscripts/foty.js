@@ -84,6 +84,16 @@ let user_configuration_original = {
         //page: { pict: "/_/_resources/pexels-suzyhazelwood-1989704_15p.jpg", pict_width: 100,},
         page: { pict: "/_/_resources/pexels-ekrulila-2203051_22p.jpg", pict_width: 100,},
       },
+      exzerpt:        {
+        marker: "$",
+        folders: ["zwischenreich"],
+        name_prompt: "Autornachname - Buchtitel",
+      },
+      mitschrift:        {
+        marker: "@",
+        folders: ["zwischenreich"],
+        name_prompt: "Exakter Titel der Veranstaltung: Titel_der_Vorlesung_Jahr_Institut_Speaker",
+      },
       ort:            {
         marker: "&",
         folders: ["zwischenreich"],
@@ -99,6 +109,11 @@ let user_configuration_original = {
                 firstline: headerPerson, },
         name_prompt: "Personnachname, Personvorname, ?Geburtsdatum ?OPTIONAL",
         frontmatter: {aliases: aliasPerson,},
+      },
+      randnotizen:        {
+        marker: "@",
+        folders: ["zwischenreich"],
+        name_prompt: "Autornachname - Buchtitel",
       },
       video:          {
         marker: "{v}",
@@ -122,16 +137,6 @@ let user_configuration_original = {
         marker: "°°",
         folders: ["zwischenreich"],
         name_prompt: "Titel Autornachname",
-      },
-      exzerpt:        {
-        marker: "$",
-        folders: ["zwischenreich"],
-        name_prompt: "Autornachname - Buchtitel",
-      },
-      mitschrift:        {
-        marker: "@",
-        folders: ["zwischenreich"],
-        name_prompt: "Autornachname - Buchtitel",
       },
       rezept:         {
         frontmatter: {extra: "breit", },
@@ -429,7 +434,8 @@ let schule_configuration = {
                           // returns Name of the note type
         cssclasses:       {__SPEC:false, DEFAULT: cbkFmtCssClasses, TYPE: "(Array.<String>|Function)"},
         date_created:     {__SPEC:false, DEFAULT: cbkFmtCreated, TYPE: "(Date|Function)", },
-        author:           {__SPEC:false, DEFAULT: "Ueberphilosophy", TYPE: "String", },
+        /* schule_public */  author:           {__SPEC:false, DEFAULT: "", TYPE: "String", },
+        // /* schule_private */ author:           {__SPEC:false, DEFAULT: "Ueberphilosophy", TYPE: "String", },
         publish:          {__SPEC:false, DEFAULT: true, TYPE: "Boolean", },
         tags:             {__SPEC:false, DEFAULT: "[]", TYPE: "(String|Array.<String>|Function)",},
       },
@@ -511,8 +517,6 @@ let schule_configuration = {
     feld:                 { // feld
       folders: ["Feld"],
       schoolyaml: {
-        date_created: cbkFmtCreated,
-        author: "Ueberphilosophy",
         publish: false,
       },
       schoolshow: {
@@ -523,10 +527,10 @@ let schule_configuration = {
         lastline:  cbkFmtLastLine,
       },
     },
-    // XXXstutiis/ ist die öffentliche Version von Werkstatt/
-    // Vor der Veröffentlichung wird (priv) Werkstatt/ als .Werkstatt/ versteckt
-    // und XXXstutiis/ zu Werkstatt/ umbenannt
     stutiis:              { // studies
+      // XXXstutiis/ ist die öffentliche Version von Werkstatt/
+      // Vor der Veröffentlichung wird (priv) Werkstatt/ als .Werkstatt/ versteckt
+      // und XXXstutiis/ zu Werkstatt/ umbenannt
       folders: ["XXXstutiis"],
       schoolyaml: {
         date_created: "",
@@ -538,7 +542,7 @@ let schule_configuration = {
     stutiismitschrift:    { // studies @
       folders: ["XXXstutiis/Mitschriften"],
       marker: "@",
-      name_prompt: "Titel der Veranstaltung",
+      name_prompt: "Exakter Titel der Veranstaltung: Titel_der_Vorlesung_Jahr_Institut_Speaker",
       schoolyaml: {
         date_created: "",
         author: "",
@@ -551,15 +555,12 @@ let schule_configuration = {
         thrdline:  "## Offen",
       },
     },
-    werkstattmitschrift : { // werkstatt @
+    werkstattmitschrift : { // private: werkstatt @, public: studies @
       folders: ["Mitschriften"],
       marker: "@",
-      name_prompt: "Titel der Veranstaltung",
+      name_prompt: "Exakter Titel der Veranstaltung: Titel_der_Vorlesung_Jahr_Institut_Speaker",
       schoolyaml: {
         /* schule_public */  date_created: "",
-        // /* schule_private */ date_created: cbkFmtCreated,
-        /* schule_public */  author: "",
-        // /* schule_private */ author: "Ueberphilosophy",
         /* schule_public */  cssclasses: "studies",
         // /* schule_private */ cssclasses: "werkstatt",
         publish: false,
@@ -573,11 +574,7 @@ let schule_configuration = {
     audio:                { // audio {a}
       folders: ["Werkstatt"],
       marker: "{a}",
-      name_prompt: "?Podcast/Reihe - Autornachname - Audiotitel ?OPTIONAL /ODER",
-      schoolshow: {
-        scriptline: "```dataviewjs\ndv.executeJs(await dv.io.load(\"Materialien/breadcrumbs.js\"));\n```",
-        pict: "colorful-dirty-computer-keyboard.jpg", pict_width: 400,
-      },
+      name_prompt: "OPTIONAL Podcast ODER Reihe - Autornachname - Audiotitel",
     },
     buch:                 { // buch {b}
       folders: ["Werkstatt"],
@@ -613,11 +610,6 @@ let schule_configuration = {
       marker: "$",
       name_prompt: "Autornachname - Buchtitel",
     },
-    mitschrift:           { // mitschrift @
-      folders: ["Werkstatt", "Buchmitschriften"],
-      marker: "@",
-      name_prompt: "Autornachname - Buchtitel",
-    },
     ort:                  { // ort &
       folders: ["Werkstatt"],
       marker: "&",
@@ -626,17 +618,27 @@ let schule_configuration = {
     person:               { // person =
       folders: ["Werkstatt"],
       marker: "=",
-      name_prompt: "Personnachname, Personvorname, ?Geburtsdatum ?OPTIONAL",
+      name_prompt: "Personnachname, Personvorname OPTIONAL , Geburtsdatum",
+      schoolshow: {
+        pict: "teacher-295387_640-pixabay_2026-01-07.png", 
+        pict_width: 100,
+        firstline: headerPerson,
+      }
+    },
+    randnotizen:           { // randnotizen @
+      folders: ["Werkstatt", "Buchmitschriften"],
+      marker: "@",
+      name_prompt: "Autornachname - Buchtitel",
     },
     video:                { // video {v}
       folders: ["Werkstatt"],
       marker: "{v}",
-      name_prompt: "?Reihe - ?Autornachname - Videotitel ?OPTIONAL",
+      name_prompt: "OPTIONAL Reihe - OPTIONAL Autornachname - Videotitel",
     },
     web:                  { // web {w}
       folders: ["Werkstatt"],
       marker: "{w}",
-      name_prompt: "?Autor - Webseitentitel - ?Datum ?OPTIONAL",
+      name_prompt: "OPTIONAL Autor - Webseitentitel - OPTIONAL Datum",
     },
     zitat:                { // zitat °
       folders: ["Werkstatt"],

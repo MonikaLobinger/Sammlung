@@ -10,6 +10,7 @@ anathymiasis - ἀναθυμίασις
 
 Die Aufdunstung (Aristoteles)
 
-Der aufsteigende Dunst, die Blähung (Petrus)
+Der aufsteigende Dunst, die Blähung (Petrus) 
+
 
 ## -footnotes

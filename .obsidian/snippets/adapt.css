@@ -452,6 +452,34 @@ svg[aria-roledescription="gantt"] {
   padding: none !important;
 }
 
+/*** Addon Webpage HTML Export
+ *   das, was nur beim Export auftritt
+*/
+div#backlinks a.backlink {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+div#backlinks a.backlink:last-of-type {
+  padding-bottom: 0.3rem !important;
+}
+div#backlinks {
+  margin-top: 4rem;
+  border: 2px solid var(--clr-fg);
+  font-size: 0.8rem;
+}
+div#backlinks .feature-header {
+  background: var(--clr-seco-muted);
+  border-top-left-radius: var(--radius-m);
+  border-top-right-radius: var(--radius-m);
+  border: 2px solid var(--clr-seco-muted);
+  padding-top: 0.3rem;
+  padding-bottom: 0.2rem;
+  margin-bottom: 0.3rem;
+}
+div#backlinks .backlinks-content {
+  line-height: 0.8rem;
+}
+
 /*** Addon vim-fuer-sammlung
 */
 .vim-sammlung-statusbar[data-vim-mode="insert"] {
@@ -462,20 +490,20 @@ svg[aria-roledescription="gantt"] {
   width:  100px;
 }
 @media screen and (min-width: 1000px) {
-  .vim-sammlung-statusbar[data-vim-mode="insert"]{width: 600px;}
-  .xxvim-sammlung-statusbar[data-vim-mode="insert"]{ background: lime; }
+  .vim-sammlung-statusbar[data-vim-mode="insert"]{width: 400px;}
+  xx.vim-sammlung-statusbar[data-vim-mode="insert"]{ background: lime; }
 }
 @media screen and (min-width: 1400px) {
-  .vim-sammlung-statusbar[data-vim-mode="insert"]{width:1000px;}
-  .xxvim-sammlung-statusbar[data-vim-mode="insert"]{ background: blue; }
+  .vim-sammlung-statusbar[data-vim-mode="insert"]{width:800px;}
+  xx.vim-sammlung-statusbar[data-vim-mode="insert"]{ background: blue; }
 }
 @media screen and (min-width: 1600px) {
-  .vim-sammlung-statusbar[data-vim-mode="insert"]{width:1200px;}
-  .xxvim-sammlung-statusbar[data-vim-mode="insert"]{ background: green; }
+  .vim-sammlung-statusbar[data-vim-mode="insert"]{width:1000px;}
+  xx.vim-sammlung-statusbar[data-vim-mode="insert"]{ background: green; }
 }
 @media screen and (min-width: 1800px) {
-  .vim-sammlung-statusbar[data-vim-mode="insert"]{width:1400px;}
-  .xxvim-sammlung-statusbar[data-vim-mode="insert"]{ background: red; }
+  .vim-sammlung-statusbar[data-vim-mode="insert"]{width:1200px;}
+  xx.vim-sammlung-statusbar[data-vim-mode="insert"]{ background: red; }
 }
 
 /********************************************************************************
@@ -584,28 +612,33 @@ svg[aria-roledescription="gantt"] {
     /* Oben&Unten einen dicken clr-seco-pur Rand
     */
   .note {
-    .mod-header, .cm-line:first-child {
+    .mod-header, .cm-line:first-child { // Diese mod-Klasse wird nicht exportiert
       border-top: 1.5em solid var(--clr-seco-pur);
       padding-top: 1em;
     }
-  .mod-footer, .cm-line:last-child {
+    .mod-footer, .cm-line:last-child { // Diese mod-Klasse wird nicht exportiert
       border-bottom: 1.5em solid var(--clr-seco-pur);
     }
   }
+  .note .breadcrumbs ~ div li { font-size: 70% ; }
+  .note .breadcrumbs ~ div li a { color: var(--clr-tert-pur) !important; }
+/*** CssClass PUBLIC studiis
 
 /*** CssClass PRIVATE diary // besondere Eigenleistung
 */
     /* Oben&Unten einen dicken clr-tert-pur Rand
     */
   .diary {
-    .mod-header, .cm-line:first-child {
+    .mod-header, .cm-line:first-child { // Diese mod-Klasse wird nicht exportiert
       border-top: 1.5em solid var(--clr-tert-pur);
       padding-top: 1em;
     }
-  .mod-footer, .cm-line:last-child {
+  .mod-footer, .cm-line:last-child { // Diese mod-Klasse wird nicht exportiert
       border-bottom: 1.5em solid var(--clr-tert-pur);
     }
   }
+  .diary .breadcrumbs ~ div li { font-size: 70% ; }
+  .diary .breadcrumbs ~ div li a { color: var(--clr-tert-pur) !important; }
 
 /*** CssClass PUBLIC foldernote (MOCs)
 */
@@ -749,10 +782,10 @@ svg[aria-roledescription="gantt"] {
 
 /*** CssClass PRIVATE feld
 */
-    /* Links einen knapp 1 cm breiten verlaufenden clr-erro-soft Streifen.
+    /* Oben&unten einen knapp 1 cm breiten verlaufenden clr-erro-soft Streifen.
     */
   .feld {
-    background-image: linear-gradient(to right,var(--clr-erro-soft) 0%, var(--clr-bg) 3%);
+    background-image: linear-gradient(to bottom,var(--clr-erro-soft) 0%, var(--clr-bg) 3%, var(--clr-bg) 97%, var(--clr-erro-soft) 100%);
   }
   .feld .internal-embed {
     margin-bottom: 3rem;
@@ -767,7 +800,8 @@ svg[aria-roledescription="gantt"] {
   .feld .markdown-embed-title {
     display: none;
   }
-
+  .feld .breadcrumbs ~ div li { font-size: 70% ; }
+  .feld .breadcrumbs ~ div li a { color: var(--clr-tert-pur) !important; }
 /*** CssClass PUBLIC studiis
 */
   /* Rechts&Links ca 1 cm verlaufende clr-tert-pur Streifen.
@@ -800,6 +834,8 @@ svg[aria-roledescription="gantt"] {
   .theme-dark .markdown-reading-view .werkstatt {
     background-image: url('data:image/svg+xml,<svg height="30" width="60" xmlns="http://www.w3.org/2000/svg"><text x="10" y="10" fill="%23101010">privat</text></svg>');
   }
+  .werkstatt .breadcrumbs ~ div li { font-size: 70% ; }
+  .werkstatt .breadcrumbs ~ div li a { color: var(--clr-tert-pur) !important; }
 
 /*** CssClass PRIVATE audio // fremdleistung
 */
@@ -822,26 +858,26 @@ svg[aria-roledescription="gantt"] {
     /* Oben&Unten einen schmalen clr-seco-pur Rand.
     */
   .exzerpt {
-    .mod-header, .cm-line:first-child {
+    .mod-header, .cm-line:first-child { // Diese mod-Klasse wird nicht exportiert
       border-top: 0.5em solid var(--clr-seco-pur);
       padding-top: 1em;
     }
-  .mod-footer, .cm-line:last-child {
+  .mod-footer, .cm-line:last-child { // Diese mod-Klasse wird nicht exportiert
       border-bottom: 0.5em solid var(--clr-seco-pur);
     }
   }
 
-/*** CssClass PRIVATE mitschrift (allgemein, nicht in Mitschriften/) // fast eigenleistung
+/*** CssClass PRIVATE randnotizen (textzusammenfassungen) // fast eigenleistung
 */
-    /* Oben&Unten einen schmalen clr-seco-pur Rand.
+    /* Oben&Unten einen schmalen clr-seco-faint Rand.
     */
-  .mitschrift {
-    .mod-header, .cm-line:first-child {
-      border-top: 0.5em solid var(--clr-seco-pur);
+  .randnotizen {
+    .mod-header, .cm-line:first-child { // Diese mod-Klasse wird nicht exportiert
+      border-top: 0.5em solid var(--clr-seco-faint);
       padding-top: 1em;
     }
-  .mod-footer, .cm-line:last-child {
-      border-bottom: 0.5em solid var(--clr-seco-pur);
+  .mod-footer, .cm-line:last-child { // Diese mod-Klasse wird nicht exportiert
+      border-bottom: 0.5em solid var(--clr-seco-faint);
     }
   }
 
@@ -860,6 +896,16 @@ svg[aria-roledescription="gantt"] {
   .person {
     background-image: linear-gradient(to right,var(--clr-seco-muted) 0%, var(--clr-bg) 1%);
   }
+.person > .markdown-preview-section  div:nth-of-type(4) img {
+  border-radius: 50%;
+  width: 150px;
+  position: relative;
+  float: right;
+  top: -3em;
+  padding: 4px;
+  background: #EEF3E2;
+  border: 6px groove #CDAD00;
+}
 
 /*** CssClass PRIVATE video // fremdleistung
 */

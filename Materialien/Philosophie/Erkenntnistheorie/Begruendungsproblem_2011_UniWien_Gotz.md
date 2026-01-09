@@ -10,10 +10,10 @@ author: Ueberphilosophy
 ```dataviewjs
 dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
-## [Das Begründungsproblem 2011 - UniWien, Gotz}(https://audiothek.philo.at/?s=Das+Begr%C3%BCndungsproblem)
+## [Das Begründungsproblem 2011 - UniWien, Gotz](https://audiothek.philo.at/?s=Das+Begr%C3%BCndungsproblem)
 #speaker/Gotz-Gerhard
 
-[[Werkstatt/Mitschriften/ZuHoeren/@Begruendungsproblem_2011_UniWien_Gotz|Mitschrift]] 
+[[@Begruendungsproblem_2011_UniWien_Gotz|Mitschrift]] 
 
 - [01-das-begruendungsproblem](https://audiothek.philo.at/lesson/01-das-begruendungsproblem)
 - [02-das-begruendungsproblem](https://audiothek.philo.at/lesson/02-das-begruendungsproblem)

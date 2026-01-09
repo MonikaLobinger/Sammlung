@@ -6,11 +6,14 @@ tags: [MOC]
 dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 %% Begin Landmark %%
+- [[Hamann Quellen]]
 - [[Harman Quellen]]
+- [[Hartmann Quellen]]
 - [[Hegel Quellen]]
 - [[Heidegger Quellen]]
 - [[Hempel Quellen]]
 - [[Heraklit Quellen]]
+- [[Herder Quellen]]
 - [[Herodot Quellen]]
 - [[Hesiod Quellen]]
 - [[Hieronymus Quellen]]
@@ -18,6 +21,8 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 - [[Hobbes Quellen]]
 - [[Hoelderlin Quellen]]
 - [[Homer Quellen]]
+- [[Hönigswald Quellen]]
+- [[Humboldt-Wilhelm Quellen]]
 - [[Hume Quellen]]
 - [[Husserl Quellen]]
 

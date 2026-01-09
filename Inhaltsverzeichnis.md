@@ -1,5 +1,8 @@
 ---
 tags: [MOC]
 ---
-# Inhaltsverzeichnis von Materialien
+# Inhaltsverzeichnis
+## Dateien in der Wurzel
+- [[home]]  
+## Inhaltsverzeichnis von Materialien
 ![[Materialien]]
