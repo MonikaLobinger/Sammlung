@@ -3,7 +3,9 @@ cssclasses: autor
 date_created: 2025-11-29
 publish: true
 tags: [Locke-John,]
-ddckey: 
+ddckey:
+gndkey:
+gndlink: 
 author: Ueberphilosophy
 ---
 ```dataviewjs

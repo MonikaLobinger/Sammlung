@@ -6,6 +6,8 @@ tags: [MOC]
 dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 %% Begin Landmark %%
-- [[Materialien/Autoren/B/Borges Quellen]]
+- [[Bateson-Gregory Quellen]]
+- [[Borges Quellen]]
+- [[Boscovic Quellen]]
 
 %% End Landmark %%

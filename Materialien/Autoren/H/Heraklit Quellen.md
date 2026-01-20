@@ -3,7 +3,9 @@ cssclasses: autor
 date_created: 2025-11-30
 publish: true
 tags: [Heraklit-von-Ephesos,]
-ddckey: 
+ddckey:
+gndkey:
+gndlink: 
 author: Ueberphilosophy
 ---
 ```dataviewjs

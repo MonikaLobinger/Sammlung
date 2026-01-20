@@ -3,7 +3,9 @@ cssclasses: autor
 date_created: 2025-11-29
 publish: true
 tags: [Nietzsche-Friedrich,]
-ddckey: 
+ddckey:
+gndkey:
+gndlink: 
 author: Ueberphilosophy
 ---
 ```dataviewjs
@@ -22,6 +24,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ## Jenseits von Gut und Böse 1886
 - [Internet Archive](https://archive.org/details/bub_gb_YIURAAAAYAAJ/mode/2up) - deutsch, Digitalisat
 - [Nietzsche Source](http://www.nietzschesource.org/#eKGWB/JGB) - deutsch, online zu lesen
-
+## Zur Genealogie der Moral 1887
+- [internet archive](https://archive.org/details/zurgenealogieder00niet) - deutsch, Digitalisat 2. Auflage 1892
 
 ## -footnotes 

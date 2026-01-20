@@ -61,6 +61,9 @@ Auflistung nach Geburtsjahr, Farben nach Profession ^[Literatys/Künstlys/Musiky
 ### Xenophanes
 > [!timeline|blue] ~-575
 > [[Xenophanes Quellen|Xenophanes]] †~-499 ^Xenophanes
+### Kleisthenes
+> [!timeline|red] ~-570
+> Kleisthenes †~-507 ^Kleisthenes
 ### Alkmaion
 > [!timeline|blue] ~-570
 > [[Alkmaion Quellen|Alkmaion]] †~-500 ^Alkmaion
@@ -70,6 +73,9 @@ Auflistung nach Geburtsjahr, Farben nach Profession ^[Literatys/Künstlys/Musiky
 ### Heraklit
 > [!timeline|blue] ~-540^[Laut Buchheim nach Apollodoros Angaben wahrscheinlich]
 > [[Heraklit Quellen|Heraklit]] †~-460 ^Heraklit
+### Aischylos
+> [!timeline|green] ~-525
+> [[Aischylos Quellen|Aischylos]] †~-456 ^Aischylos
 ### Pindar
 > [!timeline|green] ~-522
 > [[Pindar Quellen|Pindar]] †~-466 ^Pindar
@@ -112,30 +118,45 @@ Auflistung nach Geburtsjahr, Farben nach Profession ^[Literatys/Künstlys/Musiky
 ### Xenophon
 > [!timeline|green] ~-428
 > [[Xenophon Quellen|Xenophon]] †~-354 ^Xenophon
+### Eudoxos
+> [!timeline|blue] ~-390
+> Eudoxos †~-338 ^Eudoxos
 ### Aristoteles
 > [!timeline|blue] -384
 > [[Aristoteles Quellen|Aristoteles]] †-322 ^Aristoteles
 ### Theophrastos
 > [!timeline|blue] -371
 > [[Theophrastos Quellen|Theophrastos]] †-287 ^Theophrastos
-### Dikaiarchos
-> [!timeline|blue] ~-360
-> [[Dikaiarchos Quellen|Dikaiarchos]] †~-285 ^Dikaiarchos
 ### Eudemos
 > [!timeline|blue] ~-370
 > [[Eudemos Quellen|Eudemos]] †~-300 ^Eudemos
-### Kallimachos
-> [!timeline|green] ~-305
-> [[Kallimachos Quellen|Kallimachos]] †~-240 ^Kallimachos
+### Dikaiarchos
+> [!timeline|blue] ~-360
+> [[Dikaiarchos Quellen|Dikaiarchos]] †~-285 ^Dikaiarchos
 ### Alexander-der-Grosse
 > [!timeline|red] ~-356
 > Alxander der Grosse †~-323 ^Alexander-der-Grosse
+### Epikur
+> [!timeline|blue] ~-341
+> [[Epikur Quellen|Epikur]] †~-271 ^Epikur
+### Kallimachos
+> [!timeline|green] ~-305
+> [[Kallimachos Quellen|Kallimachos]] †~-240 ^Kallimachos
 ### Apollodoros
 > [!timeline|green] ~-180
 > [[Apollodoros Quellen|Apollodoros]]  †~-120 ^Apollodoros
 ### Cicero
 > [!timeline|blue] -106
 > [[Cicero Quellen|Cicero]]  †-043 ^Cicero
+### Vergil
+> [!timeline|green] -070 %% -0070-11-15 %%
+> [[Vergil Quellen|Vergil]]  †-019 ^Vergil
+### Horaz
+> [!timeline|green] -065 %% -0065-12-08 %%
+> [[Horaz Quellen|Horaz]]  †-008 ^Horaz
+### Ovid
+> [!timeline|green] -043 %% -0043-03-20 %%
+> [[Ovid Quellen|Ovid]]  †+017 ^Ovid
 ## Zeitenwende (001)
 ### Pamphile
 > [!timeline|grey] ~1
@@ -149,6 +170,9 @@ Auflistung nach Geburtsjahr, Farben nach Profession ^[Literatys/Künstlys/Musiky
 ### Sextus-Empiricus
 > [!timeline|blue] ~100
 > [[Sextus Quellen|Sextus Empiricus]] †~199 ^Sextus-Empiricus
+### Lukian
+> [!timeline|green] ~120
+> [[Lukian Quellen|Lukian von Samosta]] †~180 ^Lukian
 ### Hippolyt
 > [!timeline|yellow] ~170
 > [[Hippolyt Quellen|Hippolyt]] †235 ^Hippolyt
@@ -238,36 +262,63 @@ Auflistung nach Geburtsjahr, Farben nach Profession ^[Literatys/Künstlys/Musiky
 ### Descartes
 > [!timeline|blue] 1596
 >[[Descartes Quellen|Descartes]] †1650 ^Descartes
+### Kondiaronk
+> [!timeline|red] ~1625
+> Kondiaronk †1701 ^Kondiaronk
 ### Locke
 > [!timeline|blue] 1632
 >[[Locke Quellen|Locke]] †1704 ^Locke
 ### Spinoza
 > [!timeline|blue] 1632
 >[[Spinoza Quellen|Spinoza]] †1677 ^Spinoza
+### Newton-Isaac
+> [!timeline|grey] 1643 %% 1643-01-04 %%
+>[[Newton-Isaac Quellen|Newton, Isaac]] †1727 ^Newton-Isaac
 ### Leibniz
 > [!timeline|blue] 1646
 >[[Leibniz Quellen|Leibniz]] †1716 ^Leibniz
 ### Wolff
 > [!timeline|blue] 1679
 >[[Wolff Quellen|Wolff]] †1754 ^Wolff
+### Drevetiere
+> [!timeline|green] 1682 %% 1682-10-18 %%
+>[[Drevetiere Quellen|Drevetiere]] †1756 ^Drevetiere
+### Montesquieu
+> [!timeline|blue] 1689 %% 1989-01-18 %%
+>[[Montesquieu Quellen|Montesquieu]] †1755 ^Montesquieu
 ### Voltaire
 > [!timeline|blue] 1694
 >[[Voltaire Quellen|Voltaire]] †1778 ^Voltaire
+### Graffigny-Francoise
+> [!timeline|green] 1695 %% 1695-02-13 %%
+>[[Graffigny-Francoise Quellen|Graffigny, Francoise]] †1758 ^Graffigny-Francoise
 ### Ludwig-XV
 > [!timeline|red] ~1710
 > Ludwig XV †1774 ^Ludwig-XV
 ### Hume
-> [!timeline|blue] 1711
+> [!timeline|blue] 1711 %% 1711-05-07 %%
 > [[Hume Quellen|Hume]] †1776 ^Hume
+### Boscovic
+> [!timeline|grey] 1711 %% 1711-05-18 %%
+> [[Boscovic Quellen|Boscovic]] †1787 ^Boscovic
 ### Rousseau
 > [!timeline|green] 1712
 > [[Rousseau Quellen|Rousseau]] †1778 ^Rousseau
 ### Diderot
 > [!timeline|green] 1713
 > [[Diderot Quellen|Diderot]] †1784 ^Diderot
+### d-Alembert
+> [!timeline|blue] 1717 %% 1717-11-16 %%
+> [[d-Alembert Quellen|d’Alembert]] †1783 ^d-Alembert
 ### Kant
 > [!timeline|blue] 1724
 > [[Kant Quellen|Kant]] †1804 ^Kant
+### Turgot-Anne-Robert
+> [!timeline|red] 1727 %% 1727-05-10 %%
+>[[Turgot-Anne-Robert Quellen|Turgot, Anne Robert]] †1781 ^Turgot-Anne-Robert
+### Mendelssohn-Moses
+> [!timeline|blue] 1729 %%1729-09-06%%
+> [[Mendelssohn Quellen|Mendelssohn-Moses]] †1786 ^Mendelssohn-Moses
 ### Hamann
 > [!timeline|blue] 1730 %%1730-08-27%%
 > [[Hamann Quellen|Hamann]] †1788 ^Hamann
@@ -368,9 +419,15 @@ Auflistung nach Geburtsjahr, Farben nach Profession ^[Literatys/Künstlys/Musiky
 ### Jankelevitch 
 > [!timeline|blue] 1903
 > [[Jankelevitch Quellen|Jankelevitch]] †1985 ^Jankelevitch
+### Bateson-Gregory
+> [!timeline|grey] 1904 %% 1904-04-09 %%
+> [[Bateson-Gregory Quellen|Bateson, Gregory]] †1980 ^Bateson-Gregory
 ### Hempel-Carl-Gustav 
-> [!timeline|blue] 1905
+> [!timeline|blue] 1905  %% 1905-01-08 %%
 > [[Hempel Quellen|Hempel]] †1997 ^Hempel-Carl-Gustav
+### Klossowski-Pierre
+> [!timeline|blue] 1905 %% 1905-08-09 %% 
+> [[Klossowski-Pierre Quellen|Klossowski, Pierre]] †2001 ^Klossowski-Pierre
 ### Quine 
 > [!timeline|blue] 1908
 > [[Quine Quellen|Quine]] †2000 ^Quine
@@ -391,8 +448,14 @@ Auflistung nach Geburtsjahr, Farben nach Profession ^[Literatys/Künstlys/Musiky
 > [!timeline|blue] 1927
 > [[Gettier Quellen|Gettier]] †2021 ^Gettier
 ### Derrida 
-> [!timeline|blue] 1930
+> [!timeline|blue] 1930 %% 1930-07-15 %%
 > [[Derrida Quellen|Derrida]] †2004 ^Derrida
+### Sahlins-Marshall
+> [!timeline|grey] 1930 %% 1930-12-27 %%
+> [[Sahlins-Marshall Quellen|Sahlins, Marshall]] †2021 ^Sahlins-Marshall
+### Agamben
+> [!timeline|blue] 1942 %% 1942-04-22 %%
+> [[Agamben Quellen|Agamben]]  ^Agamben
 ### Zizek 
 > [!timeline|blue] 1949
 > [[Zizek Quellen|Zizek]]  ^Zizek

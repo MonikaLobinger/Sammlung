@@ -37,6 +37,8 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 %% Begin Waypoint %%
 - **[[A]]**
   - [[Acosta Quellen]]
+  - [[Agamben Quellen]]
+  - [[Aischylos Quellen]]
   - [[Alkmaion Quellen]]
   - [[Alkman Quellen]]
   - [[Anaximander Quellen]]
@@ -45,7 +47,9 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
   - [[Aristoteles Quellen]]
   - [[Augustinus Quellen]]
 - **[[B]]**
+  - [[Bateson-Gregory Quellen]]
   - [[Borges Quellen]]
+  - [[Boscovic Quellen]]
 - **[[C]]**
   - [[Calvin Quellen]]
   - [[Chateaubriand Quellen]]
@@ -53,6 +57,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
   - [[Cortes Quellen]]
   - [[Cusanus Quellen]]
 - **[[D]]**
+  - [[d-Alembert Quellen]]
   - [[Darwin Quellen]]
   - [[Deleuze Quellen]]
   - [[Demokrit Quellen]]
@@ -62,9 +67,11 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
   - [[Diels Quellen]]
   - [[Dikaiarchos Quellen]]
   - [[Diogenes Quellen]]
+  - [[Drevetiere Quellen]]
 - **[[E]]**
   - [[Einhard Quellen]]
   - [[Empedokles Quellen]]
+  - [[Epikur Quellen]]
   - [[Eudemos Quellen]]
   - [[Eusebius Quellen]]
 - **[[F]]**
@@ -76,6 +83,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
   - [[Gettier Quellen]]
   - [[Gilgamesch Quellen]]
   - [[Gorgias Quellen]]
+  - [[Graffigny-Francoise Quellen]]
   - [[Grotius Quellen]]
 - **[[H]]**
   - [[Hamann Quellen]]
@@ -94,6 +102,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
   - [[Hoelderlin Quellen]]
   - [[Homer Quellen]]
   - [[Hönigswald Quellen]]
+  - [[Horaz Quellen]]
   - [[Humboldt-Wilhelm Quellen]]
   - [[Hume Quellen]]
   - [[Husserl Quellen]]
@@ -107,6 +116,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
   - [[Kant Quellen]]
   - [[Karl Quellen]]
   - [[Kierkegaard Quellen]]
+  - [[Klossowski-Pierre Quellen]]
   - [[Kojeve Quellen]]
   - [[Kopernikus Quellen]]
   - [[Kotzebue Quellen]]
@@ -115,15 +125,20 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
   - [[Leibniz Quellen]]
   - [[Leukipp Quellen]]
   - [[Locke Quellen]]
+  - [[Lukian Quellen]]
   - [[Luther Quellen]]
 - **[[M]]**
   - [[Malabou Quellen]]
   - [[Melanchthon Quellen]]
   - [[Melissos Quellen]]
+  - [[Mendelssohn-Moses Quellen]]
   - [[Misch Quellen]]
+  - [[Montesquieu Quellen]]
 - **[[N]]**
+  - [[Newton-Isaac Quellen]]
   - [[Nietzsche Quellen]]
 - **[[O]]**
+  - [[Ovid Quellen]]
 - **[[P]]**
   - [[Pamphile Quellen]]
   - [[Paracelsus Quellen]]
@@ -142,6 +157,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
   - [[Rousseau Quellen]]
 - **[[S]]**
   - [[Sagard Quellen]]
+  - [[Sahlins-Marshall Quellen]]
   - [[Schadewaldt Quellen]]
   - [[Schaellibaum Quellen]]
   - [[Schelling Quellen]]
@@ -160,9 +176,11 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
   - [[Theresa Quellen]]
   - [[Thomas Quellen]]
   - [[Thukydides Quellen]]
+  - [[Turgot-Anne-Robert Quellen]]
   - [[Tyrtaios Quellen]]
 - **[[U]]**
 - **[[V]]**
+  - [[Vergil Quellen]]
   - [[Voltaire Quellen]]
 - **[[W]]**
   - [[Wagner-Hans Quellen]]

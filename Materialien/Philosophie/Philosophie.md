@@ -16,6 +16,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 - **[[Philosophie des 20ten Jhds]]**
 - **[[Politische Philosophie]]**
 - **[[Sprachphilosophie]]**
+- **[[Standpunkte]]**
 - [[-Philosophie]]
 - [[Philosophie Podcasts]]
 - [[Philosophie Unsortiert Videos]]

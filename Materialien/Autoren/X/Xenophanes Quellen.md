@@ -3,7 +3,9 @@ cssclasses: autor
 date_created: 2025-11-30
 publish: true
 tags: [Xenophanes-von-Kolophon,]
-ddckey: 
+ddckey:
+gndkey:
+gndlink: 
 author: Ueberphilosophy
 ---
 ```dataviewjs

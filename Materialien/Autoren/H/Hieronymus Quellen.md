@@ -4,6 +4,8 @@ date_created: 2025-12-30
 publish: true
 tags: [Hieronymus, ]
 ddckey:
+gndkey:
+gndlink:
 author: Ueberphilosophy
 ---
 ```dataviewjs

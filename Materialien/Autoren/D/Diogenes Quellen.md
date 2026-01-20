@@ -4,6 +4,8 @@ date_created: 2025-12-29
 publish: true
 tags: [Diogenes-Laertios,]
 ddckey:
+gndkey:
+gndlink:
 author: Ueberphilosophy
 ---
 ```dataviewjs

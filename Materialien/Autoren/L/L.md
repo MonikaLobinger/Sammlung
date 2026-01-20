@@ -10,6 +10,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 - [[Leibniz Quellen]]
 - [[Leukipp Quellen]]
 - [[Locke Quellen]]
+- [[Lukian Quellen]]
 - [[Luther Quellen]]
 
 %% End Landmark %%

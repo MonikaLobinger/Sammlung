@@ -3,7 +3,9 @@ cssclasses: autor
 date_created: 2025-11-26
 publish: true
 tags: [Kant-Immanuel,]
-ddckey: 
+ddckey:
+gndkey:
+gndlink: 
 author: Ueberphilosophy
 ---
 ```dataviewjs

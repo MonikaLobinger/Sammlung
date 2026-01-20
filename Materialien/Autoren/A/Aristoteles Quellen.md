@@ -3,7 +3,9 @@ cssclasses: autor
 date_created: 2025-11-24
 publish: true
 tags: [Aristoteles,]
-ddckey: 
+ddckey:
+gndkey: 118650130
+gndlink: https://explore.gnd.network/gnd/118650130
 author: Ueberphilosophy
 ---
 ```dataviewjs
@@ -11,6 +13,15 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 # Aristoteles
 [[Materialien/timeline#Aristoteles|Zeitleiste]]
+%%
+Der Link ist ein interner, öffnet auch keinen neuen Tab
+```dataview
+TABLE WITHOUT ID  link(gndlink,"Gnd") as Gnd
+FROM  "Materialien/Autoren"
+WHERE startswith(file.folder, this.file.folder)
+AND startswith(file.name, this.file.name)
+```
+%%
 ## Metaphysik
 - [Zeno](http://www.zeno.org/Philosophie/M/Aristoteles/Metaphysik) - deutsch, online zu lesen
 - [Übersetzt von Hermann Bonitz 1890](https://archive.org/details/metaphysik00bonigoog/page/n17/mode/2up) - Digitalisat
@@ -29,6 +40,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 
 ## De Anima
 [Internet Archiv](https://archive.org/details/dreibcherberdie00kircgoog/page/n1/mode/1up) - Deutsch, Digitalisat
+
 
 
 ## -footnotes 

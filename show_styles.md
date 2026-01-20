@@ -164,6 +164,12 @@ Dieser zweite Absatz ist für den Zeilenabstand nicht so wichtig. Den haben wir 
 > 
 > Zu
 
+> [!Comment]+
+> Kommentar
+> Faltbar
+> 
+> Auf
+
 > [!Info]-
 > Info
 > Faltbar
@@ -175,6 +181,17 @@ Dieser zweite Absatz ist für den Zeilenabstand nicht so wichtig. Den haben wir 
 > Faltbar
 > 
 > Zu
+
+> [!Idea]
+> Eigenes Callout
+> 
+> Auf
+
+> [!Kommentar]
+> Eigenes Callout
+> 
+> Auf
+
 
 > Und ein Zitat  
 > Das kein Callout ist  

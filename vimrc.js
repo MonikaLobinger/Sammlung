@@ -186,6 +186,33 @@ async function myQuickAddScript(params, settings) {
       ch:   newChar
     }
   });
+  vim.defineMotion("myLeftStart", function(cm, ub, args, state) {
+    //console.log("myLeftStart")
+    let newLine = ub.line
+    let newChar = 0
+    if(newChar == ub.ch) {
+      newLine = ub.line-1
+    }
+    return {
+      line: newLine,
+      ch:   newChar
+    }
+  });
+  vim.defineMotion("myRightEnd", function(cm, ub, args, state) {
+    //console.log("myRightEnd")
+    let newLine = ub.line
+    let newChar = cm.getLine(ub.line).length
+    if(newChar == ub.ch) {
+      newLine = ub.line+1
+      newChar = 0
+    }
+    return {
+      line: newLine,
+      ch:   newChar
+    }
+  });
+
+
 
 
 
@@ -199,6 +226,8 @@ async function myQuickAddScript(params, settings) {
   vim.mapCommand("<A-j>", "motion", "myDown", argsn, extran, )
   vim.mapCommand("<A-h>", "motion", "myLeft", argsn, extran, )
   vim.mapCommand("<A-l>", "motion", "myRight", argsn, extran, )
+  vim.mapCommand("<A-S-H>", "motion", "myLeftStart", argsn, extran, )
+  vim.mapCommand("<A-S-L>", "motion", "myRightEnd", argsn, extran, )
 
   var argsi = {
     context: "insert",
@@ -211,9 +240,11 @@ async function myQuickAddScript(params, settings) {
   vim.mapCommand("<A-j>", "motion", "myDown", argsi, extrai, )
   vim.mapCommand("<A-h>", "motion", "myLeft", argsi, extrai, )
   vim.mapCommand("<A-l>", "motion", "myRight", argsi, extrai, )
+  vim.mapCommand("<A-S-H>", "motion", "myLeftStart", argsi, extrai, )
+  vim.mapCommand("<A-S-L>", "motion", "myRightEnd", argsi, extrai, )
 
   //console.log(vim);
-  // console.log(context);
+  //console.log(context);
   //console.log(window);
   //console.log(params);
   vim.map("j", "gj");

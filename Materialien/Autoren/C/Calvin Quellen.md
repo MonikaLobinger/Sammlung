@@ -4,6 +4,8 @@ date_created: 2025-12-20
 publish: true
 tags: [Calvin-Johannes,]
 ddckey:
+gndkey:
+gndlink:
 author: Ueberphilosophy
 ---
 ```dataviewjs

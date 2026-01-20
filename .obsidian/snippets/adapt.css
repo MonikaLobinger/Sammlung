@@ -9,6 +9,9 @@
 /* Obsidian selbst hat kein @layer,
  * Webpage HTML Export exportiert keine @layerr
 */
+/* Webpage HTML Export kann keine geschachtelten Definitionen
+ * also nicht .myclass { .myothercloass { ... } }
+*/
 
 
 /********************************************************************************
@@ -452,6 +455,23 @@ svg[aria-roledescription="gantt"] {
   padding: none !important;
 }
 
+/*** Addon Chronology
+*/
+div.chronology-noteslist-container { /* scroll */
+  div.chronology-noteslist-wrapper { /* flex */
+    background: var(--clr-bg);
+  }
+}
+div.chronology-timeline-container { /* 24 slot1 */
+  div.chrono-temp-slot1 { /* eine gesamte Stunde */
+    div.chrono-temp-slot1-content { /* 6 Zeilen pro h/Scrollbar, falls mehr */
+      div.chrono-cluster-container {
+        background: var(--clr-bg);
+      }
+    }
+  }
+}
+
 /*** Addon Webpage HTML Export
  *   das, was nur beim Export auftritt
 */
@@ -479,6 +499,48 @@ div#backlinks .feature-header {
 div#backlinks .backlinks-content {
   line-height: 0.8rem;
 }
+
+.xxautor { 
+  border: 1px solid #3031f2 !important;
+}
+  /* für frontmatter, wenigstens einen wert daraus */
+  .xxautor pre.frontmatter {
+    display: initial !important;
+    width: 100% !important;
+    min-height: initial !important;
+    overflow: visible !important;
+    background: initial !important;
+  }
+  .xxautor code.is-loaded {
+    margin: 4rem;
+    padding: 10px;
+  }
+  /* Das ist der Versuch über dataview, auskommentiert */
+  /* weil dataview im Moment interne Links erzeugt */
+  .xxautor .block-language-dataview {
+    display: inline !important;
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+  .xxautor .block-language-dataview table {
+     margin: 0;
+  }
+   .xxautor .block-language-dataview thead {
+    display: none !important;
+  }
+  .xxautor.block-language-dataview tr, 
+  .xxautor.block-language-dataview tbody,
+  .xxautor.block-language-dataview td,
+  .xxautor.block-language-dataview span,
+  .xxautor.block-language-dataview tr *,
+  .xxautor.block-language-dataview td *,
+  .xxautor.block-language-dataview tbody * {
+    padding: 0 !important;
+    border: 0 !important;
+    margin: 0 !important;
+    border-color: blue !important;
+  }
 
 /*** Addon vim-fuer-sammlung
 */
@@ -607,35 +669,31 @@ div#backlinks .backlinks-content {
 
 
 
-/*** CssClass PRIVATE note // Eigenleistung
+/*** CssClass PRIVATE note -- Eigenleistung
 */
     /* Oben&Unten einen dicken clr-seco-pur Rand
     */
-  .note {
-    .mod-header, .cm-line:first-child { // Diese mod-Klasse wird nicht exportiert
-      border-top: 1.5em solid var(--clr-seco-pur);
-      padding-top: 1em;
-    }
-    .mod-footer, .cm-line:last-child { // Diese mod-Klasse wird nicht exportiert
-      border-bottom: 1.5em solid var(--clr-seco-pur);
-    }
+  .note .mod-header, .note .cm-line:first-child { /* Diese mod-Klasse wird nicht exportiert */
+    border-top: 1.5em solid var(--clr-seco-pur);
+    padding-top: 1em;
+  }
+  .note .mod-footer, .note .cm-line:last-child { /* Diese mod-Klasse wird nicht exportiert */
+    border-bottom: 1.5em solid var(--clr-seco-pur);
   }
   .note .breadcrumbs ~ div li { font-size: 70% ; }
   .note .breadcrumbs ~ div li a { color: var(--clr-tert-pur) !important; }
 /*** CssClass PUBLIC studiis
 
-/*** CssClass PRIVATE diary // besondere Eigenleistung
+/*** CssClass PRIVATE diary -- besondere Eigenleistung
 */
     /* Oben&Unten einen dicken clr-tert-pur Rand
     */
-  .diary {
-    .mod-header, .cm-line:first-child { // Diese mod-Klasse wird nicht exportiert
-      border-top: 1.5em solid var(--clr-tert-pur);
-      padding-top: 1em;
-    }
-  .mod-footer, .cm-line:last-child { // Diese mod-Klasse wird nicht exportiert
-      border-bottom: 1.5em solid var(--clr-tert-pur);
-    }
+  .diary .mod-header, .diary .cm-line:first-child { /* Diese mod-Klasse wird nicht exportiert */
+    border-top: 1.5em solid var(--clr-tert-pur);
+    padding-top: 1em;
+  }
+  .diary .mod-footer, .diary .cm-line:last-child { /* Diese mod-Klasse wird nicht exportiert */
+    border-bottom: 1.5em solid var(--clr-tert-pur);
   }
   .diary .breadcrumbs ~ div li { font-size: 70% ; }
   .diary .breadcrumbs ~ div li a { color: var(--clr-tert-pur) !important; }
@@ -644,16 +702,14 @@ div#backlinks .backlinks-content {
 */
     /* Rechts im Editor einen ca 1 cm breiten verlaufenden clr-tert-muted Streifen.
     */
-  .foldernote {
-    .cm-editor {
-      background-image: linear-gradient(to right, var(--clr-bg) 97%, var(--clr-tert-muted) 100%);
-    }
-    .markdown-embed {
-      margin-bottom: 3rem;
-    }
-    .markdown-embed h3 {
-      display: none;
-    }
+  .foldernote .cm-editor {
+    background-image: linear-gradient(to right, var(--clr-bg) 97%, var(--clr-tert-muted) 100%);
+  }
+  .foldernote .markdown-embed {
+    margin-bottom: 3rem;
+  }
+  .foldernote .markdown-embed h3 {
+    display: none;
   }
 
     /* Im MOC sollen die Katalogdateien hervorgehoben werden.
@@ -668,16 +724,14 @@ div#backlinks .backlinks-content {
 */
     /* Rechts im Editor einen ca 1 cm breiten verlaufenden clr-tert-muted Streifen.
     */
-  .catalog {
-    .cm-editor {
-      background-image: linear-gradient(to right, var(--clr-bg) 97%, var(--clr-tert-muted) 100%);
-    }
-    .markdown-embed {
-      margin-bottom: 3rem;
-    }
-    .markdown-embed h3 {
-      display: none;
-    }
+  .catalog .cm-editor {
+    background-image: linear-gradient(to right, var(--clr-bg) 97%, var(--clr-tert-muted) 100%);
+  }
+  .catalog .markdown-embed {
+    margin-bottom: 3rem;
+  }
+  .catalog .markdown-embed h3 {
+    display: none;
   }
     /* Keine Umrandungen der Zellen, nur eine Linie zwischen
      * Tabellenüberschrift und Tabelleneinträgen
@@ -748,36 +802,30 @@ div#backlinks .backlinks-content {
 */
     /* Rechts im Editor einen ca 1 cm breiten verlaufenden clr-tert-muted Streifen
     */
-  .material {
-    .cm-editor {
+  .material .cm-editor {
       background-image: linear-gradient(to right, var(--clr-bg) 97%, var(--clr-tert-muted) 100%);
     }
-  }
 
 /*** CssClass PUBLIC autor
 */
     /* Rechts im Editor einen ca 1 cm breiten verlaufenden clr-tert-muted Streifen.
     */
-  .autor {
-    .cm-editor {
-      background-image: linear-gradient(to right, var(--clr-bg) 97%, var(--clr-tert-muted) 100%);
-    }
-    .markdown-embed {
-      margin-bottom: 3rem;
-    }
-    .markdown-embed h3 {
-      display: none;
-    }
+  .autor .cm-editor {
+    background-image: linear-gradient(to right, var(--clr-bg) 97%, var(--clr-tert-muted) 100%);
+  }
+  .autor .markdown-embed {
+    margin-bottom: 3rem;
+  }
+  .autor .markdown-embed h3 {
+    display: none;
   }
 
 /*** CssClass PUBLIC sekundaer
 */
     /* Rechts im Editor einen ca 1 cm breiten verlaufenden clr-tert-faint Streifen.
     */
-  .sekundaer {
-    .cm-editor {
-      background-image: linear-gradient(to right, var(--clr-bg) 97%, var(--clr-tert-pur) 100%);
-    }
+  .sekundaer .cm-editor {
+    background-image: linear-gradient(to right, var(--clr-bg) 97%, var(--clr-tert-pur) 100%);
   }
 
 /*** CssClass PRIVATE feld
@@ -837,7 +885,7 @@ div#backlinks .backlinks-content {
   .werkstatt .breadcrumbs ~ div li { font-size: 70% ; }
   .werkstatt .breadcrumbs ~ div li a { color: var(--clr-tert-pur) !important; }
 
-/*** CssClass PRIVATE audio // fremdleistung
+/*** CssClass PRIVATE audio -- fremdleistung
 */
     /* Links einen schmalen verlaufenden clr-seco-soft Streifen.
     */
@@ -845,7 +893,7 @@ div#backlinks .backlinks-content {
     background-image: linear-gradient(to right,var(--clr-seco-soft) 0%, var(--clr-bg) 1%);
   }
 
-/*** CssClass PRIVATE buch // fremdleistung
+/*** CssClass PRIVATE buch -- fremdleistung
 */
     /* Links einen schmalen verlaufenden clr-seco-soft Streifen.
     */
@@ -853,35 +901,31 @@ div#backlinks .backlinks-content {
     background-image: linear-gradient(to right,var(--clr-seco-soft) 0%, var(--clr-bg) 1%);
   }
 
-/*** CssClass PRIVATE exzerpt // fast eigenleistung
+/*** CssClass PRIVATE exzerpt -- fast eigenleistung
 */
     /* Oben&Unten einen schmalen clr-seco-pur Rand.
     */
-  .exzerpt {
-    .mod-header, .cm-line:first-child { // Diese mod-Klasse wird nicht exportiert
-      border-top: 0.5em solid var(--clr-seco-pur);
-      padding-top: 1em;
-    }
-  .mod-footer, .cm-line:last-child { // Diese mod-Klasse wird nicht exportiert
-      border-bottom: 0.5em solid var(--clr-seco-pur);
-    }
+  .exzerpt .mod-header, .exzerpt .cm-line:first-child { /* Diese mod-Klasse wird nicht exportiert */
+    border-top: 0.5em solid var(--clr-seco-pur);
+    padding-top: 1em;
+  }
+  .exzerpt .mod-footer, .exzerpt .cm-line:last-child { /* Diese mod-Klasse wird nicht exportiert */
+    border-bottom: 0.5em solid var(--clr-seco-pur);
   }
 
-/*** CssClass PRIVATE randnotizen (textzusammenfassungen) // fast eigenleistung
+/*** CssClass PRIVATE randnotizen (textzusammenfassungen) -- fast eigenleistung
 */
     /* Oben&Unten einen schmalen clr-seco-faint Rand.
     */
-  .randnotizen {
-    .mod-header, .cm-line:first-child { // Diese mod-Klasse wird nicht exportiert
-      border-top: 0.5em solid var(--clr-seco-faint);
-      padding-top: 1em;
-    }
-  .mod-footer, .cm-line:last-child { // Diese mod-Klasse wird nicht exportiert
-      border-bottom: 0.5em solid var(--clr-seco-faint);
-    }
+  .randnotizen .mod-header, .randnotizen .cm-line:first-child { /* Diese mod-Klasse wird nicht exportiert */
+    border-top: 0.5em solid var(--clr-seco-faint);
+    padding-top: 1em;
+  }
+  .randnotizen .mod-footer, .randnotizen .cm-line:last-child { /* Diese mod-Klasse wird nicht exportiert */
+    border-bottom: 0.5em solid var(--clr-seco-faint);
   }
 
-/*** CssClass PRIVATE ort // fast fremdleistung
+/*** CssClass PRIVATE ort -- fast fremdleistung
 */
     /* Links einen schmalen verlaufenden clr-seco-muted Streifen.
     */
@@ -889,25 +933,25 @@ div#backlinks .backlinks-content {
     background-image: linear-gradient(to right,var(--clr-seco-muted) 0%, var(--clr-bg) 1%);
   }
 
-/*** CssClass PRIVATE person // fast fremdleistung
+/*** CssClass PRIVATE person -- fast fremdleistung
 */
     /* Links einen schmalen verlaufenden clr-seco-muted Streifen.
     */
   .person {
     background-image: linear-gradient(to right,var(--clr-seco-muted) 0%, var(--clr-bg) 1%);
   }
-.person > .markdown-preview-section  div:nth-of-type(4) img {
-  border-radius: 50%;
-  width: 150px;
-  position: relative;
-  float: right;
-  top: -3em;
-  padding: 4px;
-  background: #EEF3E2;
-  border: 6px groove #CDAD00;
-}
+  .person > .markdown-preview-section  div:nth-of-type(4) img {
+    border-radius: 50%;
+    width: 150px;
+    position: relative;
+    float: right;
+    top: -3em;
+    padding: 4px;
+    background: #EEF3E2;
+    border: 6px groove #CDAD00;
+  }
 
-/*** CssClass PRIVATE video // fremdleistung
+/*** CssClass PRIVATE video -- fremdleistung
 */
     /* Links einen schmalen verlaufenden clr-seco-soft Streifen.
     */
@@ -915,7 +959,7 @@ div#backlinks .backlinks-content {
     background-image: linear-gradient(to right,var(--clr-seco-soft) 0%, var(--clr-bg) 1%);
   }
 
-/*** CssClass PRIVATE web // fremdleistung
+/*** CssClass PRIVATE web -- fremdleistung
 */
     /* Links einen schmalen verlaufenden clr-seco-soft Streifen.
     */
@@ -923,7 +967,7 @@ div#backlinks .backlinks-content {
     background-image: linear-gradient(to right,var(--clr-seco-soft) 0%, var(--clr-bg) 1%);
   }
 
-/*** CssClass PRIVATE zitat // fremdleistung
+/*** CssClass PRIVATE zitat -- fremdleistung
 */
     /* Links einen schmalen verlaufenden clr-seco-soft Streifen.
     */
@@ -931,7 +975,7 @@ div#backlinks .backlinks-content {
     background-image: linear-gradient(to right,var(--clr-seco-soft) 0%, var(--clr-bg) 1%);
   }
 
-/*** CssClass PRIVATE zitate // fremdleistung
+/*** CssClass PRIVATE zitate -- fremdleistung
 */
     /* Links einen schmalen verlaufenden clr-seco-soft Streifen.
     */
@@ -970,6 +1014,60 @@ div#backlinks .backlinks-content {
   }
 
 
+/********************************************************************************
+ *
+ *** Custom callouts  Icons von https://lucide.dev/
+ *
+********************************************************************************/
+/* callout idea: eigene Idee */
+.callout[data-callout="idea"] {
+    --callout-color: 255,215,0;
+    --callout-icon: lightbulb;
+}
+/* callout heuraka: eigene Idee in Mitschriften */
+.callout[data-callout="heureka"] {
+    --callout-color: 255,215,0;
+    --callout-icon: lightbulb;
+    width: 30%;
+    float: right;
+}
+.callout[data-callout="beureka"] {
+    --callout-color: 255,215,0;
+    --callout-icon: lightbulb;
+    width: 50%;
+    float: right;
+}
+/* callout kommentar: Für eigene Anmerkungen in Mitschriften */
+.callout[data-callout="kommentar"] {
+    --callout-color: 88, 141, 1;
+    --callout-icon: pen-tool;
+    width: 30%;
+}
+.callout[data-callout="bommentar"] {
+    --callout-color: 88, 141, 1;
+    --callout-icon: pen-tool;
+    width: 50%;
+}
+.callout[data-callout="kommentar"],
+.callout[data-callout="bommentar"] {
+    font-size: 0.8rem;
+    margin-top: 0px;
+    margin-bottom: 0.5rem;
+    padding: 0.3rem;
+    margin-left: 0.2rem;
+    float: right;
+}
+.callout[data-callout="kommentar"] .callout-content,
+.callout[data-callout="bommentar"] .callout-content {
+  margin-top: 0.3rem;
+}
+.callout[data-callout="kommentar"] .callout-content p,
+.callout[data-callout="bommentar"] .callout-content p {
+    line-height: 120% ;
+}
+/*
+/*
+*/
 
 /********************************************************************************
  *

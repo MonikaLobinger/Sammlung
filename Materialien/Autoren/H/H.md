@@ -22,6 +22,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 - [[Hoelderlin Quellen]]
 - [[Homer Quellen]]
 - [[Hönigswald Quellen]]
+- [[Horaz Quellen]]
 - [[Humboldt-Wilhelm Quellen]]
 - [[Hume Quellen]]
 - [[Husserl Quellen]]

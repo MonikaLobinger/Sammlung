@@ -3,7 +3,9 @@ cssclasses: autor
 date_created: 2025-12-11
 publish: true
 tags: [Pindar,]
-ddckey: 
+ddckey:
+gndkey:
+gndlink: 
 author: Ueberphilosophy
 ---
 ```dataviewjs

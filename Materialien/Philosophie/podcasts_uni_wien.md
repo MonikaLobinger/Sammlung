@@ -1,3 +1,8 @@
+---
+ddckey: 1000
+media:  [audio,]
+---
+```dataviewjs
 - [0-abbruch-das-us-hoechstgericht-kippt-die-bundesweite-abtreibungsfreiheit](https://audiothek.philo.at/podcast/abbruch-das-us-hoechstgericht-kippt-die-bundesweite-abtreibungsfreiheit)
 - [2-a-critique-of-tolerance-in-the-age-of-identity](https://audiothek.philo.at/en/podcast/a-critique-of-tolerance-in-the-age-of-identity-2)
 - [2-a-critique-of-tolerance-in-the-age-of-identity](https://audiothek.philo.at/podcast/a-critique-of-tolerance-in-the-age-of-identity-2)

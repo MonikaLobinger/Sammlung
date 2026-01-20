@@ -4,6 +4,8 @@ date_created: 2025-12-19
 publish: true
 tags: [Deleuze-Gilles,]
 ddckey:
+gndkey:
+gndlink:
 author: Ueberphilosophy
 ---
 ```dataviewjs

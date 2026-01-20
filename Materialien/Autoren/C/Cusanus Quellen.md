@@ -4,6 +4,8 @@ date_created: 2026-01-08
 publish: true
 tags: [Cusanus, Kues-Nikolaus-von]
 ddckey:
+gndkey:
+gndlink:
 author: Ueberphilosophy
 ---
 ```dataviewjs

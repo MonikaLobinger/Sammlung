@@ -6,8 +6,9 @@ tags: [MOC]
 dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ```
 %% Begin Landmark %%
+- [[d-Alembert Quellen]]
 - [[Darwin Quellen]]
-- [[Materialien/Autoren/D/Deleuze Quellen]]
+- [[Deleuze Quellen]]
 - [[Demokrit Quellen]]
 - [[Derrida Quellen]]
 - [[Descartes Quellen]]
@@ -15,5 +16,6 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 - [[Diels Quellen]]
 - [[Dikaiarchos Quellen]]
 - [[Diogenes Quellen]]
+- [[Drevetiere Quellen]]
 
 %% End Landmark %%

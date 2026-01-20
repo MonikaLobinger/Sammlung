@@ -3,7 +3,9 @@ cssclasses: autor
 date_created: 2025-12-02
 publish: true
 tags: [Anaximander-von-Milet, ]
-ddckey: 
+ddckey:
+gndkey:
+gndlink: 
 author: Ueberphilosophy
 ---
 ```dataviewjs

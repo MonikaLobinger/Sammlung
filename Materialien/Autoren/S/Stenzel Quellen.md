@@ -4,6 +4,8 @@ date_created: 2026-01-02
 publish: true
 tags: [Stenzel-Julius]
 ddckey:
+gndkey:
+gndlink:
 author: Ueberphilosophy
 ---
 ```dataviewjs

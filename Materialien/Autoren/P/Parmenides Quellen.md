@@ -3,7 +3,9 @@ cssclasses: autor
 date_created: 2025-11-24
 publish: true
 tags: [Parmenides-von-Elea,]
-ddckey: 
+ddckey:
+gndkey:
+gndlink: 
 author: Ueberphilosophy
 ---
 ```dataviewjs

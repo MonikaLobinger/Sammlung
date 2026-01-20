@@ -8,6 +8,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 %% Begin Landmark %%
 - [[Einhard Quellen]]
 - [[Empedokles Quellen]]
+- [[Epikur Quellen]]
 - [[Eudemos Quellen]]
 - [[Eusebius Quellen]]
 

@@ -9,10 +9,9 @@ author: Ueberphilosophy
 ## Inhaltsverzeichnis Hauptbereiche
  &nbsp;&nbsp;&nbsp;&nbsp;[[home#Studieren von zu Hause aus|Allgemein]]  
  &nbsp;&nbsp;&nbsp;&nbsp;[[home#Bedienung der Site|Bedienung Netz]]  
- &nbsp;&nbsp;&nbsp;&nbsp;[[home#Benutzung des Obsidian Vaults|Bedienung Obsidian]]  
  &nbsp;&nbsp;&nbsp;&nbsp;[[home#Inhalt|Inhalt der Site/des Vaults]]  
  &nbsp;&nbsp;&nbsp;&nbsp;[[home#Erschliessung|Erschliessung]]  
- &nbsp;&nbsp;&nbsp;&nbsp;[[home#Netzresourcen|Netzressourcen]]  
+ &nbsp;&nbsp;&nbsp;&nbsp;[[home#Benutzung des Obsidian Vaults|Bedienung Obsidian]]  
  &nbsp;&nbsp;&nbsp;&nbsp;[[home#Technisches über die Quellen und deren Export|Technisches]]
 ## Allgemein: Studieren von zu Hause aus
 Sammlung von Links zu __Materialien__ zum Lernen (hörbar) __[[-Materialien|als Katalog]]__/__[[Materialien|als Verzeichnis]]__  und frei zugänglichen __Quelltexten__ __[[Materialien/timeline|als  Zeitleiste]]__/__[[Autoren|als Verzeichnis]]__. 
@@ -50,8 +49,31 @@ sed -i 's/<div class="tree-item-self is-clickable mod-collapsible nav-folder-tit
 Der gesamte Ablauf des Exports steht in [[2025-12-14#Wie es läuft]]
 %%
 
+## Inhalt
+Die Netzversion/die lokale Version, anders ausgedrückt die Site/der Vault ^[so nennt Obsidian Notizbücher] besteht aus einem öffentlichen und einem privaten Bereich. Der private Bereich ist im Ordner "Werkstatt". Er ist für eigene Notizen jeglicher Art gedacht und macht in der Netzversion keinen Sinn.
+
+Das Kernstück des öffentliche Bereichs ist der Ordner [[Materialien]]. Es wird unterschieden zwischen Lernmaterialen, hauptsächlich Videos und Audios,  und Quellen. Lernmaterialen sind über ein Thema, Quellen sind  frei zugängliche Originaltexte. Für Lernmaterialien gibt es einen  [[-Materialien|Katalog]] nach Bereichen. Quellen sind nach Autoren unterschieden, sie sind über die [[Materialien/timeline|Zeitleiste]]  zu finden. Der Katalog wird automatisch erstellt, die timeline manuell. Beide Bereiche sind auch über das [[Materialien|Inhaltsverzeichnis]] zugänglich. Über die Seitenleiste links kann man alle Seiten finden. Die Dateinamen der Kataloge beginnen mit einem Bindestrich, die Dateinamen der Inhaltsverzeichnisse heissen wie die Verzeichnisse, die sie auflisten.
+- Grobe [[Materialien/timeline|Zeitleiste]]  mit Links zu Quellenseiten (verknüpft über den Autorennamen)
+- [[-Materialien|Katalog]] mit Links zu thematischen Sammlungen von  Links zu Lernmaterialen
+## Erschliessung
+Ein physikalisches Buch steht genau einmal an einem bestimmten Platz. In Computern ist das anders. Man könnte nun meinen, wenigstens eine Datei müsse genau einmal irgendwo liegen, doch das stimmt nicht. Die selbe Datei könnte zweimal auf einem Speichermedium liegen. Änderte man sie an einem Ort, wäre sie auch am anderen verändert, da es die selbe Datei ist. So könnte eine Datei die eine Veranstaltung "evolutionäre Erkenntnistheorie" beschreibt, einmal im Ordner Philosophie und einmal im Ordner Biologie liegen. Dieser Ansatz wurde in [Nonmatrikulation](https://github.com/MonikaLobinger/Nonmatrikulation) nicht gewählt. Bei der Ablage der Dateien wird wie bei physikalischen Objekten verfahren. Jede Datei, auch eine Datei mit einer Veranstaltungsbeschreibung liegt immer genau einmal in einem bestimmten Ordner. So kann man sich sicher sein, wenn man eine Datei über Ordnersuche findet, dass man die selbe Datei nicht in einem anderen Ordner findet (und so vielleicht ohne es zu merken die selbe Veranstaltung zweimal auf seine "WillIchHören" Liste schreibt).
+### Inhaltsverzeichnisse
+Veranstaltungen liegen in Ordnern [[Materialien]]. Bis auf [[Autoren]] (und [[Autoren-Sekundaer]]) enthalten alle Unterordner in [[Materialien]] Veranstaltungen oder Unterordner mit Veranstaltungen. Inhaltsverzeichnisse in [[Materialien]] heißen wie der Ordner. Ein [[Inhaltsverzeichnis|Hauptinhaltsverzeichnis]] liegt parallel zu dieser Datei.
+### Kataloge
+Die Deutsche Nationalbibliothek wartet die [Dewey-Dezimalklassifikation auf deutsch](https://www.dnb.de/DE/Professionell/DDC-Deutsch/ddc-deutsch_node.html), kurz DDC. Jeder Veranstaltung wird ein Attribut `DDC` mit einer dreistelligen DDC Nummer gegeben. Entscheidet man sich die Veranstaltung "evolutionäre Erkenntnistheorie" im Bereich Philosophie abzulegen, bekommt sie die DDC Nummer 121, legte man sie in Biologie ab, bekäme sie die DDC Nummer 576. 
+
+Die DDC Nummern werden in Katalogen angezeigt. Die Kataloge sind nach DDC Nummern sortiert. Im [[-Materialien|Hauptkatalog]] sind alle Veranstaltungen im Verzeichnis Materialien aufgelistet, in Unterkatalogen, z.B. [[-Sprachphilosophie|Sprachphilosophie]] entsprechend nur die Veranstaltungen des entsprechenden Verzeichnisses.
+### Vernetzung
+Nichtlineare Verbindungen in Dateien/Notizen können auf drei Arten gefunden und/oder erstellt werden.
+#### Tags
+Ein Wort, dem ein Doppelkreuz vorangestellt ist, wird zu #tag. Klickt man darauf, werden im rechten Seitenbereich alle Dateien angezeigt, die dieses #Tag enthalten.
+#### Links
+Notizen können untereinander verlinkt sein. In beiden Versionen kann man wie üblich auf diese Links klicken. In der Netzversion werden die Rückverweise (Backlinks) unten auf der Seite angezeigt. In der lokalen Version kann man verschiedene Rückverweis Bereiche anzeigen. 
+#### Suche nach einem Wort
+Nach jeder bestimmten Buchstabenfolge kann über alle Dateien in der Netzversion in der linken Seitenleiste gesucht werden; in der lokalen Version ist greift man auf diese Suche über den Befehl `Suchen: in allen Dateien suchen` zu, die Ergebnisse werden dann auch links in der Seitenleiste angezeigt. 
+
 ## Benutzung des Obsidian Vaults
-Wird diese Seite im Web gelesen sollte dieser Abschnitt übersprungen werden. Wird diese Seite in Obsidian gelesen, wurde [der Obsidian Vault](https://github.com/MonikaLobinger/Nonmatrikulation)^[Ein Notizbuch  heißt in Obsidian Vault] heruntergeladen. Dieser Vault enthält keine Plugins. Im Abschnitt [[home#Einstellungen und Plugins in Obsidian|Einstellungen und Plugins für Obsidian]] ist beschrieben, wie dieser Vault bei der Erstellung der Quellen eingerichtet war. Das braucht man nicht alles, um ihn zu benutzen. Auch wurde dort die Anzeigesprache Englisch verwendet. Hier wird für ein auf Deutsch eingestelltes Obsidian beschrieben, wie man den Vault einrichtet, um ihn fürs Selbststudium gut nutzen zu können.
+Wird diese Seite in Obsidian gelesen, wurde [der Obsidian Vault](https://github.com/MonikaLobinger/Nonmatrikulation)^[Ein Notizbuch  heißt in Obsidian Vault] heruntergeladen. Dieser Vault enthält keine Plugins. Im Abschnitt [[home#Einstellungen und Plugins in Obsidian|Einstellungen und Plugins für Obsidian]] ist beschrieben, wie dieser Vault bei der Erstellung der Quellen eingerichtet war. Das braucht man nicht alles, um ihn zu benutzen. Auch wurde dort die Anzeigesprache Englisch verwendet. Hier wird für ein auf Deutsch eingestelltes Obsidian beschrieben, wie man den Vault einrichtet, um ihn fürs Selbststudium gut nutzen zu können.
 
 ### Einstellungen
 Mit der Tastenkombination `Strg-,`^[Steuerung Komma] öffnet man den Dialog Einstellungen. Dieser hat links sieben Einträge im Abschnitt "Optionen" und noch einige im Abschnitt "Obsidian-Erweiterungen".   
@@ -117,93 +139,6 @@ Das Plugin Waypoint ist vom Entwickler Idrees Hassan und wurde über 90 Tausend 
 - Neue Notizen im Verzeichnis Werkstatt sind typisiert, beim Erstellen einer neuen Notiz erscheint eine Auswahlliste.
 
 Wurden die Einstellungen und Erweiterungen wie oben angegeben eingerichtet, funktioniert das alles. Im Abschnitt [[home#Technisches über die Quellen und deren Export|Technisches über die Quellen und deren Export]] werden die verwendeten Techniken genauer beschrieben und weitere Plugins vorgestellt.
-## Inhalt
-Die Netzversion/die lokale Version, anders ausgedrückt die Site/der Vault ^[so nennt Obsidian Notizbücher] besteht aus einem öffentlichen und einem privaten Bereich. Der private Bereich ist im Ordner "Werkstatt". Er ist für eigene Notizen jeglicher Art gedacht und macht in der Netzversion keinen Sinn.
-
-Das Kernstück des öffentliche Bereichs ist der Ordner [[Materialien]]. Es wird unterschieden zwischen Lernmaterialen, hauptsächlich Videos und Audios,  und Quellen. Lernmaterialen sind über ein Thema, Quellen sind  frei zugängliche Originaltexte. Für Lernmaterialien gibt es einen  [[-Materialien|Katalog]] nach Bereichen. Quellen sind nach Autoren unterschieden, sie sind über die [[Materialien/timeline|Zeitleiste]]  zu finden. Der Katalog wird automatisch erstellt, die timeline manuell. Beide Bereiche sind auch über das [[Materialien|Inhaltsverzeichnis]] zugänglich. Über die Seitenleiste links kann man alle Seiten finden. Die Dateinamen der Kataloge beginnen mit einem Bindestrich, die Dateinamen der Inhaltsverzeichnisse heissen wie die Verzeichnisse, die sie auflisten.
-- Grobe [[Materialien/timeline|Zeitleiste]]  mit Links zu Quellenseiten (verknüpft über den Autorennamen)
-- [[-Materialien|Katalog]] mit Links zu thematischen Sammlungen von  Links zu Lernmaterialen
-## Erschliessung
-Ein physikalisches Buch steht genau einmal an einem bestimmten Platz. In Computern ist das anders. Man könnte nun meinen, wenigstens eine Datei müsse genau einmal irgendwo liegen, doch das stimmt nicht. Die selbe Datei könnte zweimal auf einem Speichermedium liegen. Änderte man sie an einem Ort, wäre sie auch am anderen verändert, da es die selbe Datei ist. So könnte eine Datei die eine Veranstaltung "evolutionäre Erkenntnistheorie" beschreibt, einmal im Ordner Philosophie und einmal im Ordner Biologie liegen. Dieser Ansatz wurde in [Nonmatrikulation](https://github.com/MonikaLobinger/Nonmatrikulation) nicht gewählt. Bei der Ablage der Dateien wird wie bei physikalischen Objekten verfahren. Jede Datei, auch eine Datei mit einer Veranstaltungsbeschreibung liegt immer genau einmal in einem bestimmten Ordner. So kann man sich sicher sein, wenn man eine Datei über Ordnersuche findet, dass man die selbe Datei nicht in einem anderen Ordner findet (und so vielleicht ohne es zu merken die selbe Veranstaltung zweimal auf seine "WillIchHören" Liste schreibt).
-### Inhaltsverzeichnisse
-Veranstaltungen liegen in Ordnern [[Materialien]]. Bis auf [[Autoren]] (und [[Autoren-Sekundaer]]) enthalten alle Unterordner in [[Materialien]] Veranstaltungen oder Unterordner mit Veranstaltungen. Inhaltsverzeichnisse in [[Materialien]] heißen wie der Ordner. 
-### Kataloge
-Die Deutsche Nationalbibliothek wartet die [Dewey-Dezimalklassifikation auf deutsch](https://www.dnb.de/DE/Professionell/DDC-Deutsch/ddc-deutsch_node.html), kurz DDC. Jeder Veranstaltung wird ein Attribut `DDC` mit einer dreistelligen DDC Nummer gegeben. Entscheidet man sich die Veranstaltung "evolutionäre Erkenntnistheorie" im Bereich Philosophie abzulegen, bekommt sie die DDC Nummer 121, legte man sie in Biologie ab, bekäme sie die DDC Nummer 576. 
-
-Die DDC Nummern werden in Katalogen angezeigt. Die Kataloge sind nach DDC Nummern sortiert. Im [[-Materialien|Hauptkatalog]] sind alle Veranstaltungen im Verzeichnis Materialien aufgelistet, in Unterkatalogen, z.B. [[-Sprachphilosophie|Sprachphilosophie]] entsprechend nur die Veranstaltungen des entsprechenden Verzeichnisses.
-### Vernetzung
-Nichtlineare Verbindungen in Dateien/Notizen können auf drei Arten gefunden und/oder erstellt werden.
-#### Tags
-Ein Wort, dem ein Doppelkreuz vorangestellt ist, wird zu #tag. Klickt man darauf, werden im rechten Seitenbereich alle Dateien angezeigt, die dieses #Tag enthalten.
-#### Links
-Notizen können untereinander verlinkt sein. In beiden Versionen kann man wie üblich auf diese Links klicken. In der Netzversion werden die Rückverweise (Backlinks) unten auf der Seite angezeigt. In der lokalen Version kann man verschiedene Rückverweis Bereiche anzeigen. 
-#### Suche nach einem Wort
-Nach jeder bestimmten Buchstabenfolge kann über alle Dateien in der Netzversion in der linken Seitenleiste gesucht werden; in der lokalen Version ist greift man auf diese Suche über den Befehl `Suchen: in allen Dateien suchen` zu, die Ergebnisse werden dann auch links in der Seitenleiste angezeigt. 
-
-
-## Netzresourcen
-### Seiten für Quellen
-- [Gottwein](https://www.gottwein.de/7)
-- [12koerbe](http://12koerbe.de/)
-- [Perseus](https://www.perseus.tufts.edu/hopper/)
-- [librivox](https://librivox.org/)
-- [Internet Archive](https://archive.org/)
-- [zeno](http://www.zeno.org/)
-- [Projekt Gutenberg](https://www.projekt-gutenberg.org/)
-- [Wikisource](https://wikisource.org/wiki/Main_Page)
-- [Google Books](https://books.google.de/)
-- [jstor](https://www.jstor.org/)
-- [Deutsches Textarchiv](https://deutschestextarchiv.de/)
-- [Österreichische Nationalbibliothek](https://onb.digital/)
-- [Standard E-Books](https://standardebooks.org/)
-- [Französische Nationalbibliothek](https://www.bnf.fr/en) 
-- [Münchener Digitalisierungszentrum](https://www.digitale-sammlungen.de/de)
-- [Bibliothek Uni Halle](https://halit.bibliothek.uni-halle.de/search?q=&v=)
-- [biblotheca augusthana](https://www.hs-augsburg.de/~harsch/augustana.html)
-- [Herzogin Anna Amalia Bibliothek](https://haab-digital.klassik-stiftung.de/viewer/index/)
-- [Internet History Sourcebooks Project](https://sourcebooks.fordham.edu/index.asp)
-- [Logos Verlag Open Access](https://www.logos-verlag.de/cgi-bin/mylibrary)
-- [Marxist Internet Archive](https://www.marxists.org/index.htm)
-- [Hegel Werke](https://hegel.net/hegelwerke/)
-- [Psychoanalytische Bibliothek Berlin](https://psybi-berlin.de/literatur-online/)
-- [oapen](https://oapen.org/)
-- [de Gruyter open access](https://library.oapen.org/browse?type=publisher&value=De+Gruyter)
-- [Logos Verlag Open Access Verzeichnis](https://www.logos-verlag.de/ebooks/OA/)
-%% 
-- [Annas Archive](https://annas-archive.org/) Schattenarchiv, Grauzone, manchmal illegal
-- https://dokumen.pub/  Bücher mit Copyright Verletzungen und evlt Malware 
-- [Zeitungsartikel archive.ph](https://archive.ph/)
-- [odysseetheater](https://odysseetheater.org/ftp/) Weiss nicht ob die legal oder beständig sind
-%% 
-### Kanäle für Materialen
-#### Sammlungen von Kanälen
-- [Uni Frankfurt Portalsammlung](https://okapi.uni-frankfurt.de/index.php/Philosophie_Multimedial)
-- [Vorlesungssammlung Philosophie](https://www.edukatico.org/de/online-kurse/philosophie)
-- [Philosophiechannels auf YouTube](https://griffl.org/die-besten-philosophie-channels-auf-youtube/)
-- [30 Quellen für Onlinevorlesungen aller Fachbereiche](https://www.fernstudi.net/magazin/10963)
-- [Wissenschaftspodcasts](https://wissenschaftspodcasts.de/)
-- [Philosophie Blogs](https://www.information-philosophie.de/blogs.html)
-#### Kanäle Philosophie
-- [LMU Videos von Vorlesungen und Vorträgen Philosophie](https://www.philosophie.lmu.de/de/medien/videos-von-vorlesungen-und-vortraegen/)
-- [Uni Hannover Philosophie Vorlesungsaufzeichnungen](https://www.philos.uni-hannover.de/de/studium/lehrveranstaltungen/videos)
-- [Uni Tübingen kath-theol Fakultät Vorlesungen als Videos](https://uni-tuebingen.de/fakultaeten/katholisch-theologische-fakultaet/lehrstuehle/philosophische-grundfragen-der-theologie/vorlesungen-als-video/)
-- [TU Darmstadt Philosophie Audiothek](https://www.philosophie.tu-darmstadt.de/institut_phil/audiothek_phil/index.de.jsp)
-- [Philosophische Audiothek Uni Wien](https://audiothek.philo.at/) - [Sitemaps](https://audiothek.philo.at/sitemap.xml)
-- [Philosophie Uni Stuttgart](https://www.youtube.com/@institutfurphilosophieuniv5984/featured)
-- [Finkelde YouTube](https://www.youtube.com/@dominikfinkelde/videos) 
-- [Online Vorlesungen Philosophie des Geistes](https://www.online-vorlesungen.de/Videos/Philosophie/Philosophie_des_Geistes.htm)
-#### Andere Bereiche
-- [LMU Psychologie/Pädagogik - einige frei](https://videoonline.edu.lmu.de/de/semester)
-- [Uni Düsseldorf Mediathek](https://mediathek.hhu.de/)
-- [Uni Hamburg Lecture2Go Videokatalog](https://lecture2go.uni-hamburg.de/l2go)
-- [Alexander Lasch Linguistik YouTube](https://www.youtube.com/@AlexanderLasch/featured)
-- [Elena Smirnova Sprachwissenschaft YouTube](https://www.youtube.com/@elenasmirnova674/featured)
-- [Lacan Podcast](http://lacast.de/) und [Lacan Videos](https://lacan-entziffern.de/category/video-lacan-entziffern/)
-- [ARD Radiowissen](https://www.ardaudiothek.de/sendung/radiowissen/urn:ard:show:a5369fa8556fcd7b/)
-### Datenbanken für alle Medien
-- [Datenbank Infosystem](https://dbis.ur.de/browse/subjects/31/)
-%%https://transformatorische-bildung.de/ %%
-
 ## Technisches über die Quellen und deren Export
 ### Einstellungen und Plugins in Obsidian
 - Erstellt mit [Obsidian](https://obsidian.md/), 
@@ -234,6 +169,9 @@ Nach jeder bestimmten Buchstabenfolge kann über alle Dateien in der Netzversion
   - Einstellungen Webpage HTML Export
      - Abschnitt Page Features
        - Graph View aus
+       - Custom HTML/JS ^[Fügt den Inhalt von banner.html in ein div.parsed-feature-container als erstes div in body ein, nach einem (davon unabhängigen) style element]
+         - Source: banner.html
+         - Feature Placement: body start
        - Backlinks aus
        - Tags Feature Placement `Start` von `.footer .data-bar` 
        - RSS aus
@@ -265,6 +203,7 @@ Nach jeder bestimmten Buchstabenfolge kann über alle Dateien in der Netzversion
       - Open Folder Notes by only clicking directly on the folder name anwählen
 - Plugin [Quickadd](https://github.com/chhoumann/quickadd) ^[um damit beim Start das  selbsterstellte Script vimrc.js zu laden.]
 - Plugin [Calendar](https://github.com/liamcain/obsidian-calendar-plugin) inklusive einer [Anpassung](allhelperfiles/pointobsidian/plugins/calendar/main.js), mit der der Befehl `Calendar: Open view` funktioniert.
+- Plugin [Chronology](https://github.com/Canna71/obsidian-chronology)
 - Für Zeitleiste [Timeline Callout von FirelsGood](https://github.com/r-u-s-h-i-k-e-s-h/Obsidian-CSS-Snippets/blob/Collection/Snippets/Callout%20styling%20-%20Timeline%20callout.md), leicht angepasst, als `timeline.css`. 
 - Plugin [Hot-Reload](https://github.com/pjeby/hot-reload#) manuell installiert ^[um einfacher eigenes Plugin vim-fuer-sammlung zu entwickeln]
 - eigenes Plugin vim-fuer-sammlung zum Anzeigen des Vim Modes in der Status Bar.

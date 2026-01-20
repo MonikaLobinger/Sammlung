@@ -3,7 +3,9 @@ cssclasses: autor
 date_created: 2025-12-01
 publish: true
 tags: [Protagoras,]
-ddckey: 
+ddckey:
+gndkey:
+gndlink: 
 author: Ueberphilosophy
 ---
 ```dataviewjs

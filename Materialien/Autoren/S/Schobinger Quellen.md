@@ -3,7 +3,9 @@ cssclasses: autor
 date_created: 2025-12-04
 publish: true
 tags: [Schobinger-Jean-Pierre,]
-ddckey: 
+ddckey:
+gndkey:
+gndlink: 
 author: Ueberphilosophy
 ---
 ```dataviewjs

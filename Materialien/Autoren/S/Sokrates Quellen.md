@@ -3,7 +3,9 @@ cssclasses: autor
 date_created: 2025-11-28
 publish: true
 tags: [Sokrates,]
-ddckey: 
+ddckey:
+gndkey:
+gndlink: 
 author: Ueberphilosophy
 ---
 ```dataviewjs

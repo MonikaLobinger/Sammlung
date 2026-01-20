@@ -4,6 +4,8 @@ date_created: 2026-01-02
 publish: true
 tags: [Dikaiarchos, ]
 ddckey:
+gndkey:
+gndlink:
 author: Ueberphilosophy
 ---
 ```dataviewjs

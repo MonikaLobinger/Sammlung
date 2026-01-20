@@ -7,7 +7,7 @@ author: Ueberphilosophy
 ---
 isonomia - ἰσονομία
 
-Gleichheit aller Bürger einer Polis vor dem Gesetz
+Gleichheit aller Bürger einer Polis vor dem Gesetz, Gleichgesetzlichkeit
 
 
 ## -footnotes

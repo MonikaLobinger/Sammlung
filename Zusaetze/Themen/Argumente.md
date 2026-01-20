@@ -10,7 +10,7 @@ author: Ueberphilosophy
 - [Was sind Argumente](https://geister.podigee.io/4-argumente) - Folge 3 des Podcasts "geister - der philosophie-podcast" 
 ## Fehlschlüsse
 - [thou shalt not commit logical fallacies](https://yourlogicalfallacyis.com/) 
-- [Du sollst keine logischen Fehlschlüsse ziehen](https://yourlogicalfallacyis.com/de) - Übersetzung der Seite "thou shalt not commit logical fallacies"
+- [Du sollst keine logischen Fehlschlüsse ziehen](https://yourlogicalfallacyis.com/de) - Deutsche Version der Seite [thou shalt not commit logical fallacies](https://yourlogicalfallacyis.com/)
 - Na logisch! Ausführliche Beschreibung von fehlerhafter Argumentation
     - [1 Na logisch!](https://www.hoheluft-magazin.de/2015/10/na-logisch/)
     - [2 Der dogmatische Fehlschluss](https://www.hoheluft-magazin.de/2015/10/na-logisch-der-dogmatische-fehlschluss/)

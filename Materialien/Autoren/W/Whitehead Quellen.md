@@ -3,7 +3,9 @@ cssclasses: autor
 date_created: 2025-12-12
 publish: true
 tags: [Whitehead-Alfred,]
-ddckey: 
+ddckey:
+gndkey:
+gndlink: 
 author: Ueberphilosophy
 ---
 ```dataviewjs

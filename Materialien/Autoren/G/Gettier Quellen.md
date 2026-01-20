@@ -3,7 +3,9 @@ cssclasses: autor
 date_created: 2025-12-12
 publish: true
 tags: [Gettier-Edmund,]
-ddckey: 
+ddckey:
+gndkey:
+gndlink: 
 author: Ueberphilosophy
 ---
 ```dataviewjs

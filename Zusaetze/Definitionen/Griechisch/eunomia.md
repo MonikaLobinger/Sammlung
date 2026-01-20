@@ -7,7 +7,7 @@ author: Ueberphilosophy
 ---
 eunomia - εὐνομία
 
-Wohlgesetzlichkeit, gute Ordnung
+Wohlgesetzlichkeit, gute Ordnung, auch im Sinne göttlicher Ordnung
 
 Auch eine Göttin, eine der Horen
 

@@ -4,6 +4,8 @@ date_created: 2025-12-31
 publish: true
 tags: [Tyrtaios, ]
 ddckey:
+gndkey:
+gndlink:
 author: Ueberphilosophy
 ---
 ```dataviewjs

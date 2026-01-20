@@ -3,7 +3,9 @@ cssclasses: autor
 date_created: 2025-11-27
 publish: true
 tags: [Thales-von-Milet,]
-ddckey: 
+ddckey:
+gndkey:
+gndlink: 
 author: Ueberphilosophy
 ---
 ```dataviewjs

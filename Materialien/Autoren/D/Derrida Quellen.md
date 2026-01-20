@@ -3,7 +3,9 @@ cssclasses: autor
 date_created: 2025-12-09
 publish: true
 tags: [Derrida-Jacques,]
-ddckey: 
+ddckey:
+gndkey:
+gndlink: 
 author: Ueberphilosophy
 ---
 ```dataviewjs
