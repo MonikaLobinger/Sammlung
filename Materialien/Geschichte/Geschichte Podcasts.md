@@ -21,7 +21,7 @@ enthält nur Podcasts, die nicht einsortiert sind
 - [004 Zahlen bitte! So datieren wir in unseren Wissenschaften](https://ausgesprochenalt.com/folge-04-jahreszahlen-wie-datieren-wir-in-unseren-wissenschaften/)
 - [005 Homer - Immer und überall berühmt](https://ausgesprochenalt.com/folge-05-der-dichter-homer-immer-und-ueberall-beruehmt/)
 - [006 Über die Wahrheit im Wein](https://ausgesprochenalt.com/folge-06-ueber-die-wahrheit-im-wein-mit-julian-schneider/)
-- [007 Die Republik schlägt zurück - Geld in der römischen Republik II](https://ausgesprochenalt.com/folge-07-die-republik-schlaegt-zurueck-geld-in-der-roemischen-republik-iihttps://ausgesprochenalt.com/folge-05-der-dichter-homer-immer-und-ueberall-beruehmt//)
+- [007 Die Republik schlägt zurück - Geld in der römischen Republik II](https://ausgesprochenalt.com/folge-07-die-republik-schlaegt-zurueck-geld-in-der-roemischen-republik-ii/)
 - [008 Die Olympischen Spiele als Festival](https://ausgesprochenalt.com/folge-08-von-bratspiessen-und-brunnen-die-olympischen-spiele-als-festival/)
 - [009 Alles neu macht der Alex - Alexander der große Hipster](https://ausgesprochenalt.com/folge-09-alles-neu-macht-der-alex-alexander-der-grosse-hipster/)
 - [010 Medizin in der Antike](https://ausgesprochenalt.com/folge-10-how-to-save-a-life-medizin-in-der-antike/)

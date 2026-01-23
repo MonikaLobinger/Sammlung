@@ -20,7 +20,19 @@ author: Ueberphilosophy
  - [ ] [[@Parmenides - Lehrgedicht]]
 
 ## technische Entwicklung
-- [ ] nix
+- [ ] Plugin
+  - [ ] Defaults anzeigen
+  - [ ] Einige Werte in Setting speichern (Welche Skriptdatei z.B.)
+  - [ ] Formatieren mit css
+    - [ ] Breiter
+    - [ ] Ok Cancel Knopf
+  - [ ] Typen berücksichtigen
+  - [ ] Werte editieren lassen
+  - [ ] Neue Werte hinzufügen
+  - [ ] Neue Typen hinzufügen
+  - [ ] Werte/Typen/Defaults löschen
+  - [ ] Speichern
+- [ ] Nix
 ## Heute bearbeitete @ Dateien
 ```dataview
 TABLE   regexreplace(file.folder, ".*\\/([^\\/]+)$", "$1")  AS folder

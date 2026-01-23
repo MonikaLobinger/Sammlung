@@ -1,0 +1,2 @@
+#! /usr/bin/env bash
+cp ../Development/foty/_scripts/test.js allhelperfiles/allscripts/poty.js

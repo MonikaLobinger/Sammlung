@@ -13,11 +13,12 @@
     let nextlink   = "";
     let lastline   = "";
     let fugger     = false; // used by example configurations
-
-
-    let knownYAML  = ["cssclasses", "date_created", "publish", "tags", ];
+    
+    
+    let knownYAML  = ["aliases", "cssclass", "date_created", "private", "publish", 
+                      "tags", "revised"];
     const inYAML   = new Map()
-    let results    = await tp.user.foty(tp, app);
+    let results    = await tp.user.foty(tp, app); 
 
     if(results.CANCELLED == true) { return }
 
@@ -42,67 +43,102 @@
                 case "fugger":    fugger     = value; break;
                 default: break;
             }
-        } else {
+        } else { 
           if(value != "!no!") {
-            inYAML.set(key,value);
+         inYAML.set(key,value); 
           } else {
             let idx = knownYAML.indexOf(key);
             if (idx >= 0) {
               knownYAML.splice( idx, 1 );
-            }
-          }
+        }
+    } 
         }
     }
     if(fugger && lastline != "") lastline="am ende "+type+"!";
+%>
 
-    let value = ""
-    let rend = ""
-    tR += `---\n`;
-    knownYAML.forEach(key => {
-        value = inYAML.get(key)
-        if(Array.isArray(value) && value.length > 1) {
-            tR += `${key}: \n`;
-            value.forEach((v,i) => {
-                tR += `  - ${v}\n`;
-            })
-         } else {
-            tR += `${key}: ${value}\n`;
-         }
-         inYAML.delete(key);
+
+<%_*// ***** WRITING Frontmatter ***** 
+%>---<%*
+    knownYAML.forEach(key => {%>
+<% key %>: <% inYAML.get(key) %>
+<%_*    inYAML.delete(key);
     })
     inYAML.forEach((val, key, m) => {
-        if(Array.isArray(val)) {
-            tR += `${key}: \n`;
-            val.forEach((v,i) => {
-                tR += `  - ${v}\n`;
+        if(Array.isArray(val)) {%>
+<% key %>:
+  - <% val[0] %>
+x<%key %>:
+<%*         val.forEach((v,i) => {
+                if(i!=0) {%>
+  - <% v %>
+<%_*            }
             })
-        } else {
-            tR += `${key}: ${val}\n`;
-        }
+        } else {%>
+<% key %>: <% val %>
+<%_*    }
         inYAML.delete(key);
     })
-    tR += `---\n`;
-    if(scriptline != "") tR   += `${scriptline}\n`;
-    if(pict!=""){
-        if(pict_width!=0) {
-            tR +=`![${pict_width}](${pict})`
-        } else {
-            tR +=`![](${pict})`
-        }
-        tR +=`\n`
-    }
-    if(firstline  != "") tR   += `# ${firstline}\n`;
-    if(sndline    != "") tR += `${sndline}\n`;
-    if(thrdline   != "") tR += `${thrdline}\n`;
-    if(fourthline != "") tR += `${fourthline}\n`;
-    if(fifthline  != "") rend += `${fifthline}\n`;
-    if(nextlink!="") {
-        if(prevlink!="") {
-            rend += `&#9668;${prevlink}`
-        }
-        rend += `- ${nextlink}&#9658;\n`
-    }
-    if(lastline   != "") rend += `\n${lastline}\n`;
-_%>
-<% tp.file.cursor(1) _%>
-<% rend _%>
+%>
+---
+
+
+<%_*// ***** WRITING Picture ***** 
+    if(pict!="") { 
+        if(pict_width!=0) { %>
+![|<% pict_width %>](<% pict %>)
+<%_*} else { %>
+![](<% pict %>)
+<%_*    } %>
+<%_*} %>
+
+
+
+<%_* // ***** WRITING Scriptline ***** 
+    if(scriptline!="") { %>
+<% scriptline %>
+<%_*} -%>
+
+<%_* // ***** WRITING Firstline ***** 
+    if(firstline!="") { %>
+# <% firstline %>
+<%_*} -%>
+
+<%_* // ***** WRITING Sndline ***** 
+    if(sndline!="") { %>
+<% sndline %>
+<%_*} -%>
+
+<%_* // ***** WRITING Thrdline ***** 
+    if(thrdline!="") { %>
+<% thrdline %>
+<%_*} -%>
+
+<%_* // ***** WRITING Fourthline ***** 
+    if(fourthline!="") { %>
+<% fourthline %>
+<%_*} -%>
+
+<%_* // ***** WRITING Fifthline ***** 
+    if(fifthline!="") { %>
+<% fifthline %>
+<%_*} -%>
+
+<%_* // ***** Setting Cursor ***** %>
+<% tp.file.cursor(1) %>
+
+
+<%_* // ***** WRITING links to prev/next ***** 
+if(nextlink!="") { %>
+<%*      if(prevlink!="") { %>
+&#9668;<% prevlink %>
+<%_*     } _%>
+- <% nextlink %>&#9658;
+<%_* } %>
+
+
+
+<%_* // ***** WRITING Lastline ***** 
+    if(lastline!="") { %>
+<% lastline %>
+<%_* } %>

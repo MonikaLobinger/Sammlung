@@ -6,6 +6,7 @@ author: Ueberphilosophy
 ---
 
 # Nonmatrikulation
+Sammlung von Vorlesungen und frei zugänglichen Primärquellen
 ## Inhaltsverzeichnis Hauptbereiche
  &nbsp;&nbsp;&nbsp;&nbsp;[[home#Studieren von zu Hause aus|Allgemein]]  
  &nbsp;&nbsp;&nbsp;&nbsp;[[home#Bedienung der Site|Bedienung Netz]]  
@@ -14,17 +15,17 @@ author: Ueberphilosophy
  &nbsp;&nbsp;&nbsp;&nbsp;[[home#Benutzung des Obsidian Vaults|Bedienung Obsidian]]  
  &nbsp;&nbsp;&nbsp;&nbsp;[[home#Technisches über die Quellen und deren Export|Technisches]]
 ## Allgemein: Studieren von zu Hause aus
-Sammlung von Links zu __Materialien__ zum Lernen (hörbar) __[[-Materialien|als Katalog]]__/__[[Materialien|als Verzeichnis]]__  und frei zugänglichen __Quelltexten__ __[[Materialien/timeline|als  Zeitleiste]]__/__[[Autoren|als Verzeichnis]]__. 
+Sammlung von Links zu __Materialien__ (Vorlesungen als Audios oder Videos) __[[-Materialien|als Katalog]]__/__[[Materialien|als Verzeichnis]]__  und frei zugänglichen __Quelltexten__ (Primärquellen) __[[Materialien/timeline|als  Zeitleiste]]__/__[[Autoren|als Verzeichnis]]__. 
 
-Diese befindet sich als kaum kommentierte Linksammlung im Ordner `Materialen`. Der Ordner `Werkstatt` kann für jeweils eigene Notizen verwendet. Im Ordner `Zusaetze` sind für die Sammlung unwichtige Seiten. Die selbst erstellen Definitionen im Ordner `Zusaetze/Definitionen` sind grob, auf den Themenseiten im Ordner `Zusaetze/Themen` finden sich Links zu bestimmten Themen.
+Diese befindet sich als kaum kommentierte Linksammlung im Ordner `Materialen`. Der Ordner `Werkstatt` kann in der lokalen Version (dem Obsidian Vault[^1]) für jeweils eigene Notizen verwendet werden. Im Ordner `Zusaetze` sind  zusätliche Seiten, die die Sammlung ergänzen. Die selbst erstellen Definitionen im Ordner `Zusaetze/Definitionen` sind grob, auf den Themenseiten im Ordner `Zusaetze/Themen` finden sich Links zu bestimmten Themen.
 
-Die Sammlung ist im Netz als statische Site veröffentlicht. Die [Quellen](https://github.com/MonikaLobinger/Nonmatrikulation) sind ein [Obsidian](https://obsidian.md/) Notebook.
+Die Sammlung ist im Netz als statische Site veröffentlicht. Die [Quellen](https://github.com/MonikaLobinger/Nonmatrikulation) sind ein [Obsidian](https://obsidian.md/) Notebook - damit kann man sich den Vault[^1] als lokale Version einrichten.
 ## Bedienung der Site
  - Klick vor (links neben) Überschriften klappt den Inhalt ein, nochmaliger Klick wieder auf; das zugehörige Symbol wird beim Drüberfahren mit der Maus sichtbar. 
  - Ganz oben links und rechts kann man die Seitenleisten ein- und ausblenden
  - Auf der rechten Seitenleiste oben kann man dunkle oder helle Anzeige einstellen.
  - Im Suchfeld auf der linken Seitenleiste oben durchsucht man alle Seiten. Nach Tags sucht man mit vorrangestelltem Doppelkreuz: `#tagname`. 
- - Beim  Klick mit der Maus öffnen alle Links, auch externe,  im selben Fenster. `Ctrl` (deutsch: `Shift`)-Klick öffnet in einem neuen Tab.
+ - Beim  Klick mit der Maus öffnen alle Links, auch externe,  im selben Fenster. `Ctrl` (deutsch: `Strg`)-Klick öffnet in einem neuen Tab.
  - Links auf Überschriften funktionieren nur innerhalb der aktuellen Seite ^[Das ist wohl dem Plugin  [Webpage HTML Export](https://github.com/KosmosisDire/obsidian-webpage-export); doch es exportiert die Seitenleisten mit der Ordnerstruktur und der Dateistruktur ohne Anpassung ohne Probleme, darum behalte ich es bei, hoffend, dass es verbessert wird.], entsprechend zeigen die Hovers auf Überschriften anderer Seiten den Seitenanfang an.    Die exportierte Sammlung verwendet in den Katalogen Links auf Überschriften der DDC Klassen und von den Autorenseiten Links auf Überschriften in die Zeitleiste. Für beide wird der Fehler in den Html-Dateien durch ein Script korrigiert. ^[In der Verlinkung wird an die Überschrift "_0" angehängt, so dass sie funktioniert. Da die Sammlung auch direkt in Obsidian verwendet wird und dort "_0" nicht zum Link gehört, wird das nicht in den Quellen angepasst]
  - Links auf Anker funktionieren in der exportierten Sammlung grundsätzlich nicht. ^[Auch das wohl dem Plugin [Webpage HTML Export](https://github.com/KosmosisDire/obsidian-webpage-export) geschuldet, denn in Obsidian selbst funktioniert das.]. z.B. [[home#^textformate|Verlinkung zu Anker Textformate auf dieser Seite.]]
  - Entsprechend würde die Verlinkung von Fußnoten nicht funktionieren, da diese über Anker realisiert sind. Für sie wird die Verlinkung allerdings in den Html-Dateien durch ein Script korrigiert. Ein Hover Effekt wird dadurch nicht hergestellt.
@@ -50,7 +51,7 @@ Der gesamte Ablauf des Exports steht in [[2025-12-14#Wie es läuft]]
 %%
 
 ## Inhalt
-Die Netzversion/die lokale Version, anders ausgedrückt die Site/der Vault ^[so nennt Obsidian Notizbücher] besteht aus einem öffentlichen und einem privaten Bereich. Der private Bereich ist im Ordner "Werkstatt". Er ist für eigene Notizen jeglicher Art gedacht und macht in der Netzversion keinen Sinn.
+Die Netzversion/die lokale Version, anders ausgedrückt die Site/der Vault  besteht aus einem öffentlichen und einem privaten Bereich. Der private Bereich ist im Ordner "Werkstatt". Er ist für eigene Notizen jeglicher Art gedacht und macht in der Netzversion keinen Sinn.
 
 Das Kernstück des öffentliche Bereichs ist der Ordner [[Materialien]]. Es wird unterschieden zwischen Lernmaterialen, hauptsächlich Videos und Audios,  und Quellen. Lernmaterialen sind über ein Thema, Quellen sind  frei zugängliche Originaltexte. Für Lernmaterialien gibt es einen  [[-Materialien|Katalog]] nach Bereichen. Quellen sind nach Autoren unterschieden, sie sind über die [[Materialien/timeline|Zeitleiste]]  zu finden. Der Katalog wird automatisch erstellt, die timeline manuell. Beide Bereiche sind auch über das [[Materialien|Inhaltsverzeichnis]] zugänglich. Über die Seitenleiste links kann man alle Seiten finden. Die Dateinamen der Kataloge beginnen mit einem Bindestrich, die Dateinamen der Inhaltsverzeichnisse heissen wie die Verzeichnisse, die sie auflisten.
 - Grobe [[Materialien/timeline|Zeitleiste]]  mit Links zu Quellenseiten (verknüpft über den Autorennamen)
@@ -204,6 +205,7 @@ Wurden die Einstellungen und Erweiterungen wie oben angegeben eingerichtet, funk
 - Plugin [Quickadd](https://github.com/chhoumann/quickadd) ^[um damit beim Start das  selbsterstellte Script vimrc.js zu laden.]
 - Plugin [Calendar](https://github.com/liamcain/obsidian-calendar-plugin) inklusive einer [Anpassung](allhelperfiles/pointobsidian/plugins/calendar/main.js), mit der der Befehl `Calendar: Open view` funktioniert.
 - Plugin [Chronology](https://github.com/Canna71/obsidian-chronology)
+- Plugin [Recent Files](https://github.com/tgrosinger/recent-files-obsidian)
 - Für Zeitleiste [Timeline Callout von FirelsGood](https://github.com/r-u-s-h-i-k-e-s-h/Obsidian-CSS-Snippets/blob/Collection/Snippets/Callout%20styling%20-%20Timeline%20callout.md), leicht angepasst, als `timeline.css`. 
 - Plugin [Hot-Reload](https://github.com/pjeby/hot-reload#) manuell installiert ^[um einfacher eigenes Plugin vim-fuer-sammlung zu entwickeln]
 - eigenes Plugin vim-fuer-sammlung zum Anzeigen des Vim Modes in der Status Bar.
@@ -400,6 +402,8 @@ tote externe Links checken: https://error404.atomseo.com/
 %%
 ## -footnotes
 
+[^1]: so nennt Obsidian Notizbücher 
 [^2]: Add 2 spaces at the start of each new line.
   This lets you write footnotes that span multiple lines.
+  
 

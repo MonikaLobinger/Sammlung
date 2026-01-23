@@ -15,6 +15,7 @@ Aus Obsidian heraus exportieren: von Privat (Export ist ein Sondermodus von Priv
 - in schoolout ==.makepriv== aufrufen oder `rm -rf *` ^[Nicht die versteckten Dateien löschen, meine Scripts sind versteckt und `git` sowieso]
 - Obsidian `Einstellungen Allgemein Sprache` muss Deutsch sein.
 - Aus Obsidian exportieren, Obsidian dabei im Vordergrund lassen ^[Wenn man dabei die Seitenleiste rechts ausblendet, muss weniger gerendert werden]. Falls schoolout gelöscht wurde, mit gelöschtem Cache exportieren. 
+- Dateien mit Fehlern touchen und nochmal exportieren
 - in schoolout .domakepub aufrufen, das ruft u. a. `.adapt_html "domakepub"` auf, das man im Privaten Modus direkt aufrufen kann: `adapt_html "makepriv"`.
 - Das testet auch den output, wenn der nicht stimmt, unvollständige Dateien touchen und neu exportieren
 - in schoolout git add, git commit, git push

@@ -6,4 +6,6 @@ test/
 test*
 rmdirs
 *.swp
+PROJEKTE.md
+projects.html
 .ZZZZZZ2/

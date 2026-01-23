@@ -1,7 +1,72 @@
 module.exports = poty;
 
 //#region PLUGIN CONFIGURATION
+xxpoty_configuration = {
+  SECTION_NOTETYPES: {
+    note: {
+      yaml: {__SPEC: {RENDER: false,}, date_created: cbkFmtCreated, },
+      show: {__SPEC: {RENDER: true,}, firstline: "firstline",  },
+    },
+  }
+}
+
 poty_configuration = {
+SECTION_TRANSLATE: {
+    TITLE_NEW_FILE: "Unbenannt"
+},
+SECTION_NOTETYPES: {
+    fueralle: {
+        __SPEC: {
+            REPEAT: true
+        },
+        yaml: {
+            __SPEC: {
+                RENDER: false
+            },
+            aliases: {
+                __SPEC: false,
+                DEFAULT: cbkAliasOrt,
+                TYPE: "(Array.<String>|Function)"
+            },
+            borgia: {
+                __SPEC: false,
+                DEFAULT: "Lucrezia",
+                TYPE: "String"
+            }
+        },
+        show: {
+            __SPEC: {
+                RENDER: true
+            },
+            firstline: {
+                __SPEC: false,
+                DEFAULT: "DAS WORT",
+                TYPE: "String"
+            },
+            fugger: {
+                __SPEC: false,
+                DEFAULT: true,
+                TYPE: "Boolean"
+            }
+        }
+    },
+    alt: {
+      folders: ["alt", "antik"],
+      show: {
+          lastline: "ALT",
+          type: "alt"
+      }
+      },
+      note: {
+          marker: "{w}",
+          folders: ["temp",],
+          show: {
+              type: "note"
+          }
+      }
+  }
+};
+xxpoty_configuration = {
     SECTION_GENERAL: {
         LANGUAGE: "de"
     },
@@ -332,18 +397,7 @@ poty_configuration = {
             name_prompt: "Titel Autornachname"
         }
     }
-}
-/*
-poty_configuration = {
-  SECTION_NOTETYPES: {
-    note: {
-      yaml: {__SPEC: {RENDER: false,},  },
-      show: {__SPEC: {RENDER: true,}, firstline: "firstline",  },
-    },
-  }
-}
-*/
-
+};
 
 function cbkAliasPerson(noteName) {
     let aliases = [];
@@ -1793,6 +1847,7 @@ const lime = "lime";
 const green = "lightgreen";
 const gray = "silver";
 var DEBUG = false;
+var TESTING = false;
 var CHECK_ERROR_OUTPUT = false;
 if (CHECK_ERROR_OUTPUT) {
     DEBUG = false;
@@ -1963,28 +2018,29 @@ class Gene {
         if (cbk != undefined && typeof cbk != "function") throw new TypeError(`function 'Gene.constructor'${NL}2nd parameter '${cbk}' is not of type 'Function'`);
         this.#ident = ident;
         this.#cbk = cbk === undefined ? cbkTypeOf : cbk
-    }
+      }
     is(v) {
         return this.#cbk(v, this)
-    }
+      }
 }
 class GenePool {
     #genes = {};
     #defaultCallback = cbkInstanceOf;
     constructor(...params) {
+        console.log("             new GenePool")
         if (params.length > 0 && typeof params[0] === "function") this.#defaultCallback = params.shift();
         while (params.length > 0) this.addGene(params.shift(), this.#defaultCallback)
-    }
+      }
     addGene(ident, cbk) {
         if (this.#genes[ident] === undefined) this.#genes[ident] = new Gene(ident, cbk === undefined ? this.#defaultCallback : cbk);
         return this.#genes[ident]
-    }
+      }
     hasGene(ident) {
         return this.#genes[ident] != undefined
-    }
+      }
     length() {
         return Object.keys(this.#genes).length
-    }
+      }
     isA(v, ident) {
         if (GenePool.isCompoundOr(ident)) {
             let ids = ident.slice(1, -1).split("|");
@@ -1997,24 +2053,24 @@ class GenePool {
             if (!this.hasGene(ident)) return false;
             return this.#genes[ident].is(v)
         }
-    }
-    toString() {
+      }
+    toDisplayString() {
         return "°°°" + this.constructor.name
-    }
+      }
     static isCompoundOr(id) {
         let answ = false;
         if (typeof id === "string") {
             if (id.startsWith("(") && id.endsWith(")")) answ = true
         }
         return answ
-    }
+      }
     static isCompoundArr(id) {
         let answ = false;
         if (typeof id === "string") {
             if (id.startsWith("Array.<") && id.endsWith(">")) answ = true
         }
         return answ
-    }
+      }
 }
 class Essence extends GenePool {
     static #DEFAULT_HARDCODED_SPEC_KEY = "_S_P_E_C_";
@@ -2023,69 +2079,70 @@ class Essence extends GenePool {
     #skipped = [];
     get specificationPool() {
         return this.#specificationPool
-    }
+      }
     get SPEC_KEY() {
         return this.#SPEC_KEY
-    }
+      }
     get skipped() {
         return this.#skipped
-    }
+      }
     get ROOT() {
         return this[Essence.#pre + "ROOT"]
-    }
+      }
     get RENDER() {
         return this[Essence.#pre + "RENDER"]
-    }
+      }
     get TYPE() {
         return this[Essence.#pre + "TYPE"]
-    }
+      }
     get DEFAULT() {
         return this[Essence.#pre + "DEFAULT"]
-    }
+      }
     get VALUE() {
         return this[Essence.#pre + "VALUE"]
-    }
+      }
     get IGNORE() {
         return this[Essence.#pre + "IGNORE"]
-    }
+      }
     get PARSE() {
         return this[Essence.#pre + "PARSE"]
-    }
+      }
     get INTERNAL() {
         return this[Essence.#pre + "INTERNAL"]
-    }
+      }
     get FLAT() {
         return this[Essence.#pre + "FLAT"]
-    }
+      }
     get LOCAL() {
         return this[Essence.#pre + "LOCAL"]
-    }
+      }
     get ONCE() {
         return this[Essence.#pre + "ONCE"]
-    }
+      }
     get REPEAT() {
         return this[Essence.#pre + "REPEAT"]
-    }
+      }
     static #pre = GLOBAL_namePartHiddenPropertiesStartWith;
-    static #RENDER_DEFT = GLOBAL_RENDER_DEFAULT;
-    static #TYPE_DEFT = GLOBAL_TYPE_DEFAULT;
-    static #DEFAULT_DEFT = GLOBAL_DEFAULT_DEFAULT;
-    static #VALUE_DEFT = GLOBAL_VALUE_DEFAULT;
-    static #IGNORE_DEFT = GLOBAL_IGNORE_DEFAULT;
-    static #PARSE_DEFT = GLOBAL_PARSE_DEFAULT;
-    static #INTERNAL_DEFT = GLOBAL_INTERNAL_DEFAULT;
-    static #FLAT_DEFT = GLOBAL_FLAT_DEFAULT;
-    static #LOCAL_DEFT = GLOBAL_LOCAL_DEFAULT;
-    static #ONCE_DEFT = GLOBAL_ONCE_DEFAULT;
-    static #REPEAT_DEFT = GLOBAL_REPEAT_DEFAULT;
+      static #RENDER_DEFT = GLOBAL_RENDER_DEFAULT;
+      static #TYPE_DEFT = GLOBAL_TYPE_DEFAULT;
+      static #DEFAULT_DEFT = GLOBAL_DEFAULT_DEFAULT;
+      static #VALUE_DEFT = GLOBAL_VALUE_DEFAULT;
+      static #IGNORE_DEFT = GLOBAL_IGNORE_DEFAULT;
+      static #PARSE_DEFT = GLOBAL_PARSE_DEFAULT;
+      static #INTERNAL_DEFT = GLOBAL_INTERNAL_DEFAULT;
+      static #FLAT_DEFT = GLOBAL_FLAT_DEFAULT;
+      static #LOCAL_DEFT = GLOBAL_LOCAL_DEFAULT;
+      static #ONCE_DEFT = GLOBAL_ONCE_DEFAULT;
+      static #REPEAT_DEFT = GLOBAL_REPEAT_DEFAULT;
     constructor(spec_key = Essence.#DEFAULT_HARDCODED_SPEC_KEY) {
+        //console.log("           new Essence")
         super();
         this.#SPEC_KEY = spec_key;
         this.addGene(Object);
         this.addGene(Gene);
         this.addGene(GenePool);
         this.addGene(Essence)
-    }
+      }
     parse(literal, parent, name) {
         if (parent != undefined && !this.isA(parent, GenePool)) throw new TypeError(`function 'Essence.parse'${NL}2nd parameter '${parent}' is not of type 'GenePool'`);
         if (literal != undefined && typeof literal != "object") throw new TypeError(`function 'Essence.parse'${NL}1st parameter '${literal}' is not of type 'Object'`);
@@ -2148,7 +2205,7 @@ class Essence extends GenePool {
         hide(this, l, s, "DEFAULT", this.TYPE, un, Essence.#DEFAULT_DEFT, un, n);
         hide(this, l, s, "VALUE", this.TYPE, un, Essence.#VALUE_DEFT, un, n);
         if (literal != un) delete literal[this.#SPEC_KEY];
-    }
+      }
     #validateOrInform(value, type, name) {
         let ok = value === undefined || this.#specificationPool.isA(value, type);
         if (!ok) {
@@ -2159,7 +2216,7 @@ class Essence extends GenePool {
             this.#skipped.push(errObj)
         }
         return ok
-    }
+      }
     static doParse(literal) {
         let answ = true;
         if (typeof literal == "object" && literal != null) {
@@ -2169,50 +2226,51 @@ class Essence extends GenePool {
             }
         }
         return answ
-    }
+      }
     static getROOT(lit) {
         return lit[Essence.#pre + "ROOT"]
-    }
+      }
     static getRENDER(lit) {
         return lit[Essence.#pre + "RENDER"]
-    }
+      }
     static getTYPE(lit) {
         return lit[Essence.#pre + "TYPE"]
-    }
+      }
     static getDEFAULT(lit) {
         return lit[Essence.#pre + "DEFAULT"]
-    }
+      }
     static getVALUE(lit) {
         return lit[Essence.#pre + "VALUE"]
-    }
+      }
     static getIGNORE(lit) {
         return lit[Essence.#pre + "IGNORE"]
-    }
+      }
     static getPARSE(lit) {
         return lit[Essence.#pre + "PARSE"]
-    }
+      }
     static getINTERNAL(lit) {
         return lit[Essence.#pre + "INTERNAL"]
-    }
+      }
     static getFLAT(lit) {
         return lit[Essence.#pre + "FLAT"]
-    }
+      }
     static getLOCAL(lit) {
         return lit[Essence.#pre + "LOCAL"]
-    }
+      }
     static getONCE(lit) {
         return lit[Essence.#pre + "ONCE"]
-    }
+      }
     static getREPEAT(lit) {
         return lit[Essence.#pre + "REPEAT"]
-    }
+      }
 }
 class AEssence extends Essence {
     static #SPEC_KEY = GLOBAL__SPEC;
     static get SPEC_KEY() {
         return AEssence.#SPEC_KEY
-    }
+      }
     constructor(literal, parent, name) {
+        //console.log("         new AEssence")
         super(AEssence.#SPEC_KEY);
         if (parent != undefined && !this.isA(parent, GenePool)) throw new TypeError(`function 'AEssence.constructor'${NL}2nd parameter '${parent}' is not of type 'GenePool'`);
         if (literal != undefined && typeof literal != "object") throw new TypeError(`function 'AEssence.constructor'${NL}1st parameter '${literal}' is not of type 'Object'`);
@@ -2224,7 +2282,7 @@ class AEssence extends Essence {
         this.specificationPool.addGene("Object", cbkTypeOfLc);
         this.specificationPool.addGene("Date", cbkIsDate);
         this.parse(literal, parent, typeof name == "symbol" ? "_Symbol_" + GLOBAL_SYMBOL_COUNTER++ : name)
-    }
+      }
 }
 class BreadCrumbs extends AEssence {
     static sep = GLOBAL_BREADCRUMBS_SEPARATOR;
@@ -2233,43 +2291,44 @@ class BreadCrumbs extends AEssence {
     #literal;
     get literal() {
         return this.#literal
-    }
+      }
     get parent() {
         return this.#parent
-    }
+      }
     get name() {
         return this.#name
-    }
+      }
     get root() {
         return this.ROOT ? this : this.parent.root
-    }
+      }
     constructor(literal, name, parent) {
+        console.log("       new Breadcrumbs")
         super(literal, parent, typeof name == "symbol" ? "_Symbol_" + GLOBAL_SYMBOL_COUNTER++ : name);
-        this.addGene(BreadCrumbs);
-        this.addGene("undefined", cbkTypeOf);
-        this.addGene("null", cbkIsNull);
-        this.addGene("boolean", cbkTypeOf);
-        this.addGene("number", cbkTypeOf);
-        this.addGene("bigint", cbkTypeOf);
-        this.addGene("string", cbkTypeOf);
-        this.addGene("symbol", cbkTypeOf);
-        this.addGene("function", cbkTypeOf);
-        this.addGene("date", cbkIsDate);
-        this.addGene("object", cbkIsObjectNotNullNotArray);
-        this.addGene("array", cbkIsArray);
+            this.addGene(BreadCrumbs);
+            this.addGene("undefined", cbkTypeOf);
+            this.addGene("null", cbkIsNull);
+            this.addGene("boolean", cbkTypeOf);
+            this.addGene("number", cbkTypeOf);
+            this.addGene("bigint", cbkTypeOf);
+            this.addGene("string", cbkTypeOf);
+            this.addGene("symbol", cbkTypeOf);
+            this.addGene("function", cbkTypeOf);
+            this.addGene("date", cbkIsDate);
+            this.addGene("object", cbkIsObjectNotNullNotArray);
+            this.addGene("array", cbkIsArray);
         if (!this.isA(parent, "undefined")) this.throwIfNotOfType(parent, "parent", BreadCrumbs);
         this.#parent = parent;
         this.throwIfUndefined(name, "name");
         this.throwIfNotOfType(name, "name", "(string|symbol)");
         if (typeof name === "symbol") this.#name = "_Symbol_" + GLOBAL_SYMBOL_COUNTER++;
-        this.#name = name;
+        else this.#name = name;
         if (!this.isA(literal, "undefined")) this.throwIfNotOfType(literal, "literal", "object");
         this.#literal = literal;
         if (this.skipped.length) {
             let str = `Breadcrumbs: ${this.toBreadcrumbs()}
-Not all specification values had been correct. Wrong values
-are skipped and parents setting or hardcoded default is used.
-Skipped values are: `;
+            Not all specification values had been correct. Wrong values
+            are skipped and parents setting or hardcoded default is used.
+            Skipped values are: `;
             this.skipped.forEach(skip => {
                 str += "\nName: " + skip.name;
                 str += ", value: " + skip.value;
@@ -2277,11 +2336,11 @@ Skipped values are: `;
             });
             console.log(str)
         }
-    }
-    toString() {
+      }
+    toDisplayString() {
         if (typeof this.#name === "string") return "°°°" + this.constructor.name + " " + this.#name;
         else if (typeof this.#name === "symbol") return "°°°" + this.constructor.name + " " + "_Symbol_" + GLOBAL_SYMBOL_COUNTER++
-    }
+      }
     toBreadcrumbs() {
         let breadcrumbs = "";
         let sep = "";
@@ -2292,14 +2351,14 @@ Skipped values are: `;
         }
         breadcrumbs += sep + this.#name;
         return breadcrumbs
-    }
+      }
     throwIfUndefined(val, vName, fuName = "constructor", msg = "is undefined", usrMsg = "") {
         if (typeof vName != "string") vName = "";
         if (typeof fuName != "string") fuName = "";
         if (typeof msg != "string") msg = "is undefined";
         if (typeof usrMsg != "string") usrMsg = "";
         if (this.isA(val, "undefined")) throw new SettingError(`${this.constructor.name}.${fuName}`, usrMsg, `Path: ${this.toBreadcrumbs()}${NL}'${vName}' ${msg}`)
-    }
+      }
     throwIfNotOfType(val, vName, type, fuName = "constructor", msg = "is not of type", usrMsg = "") {
         let typeStr = this.isA(type, Object) ? type.toString().split(" ")[1] : type;
         if (typeof vName != "string") vName = "";
@@ -2307,7 +2366,7 @@ Skipped values are: `;
         if (typeof msg != "string") msg = " is not of type";
         if (typeof usrMsg != "string") usrMsg = "";
         if (!this.isA(val, type)) throw new SettingError(`${this.constructor.name}.${fuName}`, usrMsg, `Path: ${this.toBreadcrumbs()}${NL}'${vName}' '${val}' ${msg} '${typeStr}'`)
-    }
+      }
 }
 class Setting extends BreadCrumbs {
     static #ROOT_KEY = GLOBAL_ROOT_KEY;
@@ -2318,17 +2377,65 @@ class Setting extends BreadCrumbs {
     #children = {};
     static set worker(workerClass) {
         Setting.#workers[workerClass.workerKey] = workerClass
-    }
+      }
     get workersTypeForChildren() {
         return this.#workersTypeForChildren
-    }
+      }
     set workersTypeForChildren(type) {
         this.#workersTypeForChildren = type
-    }
+      }
     get children() {
         return this.#children
+      }
+    static deepCopy(literal) {
+      let newLiteral
+      let type = typeof(literal)
+      if(type === "object") {
+        if(literal === null) {
+          type = "null"
+        } else if (Array.isArray(literal)) {
+          type = "array"
+        }
+      }
+      if(type !== "object") {
+        switch(type) {
+        case "array":
+          newLiteral = [];
+          literal.forEach(ele => {
+              newLiteral.push(Setting.deepCopy(ele))
+          });
+          break
+        case "function":
+        case "symbol":
+        case "null":
+        case "undefined":
+        case "boolean":
+        case "number":
+        case "bigint":
+        case "string":
+          newLiteral = literal
+          break
+        case "object":
+          throw new TypeError("Dies kann nicht passieren")
+          break
+        default:
+          throw new TypeError("Dies kann nur passieren, wenn JavaScript weitere Typen erhält")
+          break
+        }
+      } else {
+        newLiteral = {}
+        if(Object.keys(Object.getOwnPropertyDescriptors(literal)).length !==
+          Object.keys(literal).length) {
+          ;//vaut("Setting:deepCopy",  "literal has Symbol properties", green, black)
+        }
+        for (const [k, v] of Object.entries(literal)) {
+          newLiteral[k] = Setting.deepCopy(v)
+        }
+      }
+      return newLiteral
     }
     constructor(literal, key = undefined, parent = undefined, add2parent = false) {
+        vaut("    NEW SETTING", key, "yellow", black)
         super(literal, key === undefined ? Setting.#ROOT_KEY : key, parent);
         this.addGene(Setting);
         this.throwIfUndefined(literal, "literal");
@@ -2336,10 +2443,15 @@ class Setting extends BreadCrumbs {
         if (!this.ROOT) this.#workersTypeForChildren = this.parent.workersTypeForChildren;
         if (add2parent && !this.ROOT) this.parent.children[key] = this;
         this.#parse();
+        vaut("    ENDE NEW SETTING, es folgt literal", key, "yellow", black)
+        console.log(Setting.deepCopy(literal))
     }
     #parse() {
-        let un;
-        let type = !this.ROOT && this.parent.workersTypeForChildren !== undefined ? this.parent.workersTypeForChildren : Setting.#globalType;
+      let un;
+        console.log("    <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Setting #parse: " + this.ROOT)
+        let type = !this.ROOT && this.parent.workersTypeForChildren !== undefined ?
+                 this.parent.workersTypeForChildren :
+                 Setting.#globalType;
         for (const [childkey, childval] of Object.entries(this.literal)) {
             if (!AEssence.doParse(childval)) continue;
             if (Setting.#isWorkerKey(childkey)) {
@@ -2356,10 +2468,11 @@ class Setting extends BreadCrumbs {
                 this.literal[childkey] = litAtom;
                 this.#children[childkey] = this.#essenceOfAtom(this.literal, childkey, type)
             }
+         }
+         console.log("    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Ende Setting #parse: " + this.ROOT)
         }
-    }
     #essenceOfAtom(literal, key, type) {
-        if (typeof literal != "object") return undefined;
+      if (typeof literal != "object") return undefined;
         let aEss = undefined;
         let specLit = literal[key][AEssence.SPEC_KEY];
         if (typeof specLit == "boolean") {
@@ -2368,7 +2481,7 @@ class Setting extends BreadCrumbs {
             literal[key] = aEss.VALUE
         }
         return aEss
-    }
+        }
     iterator() {} [Symbol.iterator]() {
         let index = 0;
         return {
@@ -2383,7 +2496,7 @@ class Setting extends BreadCrumbs {
                 }
             }
         }
-    }
+      }
     has(key) {
         if (typeof key == "string") {
             let subKeys = key.split(".");
@@ -2396,7 +2509,7 @@ class Setting extends BreadCrumbs {
         if (this.#works[key]) return true;
         else if (this.#children[key]) return true;
         else return false
-    }
+      }
     at(key) {
         if (typeof key == "string") {
             let subKeys = key.split(".");
@@ -2407,7 +2520,7 @@ class Setting extends BreadCrumbs {
         }
         if (this.#works[key]) return this.#works[key];
         else return this.#children[key]
-    }
+      }
     getValue(key, ...params) {
         let works_and_subkeys = this.#getWorks(key);
         if (works_and_subkeys !== undefined) {
@@ -2416,7 +2529,7 @@ class Setting extends BreadCrumbs {
         } else {
             if (this.at(key) !== undefined) return this.at(key).VALUE
         }
-    }
+      }
     #getWorks(key) {
         let answ;
         if (typeof key == "string") {
@@ -2430,12 +2543,9 @@ class Setting extends BreadCrumbs {
             }
         }
         return answ
-    }
+      }
     toPlainString(indent = "\n") {
         let plainString = "";
-        if (indent === "\n") {
-            plainString += "{"
-        }
         let sectionKeys = Object.keys(this.#works);
         for (const key in this.#works) {
             if (this.#works.hasOwnProperty(key)) {
@@ -2457,11 +2567,8 @@ class Setting extends BreadCrumbs {
             }
             plainString += ","
         }
-        if (indent === "\n") {
-            plainString += "\n}"
-        }
         return plainString
-    }
+      }
     static valueString(value) {
         let valueString = "";
         if (typeof value === "function") {
@@ -2481,18 +2588,19 @@ class Setting extends BreadCrumbs {
             valueString += value
         }
         return valueString
-    }
+      }
     getFrontmatterYAML() {
         let frontmatterYAML = {};
         for (const [key, value] of this) {
             if (value.FLAT) {
-                if (value.RENDER != undefined && !value.RENDER && !value.IGNORE) frontmatterYAML[key] = value.VALUE
+                if (value.RENDER != undefined && !value.RENDER && !value.IGNORE) 
+                  frontmatterYAML[key] = value.VALUE
             } else {
                 Object.assign(frontmatterYAML, value.getFrontmatterYAML())
             }
         }
         return frontmatterYAML
-    }
+      }
     getRenderYAML() {
         let renderYAML = {};
         for (const [key, value] of Object.entries(this.#children)) {
@@ -2501,7 +2609,7 @@ class Setting extends BreadCrumbs {
             } else Object.assign(renderYAML, value.getRenderYAML())
         }
         return renderYAML
-    }
+      }
     getGeneralYAML() {
         let generalYAML = {};
         for (const [key, value] of this) {
@@ -2512,7 +2620,7 @@ class Setting extends BreadCrumbs {
             }
         }
         return generalYAML
-    }
+      }
     showVALUES(depth) {
         let indent = "";
         for (let d = depth; d > 0; d--) indent += "    ";
@@ -2524,7 +2632,7 @@ class Setting extends BreadCrumbs {
             }
             if (value.isA(value, Setting)) value.showVALUES(depth + 1)
         }
-    }
+      }
     showVALUE_DEFAULT(depth) {
         let indent = "";
         for (let d = depth; d > 0; d--) indent += "    ";
@@ -2537,7 +2645,7 @@ class Setting extends BreadCrumbs {
                 value.showVALUE_DEFAULT(depth + 1)
             }
         }
-    }
+      }
     showWhatGoesOut(depth) {
         let indent = "";
         if (depth == 0) vaut("RENDER|IGNORE|REPEAT|FLAT", "KEY:VALUE:DEFAULT");
@@ -2554,24 +2662,26 @@ class Setting extends BreadCrumbs {
             vaut(indent + render + ignore + repeat + flat, key + ":" + val + ":" + def);
             if (value.isA(value, Setting)) value.showWhatGoesOut(depth + 1)
         }
-    }
+      }
     static #isWorkerKey(key) {
         return Setting.#workers[key] !== undefined
-    }
+      }
 }
 class GeneralWorker extends Setting {
     static #KEY = GENERAL_WORKER_KEY;
     static #localType = GENERAL_TYPE;
     static get workerKey() {
         return GeneralWorker.#KEY
-    }
+      }
     constructor(literal, key, parent) {
+        vaut("new GENERALWORKER", key)
+        console.log(Setting.deepCopy(literal))
         parent.workersTypeForChildren = GeneralWorker.#localType;
         super(literal, key, parent);
         this.addGene(GeneralWorker);
         this.throwIfUndefined(parent, "parent");
         this.throwIfUndefined(key, "key")
-    }
+      }
     getValue(key, fallback) {
         let atom = this.at(key);
         let value;
@@ -2581,7 +2691,7 @@ class GeneralWorker extends Setting {
             value = fallback
         }
         return value
-    }
+      }
 }
 Setting.worker = GeneralWorker;
 class LocalizationWorker extends Setting {
@@ -2595,6 +2705,8 @@ class LocalizationWorker extends Setting {
         if (typeof lang == "string") this.#defaultLang = lang
     }
     constructor(literal, key, parent) {
+        vaut("new LOCALIZATIONWORKER",key)
+        console.log(Setting.deepCopy(literal))
         parent.workersTypeForChildren = LocalizationWorker.#localType;
         super(literal, key, parent);
         this.addGene(LocalizationWorker);
@@ -2630,6 +2742,8 @@ class DialogWorker extends Setting {
         return DialogWorker.#KEY
     }
     constructor(literal, key, parent) {
+        vaut("new DIALOGWORKER", key)
+        console.log(Setting.deepCopy(literal))
         parent.workersTypeForChildren = DialogWorker.#localType;
         super(literal, key, parent);
         this.addGene(DialogWorker);
@@ -2647,6 +2761,8 @@ class TypesWorker extends Setting {
     static #plainStaticString = "";
     #plainString = "";
     constructor(literal, key, parent) {
+        vaut("NEW TYPESWORKER",key)
+        console.log(Setting.deepCopy(literal))
         parent.workersTypeForChildren = TypesWorker.#localType;
         TypesWorker.#toPlainString(literal);
         TypesWorker.#cpRepeatedDefaults(literal);
@@ -2656,7 +2772,7 @@ class TypesWorker extends Setting {
         this.addGene(TypesWorker);
         this.throwIfUndefined(parent, "parent");
         this.throwIfUndefined(key, "key");
-    }
+      }
     static #toPlainString(literal, indent = "\n  ") {
         let indentToUse = indent;
         for (const [key, value] of Object.entries(literal)) {
@@ -2664,7 +2780,9 @@ class TypesWorker extends Setting {
                 indentToUse = " "
             }
             TypesWorker.#plainStaticString += indentToUse + key + ": ";
-            if (typeof value != "object" || Object.getOwnPropertyNames(value).length === 0) {
+            if (typeof value != "object" ||
+                Object.getOwnPropertyNames(value).length === 0 ||
+                Array.isArray(value)) {
                 TypesWorker.#plainStaticString += Setting.valueString(value)
             } else {
                 TypesWorker.#plainStaticString += "{";
@@ -2676,7 +2794,7 @@ class TypesWorker extends Setting {
                 indentToUse = indent
             }
         }
-    }
+      }
     static #cpRepeatedDefaults(literal) {
         if (typeof literal != "object" || literal == null) return;
         let defaults;
@@ -2698,7 +2816,7 @@ class TypesWorker extends Setting {
             }
             delete literal[defaultskey]
         }
-    }
+      }
     static #deepCopy(what, to, name, toname, depth) {
         if (typeof what != "object") {
             if (to[name] === undefined) {
@@ -2727,10 +2845,10 @@ class TypesWorker extends Setting {
                 TypesWorker.#deepCopy(whatvalue, to[name], whatkey, name, depth + 1)
             }
         }
-    }
+      }
     toPlainString(indent) {
         return this.#plainString
-    }
+      }
     getValue(key, fallback) {
         let atom = this.at(key);
         let value;
@@ -2740,7 +2858,7 @@ class TypesWorker extends Setting {
             value = fallback
         }
         return value
-    }
+      }
 }
 Setting.worker = TypesWorker;
 class DialogError extends Error {
@@ -2988,7 +3106,7 @@ class Templater {
                 this.#notename = await this.#tp.system.prompt(prompt, "", true)
             } catch (e) {
                 throw new DialogError("Choose Notename Dialog cancelled")
-            }
+              }
         }
     }
     async #rename() {
@@ -3025,7 +3143,7 @@ class Templater {
         } catch (e) {
             this.#tp.system.prompt("Renaming not possible or supported", "ABORT\n        Renaming not possible or supported in this folder\n        Press ESCAPE or any key", false, true);
             throw new DialogError("Renaming not possible or supported")
-        }
+          }
     }
 }
 async function poty(tp, app) {
@@ -3042,6 +3160,9 @@ async function poty(tp, app) {
     test(testYAML);
     try {
         let lit = poty_configuration;
+        let cp = Setting.deepCopy(poty_configuration)
+        console.log(cp)
+        //await new Promise(r => setTimeout(r, 2000));
         let setting = new Setting(lit, undefined, undefined);
         let templ = new Templater(setting, tp, app);
         await templ.doTheWork();
@@ -3068,4 +3189,11 @@ async function poty(tp, app) {
     }
     if (!DEBUG) dbgYAML = undefined;
     return Object.assign({}, frontmatterYAML, dbgYAML, testYAML, renderYAML)
+}
+function giveMe() {
+  let xx = new Setting(poty_configuration, undefined, undefined)
+  vaut("EXPERIMENTE", "aus poty.js", blue, white)
+  console.log(xx.toDisplayString())
+  vaut("-----------", "-----------", blue, white)
+  return xx
 }

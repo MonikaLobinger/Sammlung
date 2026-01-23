@@ -20,6 +20,5 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 - [[-Philosophie]]
 - [[Philosophie Podcasts]]
 - [[Philosophie Unsortiert Videos]]
-- [[podcasts_uni_wien]]
 
 %% End Waypoint %%

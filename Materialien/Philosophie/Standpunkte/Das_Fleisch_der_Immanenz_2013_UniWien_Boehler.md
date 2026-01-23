@@ -13,7 +13,7 @@ dv.executeJs(await dv.io.load("Materialien/breadcrumbs.js"));
 ## [Das Fleisch der Immanenz - Spinoza. Nietzsche. Deleuze](https://audiothek.philo.at/?s=Das+Fleisch+der+Immanenz) 
 #speaker/Boehler-Arnold
 
-[[XXXstutiis/Mitschriften/@Das_Fleisch_der_Immanenz_2013_UniWien_Boehler|Mitschrift]] 
+[[@Das_Fleisch_der_Immanenz_2013_UniWien_Boehler|Mitschrift]] 
 
 - [01-vo-l-das-fleisch-der-immanenz-spinoza-nietzsche-deleuze](https://audiothek.philo.at/lesson/01-vo-l-das-fleisch-der-immanenz-spinoza-nietzsche-deleuze)
 - [02-vo-l-das-fleisch-der-immanenz-spinoza-nietzsche-deleuze](https://audiothek.philo.at/lesson/02-vo-l-das-fleisch-der-immanenz-spinoza-nietzsche-deleuze)
